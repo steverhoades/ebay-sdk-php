@@ -16,7 +16,9 @@
         }
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php-64bit": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-libxml": "*",
         "guzzlehttp/guzzle": "^7.0",
         "guzzlehttp/psr7": "^1.0",
         "guzzlehttp/promises": "^1.1"
