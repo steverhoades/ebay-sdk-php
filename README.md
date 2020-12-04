@@ -1,6 +1,6 @@
 # eBay SDK for PHP
 
-This is a fork of the original [dts/ebay-sdk-php](https://github.com/davidtsadler/ebay-sdk-php) by @davidtsadler, with support for PHP 7.4 and PHP 8, Guzzle 7.
+This is a fork of the original [dts/ebay-sdk-php](https://github.com/davidtsadler/ebay-sdk-php) by [@davidtsadler](https://github.com/davidtsadler), with support for PHP 7.4 and PHP 8, Guzzle 7.
 
 The original project has been officially abandoned in February 2020.
 
@@ -37,7 +37,7 @@ This is a personal project that was originally developed by David T. Sadler, who
 The SDK can be installed with [Composer](http://getcomposer.org/):
 
 ```
-php composer.phar require benmorel/ebay-sdk-php
+composer require benmorel/ebay-sdk-php
 ```
 
 ## Example
@@ -49,8 +49,8 @@ php composer.phar require benmorel/ebay-sdk-php
 
 require 'vendor/autoload.php';
 
-use \DTS\eBaySDK\Shopping\Services;
-use \DTS\eBaySDK\Shopping\Types;
+use DTS\eBaySDK\Shopping\Services;
+use DTS\eBaySDK\Shopping\Types;
 
 // Create the service object.
 $service = new Services\ShoppingService();
