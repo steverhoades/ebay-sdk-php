@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\PayPalAccountStatusCodeType;
 
-class PayPalAccountStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class PayPalAccountStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PayPalAccountStatusCodeType();
     }

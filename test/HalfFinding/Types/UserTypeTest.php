@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\HalfFinding\Types;
 
 use DTS\eBaySDK\HalfFinding\Types\UserType;
 
-class UserTypeTest extends \PHPUnit_Framework_TestCase
+class UserTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UserType();
     }

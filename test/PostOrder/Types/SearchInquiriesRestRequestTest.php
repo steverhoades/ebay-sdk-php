@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\SearchInquiriesRestRequest;
 
-class SearchInquiriesRestRequestTest extends \PHPUnit_Framework_TestCase
+class SearchInquiriesRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SearchInquiriesRestRequest();
     }

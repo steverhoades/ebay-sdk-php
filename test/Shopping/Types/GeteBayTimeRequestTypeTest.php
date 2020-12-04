@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\GeteBayTimeRequestType;
 
-class GeteBayTimeRequestTypeTest extends \PHPUnit_Framework_TestCase
+class GeteBayTimeRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GeteBayTimeRequestType();
     }

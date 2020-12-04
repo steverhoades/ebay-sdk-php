@@ -5,7 +5,7 @@ use DTS\eBaySDK\FileTransfer\Services\FileTransferService;
 use DTS\eBaySDK\FileTransfer\Types;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class AttachmentTest extends \PHPUnit_Framework_TestCase
+class AttachmentTest extends \PHPUnit\Framework\TestCase
 {
     public function testAttachmentFieldIsSetCorrectlyInRequest()
     {

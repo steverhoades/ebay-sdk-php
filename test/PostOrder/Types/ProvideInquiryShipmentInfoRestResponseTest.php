@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\ProvideInquiryShipmentInfoRestResponse;
 
-class ProvideInquiryShipmentInfoRestResponseTest extends \PHPUnit_Framework_TestCase
+class ProvideInquiryShipmentInfoRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProvideInquiryShipmentInfoRestResponse();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\VATStatusCodeType;
 
-class VATStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class VATStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new VATStatusCodeType();
     }

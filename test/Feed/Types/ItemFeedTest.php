@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Feed\Types;
 
 use DTS\eBaySDK\Feed\Types\ItemFeed;
 
-class ItemFeedTest extends \PHPUnit_Framework_TestCase
+class ItemFeedTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemFeed();
     }

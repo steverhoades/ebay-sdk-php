@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\UserStatusCodeType;
 
-class UserStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class UserStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UserStatusCodeType();
     }

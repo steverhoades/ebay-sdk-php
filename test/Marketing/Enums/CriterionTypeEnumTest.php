@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Enums;
 
 use DTS\eBaySDK\Marketing\Enums\CriterionTypeEnum;
 
-class CriterionTypeEnumTest extends \PHPUnit_Framework_TestCase
+class CriterionTypeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CriterionTypeEnum();
     }

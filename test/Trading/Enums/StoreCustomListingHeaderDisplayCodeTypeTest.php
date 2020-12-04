@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\StoreCustomListingHeaderDisplayCodeType;
 
-class StoreCustomListingHeaderDisplayCodeTypeTest extends \PHPUnit_Framework_TestCase
+class StoreCustomListingHeaderDisplayCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new StoreCustomListingHeaderDisplayCodeType();
     }

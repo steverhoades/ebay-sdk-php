@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Enums;
 
 use DTS\eBaySDK\Shopping\Enums\CurrencyCodeType;
 
-class CurrencyCodeTypeTest extends \PHPUnit_Framework_TestCase
+class CurrencyCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CurrencyCodeType();
     }

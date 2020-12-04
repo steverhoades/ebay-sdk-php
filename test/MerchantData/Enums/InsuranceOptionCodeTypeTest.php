@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\InsuranceOptionCodeType;
 
-class InsuranceOptionCodeTypeTest extends \PHPUnit_Framework_TestCase
+class InsuranceOptionCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new InsuranceOptionCodeType();
     }

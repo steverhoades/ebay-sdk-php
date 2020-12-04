@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Test;
 
 use DTS\eBaySDK\Debugger;
 
-class DebuggerTest extends \PHPUnit_Framework_TestCase
+class DebuggerTest extends \PHPUnit\Framework\TestCase
 {
     public function testOutputsDebugInformation()
     {
@@ -16,7 +16,7 @@ class DebuggerTest extends \PHPUnit_Framework_TestCase
 
         $d('debug');
 
-        $this->assertContains('debug', $str);
+        $this->assertStringContainsString('debug', $str);
     }
 
     public function testScrubsCredentials()
@@ -43,16 +43,16 @@ EOT;
 
         $d($msg);
 
-        $this->assertNotContains('token', $str);
-        $this->assertNotContains('appname', $str);
-        $this->assertNotContains('userid', $str);
-        $this->assertNotContains('appid', $str);
-        $this->assertNotContains('trackingid', $str);
-        $this->assertNotContains('partnercode', $str);
-        $this->assertNotContains('appname', $str);
-        $this->assertNotContains('certname', $str);
-        $this->assertNotContains('devname', $str);
-        $this->assertNotContains('authtoken', $str);
+        $this->assertStringNotContainsString('token', $str);
+        $this->assertStringNotContainsString('appname', $str);
+        $this->assertStringNotContainsString('userid', $str);
+        $this->assertStringNotContainsString('appid', $str);
+        $this->assertStringNotContainsString('trackingid', $str);
+        $this->assertStringNotContainsString('partnercode', $str);
+        $this->assertStringNotContainsString('appname', $str);
+        $this->assertStringNotContainsString('certname', $str);
+        $this->assertStringNotContainsString('devname', $str);
+        $this->assertStringNotContainsString('authtoken', $str);
     }
 
     public function testScrubsCustom()
@@ -78,10 +78,10 @@ EOT;
 
         $d($msg);
 
-        $this->assertNotContains('token', $str);
-        $this->assertNotContains('email@example.com', $str);
-        $this->assertContains('REDACTED_EMAIL', $str);
-        $this->assertNotContains('<itemId>123456789</itemId>', $str);
-        $this->assertContains('REDACTED_ITEM_ID', $str);
+        $this->assertStringNotContainsString('token', $str);
+        $this->assertStringNotContainsString('email@example.com', $str);
+        $this->assertStringContainsString('REDACTED_EMAIL', $str);
+        $this->assertStringNotContainsString('<itemId>123456789</itemId>', $str);
+        $this->assertStringContainsString('REDACTED_ITEM_ID', $str);
     }
 }

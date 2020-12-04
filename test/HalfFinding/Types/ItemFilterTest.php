@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\HalfFinding\Types;
 
 use DTS\eBaySDK\HalfFinding\Types\ItemFilter;
 
-class ItemFilterTest extends \PHPUnit_Framework_TestCase
+class ItemFilterTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemFilter();
     }

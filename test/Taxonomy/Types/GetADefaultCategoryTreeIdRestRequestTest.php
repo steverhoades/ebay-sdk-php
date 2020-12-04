@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Taxonomy\Types;
 
 use DTS\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest;
 
-class GetADefaultCategoryTreeIdRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetADefaultCategoryTreeIdRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetADefaultCategoryTreeIdRestRequest();
     }

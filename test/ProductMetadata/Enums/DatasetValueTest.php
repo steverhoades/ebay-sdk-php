@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Enums;
 
 use DTS\eBaySDK\ProductMetadata\Enums\DatasetValue;
 
-class DatasetValueTest extends \PHPUnit_Framework_TestCase
+class DatasetValueTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DatasetValue();
     }

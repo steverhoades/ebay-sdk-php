@@ -5,14 +5,14 @@ use DTS\eBaySDK\Trading\Services;
 use DTS\eBaySDK\Trading\Types;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class MultipartFormDataTest extends \PHPUnit_Framework_TestCase
+class MultipartFormDataTest extends \PHPUnit\Framework\TestCase
 {
     private $httpHandler;
     private $service;
     private $request;
     private $requestXml;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         /**
          * Use a class that will fake sending requests and getting responses.

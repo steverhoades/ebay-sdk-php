@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType;
 
-class GetPromotionalSaleDetailsRequestTypeTest extends \PHPUnit_Framework_TestCase
+class GetPromotionalSaleDetailsRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetPromotionalSaleDetailsRequestType();
     }

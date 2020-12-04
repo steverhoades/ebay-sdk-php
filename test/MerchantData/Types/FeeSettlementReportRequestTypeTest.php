@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\FeeSettlementReportRequestType;
 
-class FeeSettlementReportRequestTypeTest extends \PHPUnit_Framework_TestCase
+class FeeSettlementReportRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FeeSettlementReportRequestType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Enums;
 
 use DTS\eBaySDK\Marketing\Enums\InventoryCriterionEnum;
 
-class InventoryCriterionEnumTest extends \PHPUnit_Framework_TestCase
+class InventoryCriterionEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new InventoryCriterionEnum();
     }

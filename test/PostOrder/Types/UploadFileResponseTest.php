@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\UploadFileResponse;
 
-class UploadFileResponseTest extends \PHPUnit_Framework_TestCase
+class UploadFileResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UploadFileResponse();
     }

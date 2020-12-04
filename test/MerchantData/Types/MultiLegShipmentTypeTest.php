@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\MultiLegShipmentType;
 
-class MultiLegShipmentTypeTest extends \PHPUnit_Framework_TestCase
+class MultiLegShipmentTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MultiLegShipmentType();
     }

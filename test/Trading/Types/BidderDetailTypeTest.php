@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\BidderDetailType;
 
-class BidderDetailTypeTest extends \PHPUnit_Framework_TestCase
+class BidderDetailTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BidderDetailType();
     }

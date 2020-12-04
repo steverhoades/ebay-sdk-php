@@ -5,7 +5,7 @@ use DTS\eBaySDK\Test\Mocks\AmountClass;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 use DTS\eBaySDK\Test\Mocks\SimpleClass;
 
-class ConstructTest extends \PHPUnit_Framework_TestCase
+class ConstructTest extends \PHPUnit\Framework\TestCase
 {
     public function testSettingPropertiesViaCtor()
     {
@@ -57,19 +57,19 @@ class ConstructTest extends \PHPUnit_Framework_TestCase
         $obj = new ComplexClass($values);
 
         $this->assertEquals('foo', $obj->foo);
-        $this->assertInternalType('string', $obj->foo);
+        $this->assertisString($obj->foo);
 
         $this->assertEquals(123, $obj->integer);
-        $this->assertInternalType('integer', $obj->integer);
+        $this->assertisInt($obj->integer);
 
         $this->assertEquals(123.45, $obj->double);
-        $this->assertInternalType('float', $obj->double);
+        $this->assertisFloat($obj->double);
 
         $this->assertEquals(true, $obj->booleanTrue);
-        $this->assertInternalType('boolean', $obj->booleanTrue);
+        $this->assertisBool($obj->booleanTrue);
 
         $this->assertEquals(false, $obj->booleanFalse);
-        $this->assertInternalType('boolean', $obj->booleanFalse);
+        $this->assertisBool($obj->booleanFalse);
 
         $this->assertEquals(
             new \DateTime('2000-01-01T00:00:00.000Z', new \DateTimeZone('UTC')),
@@ -123,7 +123,7 @@ class ConstructTest extends \PHPUnit_Framework_TestCase
 
     public function testSettingInvalidPropertyViaCtor()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property bar');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property bar');
 
         new ComplexClass([
             'bar' => 'bar'
@@ -132,7 +132,7 @@ class ConstructTest extends \PHPUnit_Framework_TestCase
 
     public function testSettingInvalidPropertyTypeViaCtor()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for string. Expected string but got integer');
+        $this->expectException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for string. Expected string but got integer');
 
         new ComplexClass([
             'string' => 123

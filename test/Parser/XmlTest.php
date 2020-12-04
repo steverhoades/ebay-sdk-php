@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Parser\Test;
 
 use DTS\eBaySDK\Parser\XmlParser;
 
-class XmlTest extends \PHPUnit_Framework_TestCase
+class XmlTest extends \PHPUnit\Framework\TestCase
 {
     public function testCanParseXml()
     {

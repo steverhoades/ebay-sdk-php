@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Taxonomy\Types;
 
 use DTS\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest;
 
-class GetItemAspectsForCategoryRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetItemAspectsForCategoryRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetItemAspectsForCategoryRestRequest();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\HistogramEntryType;
 
-class HistogramEntryTypeTest extends \PHPUnit_Framework_TestCase
+class HistogramEntryTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new HistogramEntryType();
     }

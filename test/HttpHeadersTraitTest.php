@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Test;
 
 use DTS\eBaySDK\Test\Mocks\HttpHeaders;
 
-class HttpHeadersTraitTest extends \PHPUnit_Framework_TestCase
+class HttpHeadersTraitTest extends \PHPUnit\Framework\TestCase
 {
     public function testNoHeaders()
     {

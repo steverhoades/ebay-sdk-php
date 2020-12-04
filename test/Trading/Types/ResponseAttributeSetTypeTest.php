@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ResponseAttributeSetType;
 
-class ResponseAttributeSetTypeTest extends \PHPUnit_Framework_TestCase
+class ResponseAttributeSetTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ResponseAttributeSetType();
     }

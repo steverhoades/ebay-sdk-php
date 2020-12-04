@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\HalfFinding\Enums;
 
 use DTS\eBaySDK\HalfFinding\Enums\ErrorSeverity;
 
-class ErrorSeverityTest extends \PHPUnit_Framework_TestCase
+class ErrorSeverityTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ErrorSeverity();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Fulfillment\Enums;
 
 use DTS\eBaySDK\Fulfillment\Enums\PaymentStatusEnum;
 
-class PaymentStatusEnumTest extends \PHPUnit_Framework_TestCase
+class PaymentStatusEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PaymentStatusEnum();
     }

@@ -16,13 +16,13 @@
         "issues": "https://github.com/davidtsadler/ebay-sdk-php/issues"
     },
     "require": {
-        "php": ">=5.5",
+        "php": "^7.4 || ^8.0",
         "guzzlehttp/guzzle": "~6.0",
         "guzzlehttp/psr7": "~1.0",
         "guzzlehttp/promises": "^1.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.0",
+        "phpunit/phpunit": "^9.0",
         "squizlabs/php_codesniffer": "2.*"
     },
     "autoload": {

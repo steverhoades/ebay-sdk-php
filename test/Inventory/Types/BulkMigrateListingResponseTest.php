@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\BulkMigrateListingResponse;
 
-class BulkMigrateListingResponseTest extends \PHPUnit_Framework_TestCase
+class BulkMigrateListingResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BulkMigrateListingResponse();
     }

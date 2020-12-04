@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Account\Types;
 
 use DTS\eBaySDK\Account\Types\PaymentPolicyResponse;
 
-class PaymentPolicyResponseTest extends \PHPUnit_Framework_TestCase
+class PaymentPolicyResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PaymentPolicyResponse();
     }

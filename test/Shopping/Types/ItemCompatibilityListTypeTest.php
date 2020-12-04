@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\ItemCompatibilityListType;
 
-class ItemCompatibilityListTypeTest extends \PHPUnit_Framework_TestCase
+class ItemCompatibilityListTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemCompatibilityListType();
     }

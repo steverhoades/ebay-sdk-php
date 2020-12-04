@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\ShippingServiceCostOverrideListType;
 
-class ShippingServiceCostOverrideListTypeTest extends \PHPUnit_Framework_TestCase
+class ShippingServiceCostOverrideListTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ShippingServiceCostOverrideListType();
     }

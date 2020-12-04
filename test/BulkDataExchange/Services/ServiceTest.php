@@ -6,7 +6,7 @@ use DTS\eBaySDK\BulkDataExchange\Services\BulkDataExchangeService;
 use DTS\eBaySDK\Test\BulkDataExchange\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends \PHPUnit\Framework\TestCase
 {
     public function testConfigDefinitions()
     {

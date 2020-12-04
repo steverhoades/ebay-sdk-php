@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\TimeRangeType;
 
-class TimeRangeTypeTest extends \PHPUnit_Framework_TestCase
+class TimeRangeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TimeRangeType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Analytics\Types;
 
 use DTS\eBaySDK\Analytics\Types\RangeValue;
 
-class RangeValueTest extends \PHPUnit_Framework_TestCase
+class RangeValueTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RangeValue();
     }

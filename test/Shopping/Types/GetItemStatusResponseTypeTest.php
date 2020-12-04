@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\GetItemStatusResponseType;
 
-class GetItemStatusResponseTypeTest extends \PHPUnit_Framework_TestCase
+class GetItemStatusResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetItemStatusResponseType();
     }

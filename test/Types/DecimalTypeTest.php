@@ -3,11 +3,11 @@ namespace DTS\eBaySDK\Types\Test;
 
 use DTS\eBaySDK\Types\DecimalType;
 
-class DecimalTypeTest extends \PHPUnit_Framework_TestCase
+class DecimalTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DecimalType();
     }
@@ -26,26 +26,26 @@ class DecimalTypeTest extends \PHPUnit_Framework_TestCase
     {
         $this->obj->value = 123;
         $this->assertEquals(123, $this->obj->value);
-        $this->assertInternalType('integer', $this->obj->value);
+        $this->assertisInt($this->obj->value);
 
         $this->obj->value = -123;
         $this->assertEquals(-123, $this->obj->value);
-        $this->assertInternalType('integer', $this->obj->value);
+        $this->assertisInt($this->obj->value);
 
         $this->obj->value = 123.00;
         $this->assertEquals(123.00, $this->obj->value);
-        $this->assertInternalType('float', $this->obj->value);
+        $this->assertisFloat($this->obj->value);
 
         $this->obj->value = -123.00;
         $this->assertEquals(-123.00, $this->obj->value);
-        $this->assertInternalType('float', $this->obj->value);
+        $this->assertisFloat($this->obj->value);
 
         $this->obj->value = 123.45;
         $this->assertEquals(123.45, $this->obj->value);
-        $this->assertInternalType('float', $this->obj->value);
+        $this->assertisFloat($this->obj->value);
 
         $this->obj->value = -123.45;
         $this->assertEquals(-123.45, $this->obj->value);
-        $this->assertInternalType('float', $this->obj->value);
+        $this->assertisFloat($this->obj->value);
     }
 }

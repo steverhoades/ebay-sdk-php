@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Catalog\Types;
 
 use DTS\eBaySDK\Catalog\Types\GetChangeRequestRestResponse;
 
-class GetChangeRequestRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetChangeRequestRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetChangeRequestRestResponse();
     }

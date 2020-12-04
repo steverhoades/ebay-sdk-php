@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchResponse;
 
-class FindItemsForFavoriteSearchResponseTest extends \PHPUnit_Framework_TestCase
+class FindItemsForFavoriteSearchResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FindItemsForFavoriteSearchResponse();
     }

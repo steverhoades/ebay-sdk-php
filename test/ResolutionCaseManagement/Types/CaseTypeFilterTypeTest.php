@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Types\CaseTypeFilterType;
 
-class CaseTypeFilterTypeTest extends \PHPUnit_Framework_TestCase
+class CaseTypeFilterTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CaseTypeFilterType();
     }

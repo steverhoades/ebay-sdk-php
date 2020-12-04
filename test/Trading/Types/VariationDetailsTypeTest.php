@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\VariationDetailsType;
 
-class VariationDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class VariationDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new VariationDetailsType();
     }

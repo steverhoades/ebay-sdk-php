@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\PickUpInStoreDetailsType;
 
-class PickUpInStoreDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class PickUpInStoreDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PickUpInStoreDetailsType();
     }

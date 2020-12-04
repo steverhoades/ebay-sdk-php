@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\DomainHistogramType;
 
-class DomainHistogramTypeTest extends \PHPUnit_Framework_TestCase
+class DomainHistogramTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DomainHistogramType();
     }

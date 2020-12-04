@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\RefundSourceTypeCodeType;
 
-class RefundSourceTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class RefundSourceTypeCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RefundSourceTypeCodeType();
     }

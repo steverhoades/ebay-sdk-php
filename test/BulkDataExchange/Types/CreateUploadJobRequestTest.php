@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
 
 use DTS\eBaySDK\BulkDataExchange\Types\CreateUploadJobRequest;
 
-class CreateUploadJobRequestTest extends \PHPUnit_Framework_TestCase
+class CreateUploadJobRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CreateUploadJobRequest();
     }

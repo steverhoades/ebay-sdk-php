@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\ReviseReasonCodeType;
 
-class ReviseReasonCodeTypeTest extends \PHPUnit_Framework_TestCase
+class ReviseReasonCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReviseReasonCodeType();
     }

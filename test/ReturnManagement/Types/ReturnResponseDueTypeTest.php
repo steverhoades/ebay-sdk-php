@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Types;
 
 use DTS\eBaySDK\ReturnManagement\Types\ReturnResponseDueType;
 
-class ReturnResponseDueTypeTest extends \PHPUnit_Framework_TestCase
+class ReturnResponseDueTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReturnResponseDueType();
     }

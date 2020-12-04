@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Enums;
 
 use DTS\eBaySDK\Shopping\Enums\SeverityCodeType;
 
-class SeverityCodeTypeTest extends \PHPUnit_Framework_TestCase
+class SeverityCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SeverityCodeType();
     }

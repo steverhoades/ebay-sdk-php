@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\OfferArrayType;
 
-class OfferArrayTypeTest extends \PHPUnit_Framework_TestCase
+class OfferArrayTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new OfferArrayType();
     }

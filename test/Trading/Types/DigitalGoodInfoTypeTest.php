@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\DigitalGoodInfoType;
 
-class DigitalGoodInfoTypeTest extends \PHPUnit_Framework_TestCase
+class DigitalGoodInfoTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DigitalGoodInfoType();
     }

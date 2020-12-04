@@ -30,7 +30,7 @@ trait ManageEnv
         return $dir;
     }
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->appId = getenv(CredentialsProvider::ENV_APP_ID);
         $this->certId = getenv(CredentialsProvider::ENV_CERT_ID);
@@ -41,7 +41,7 @@ trait ManageEnv
         $this->homepath = getenv('HOMEPATH');
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         putenv(CredentialsProvider::ENV_APP_ID . '=' . $this->appId);
         putenv(CredentialsProvider::ENV_CERT_ID . '=' . $this->certId);

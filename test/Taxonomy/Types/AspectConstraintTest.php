@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Taxonomy\Types;
 
 use DTS\eBaySDK\Taxonomy\Types\AspectConstraint;
 
-class AspectConstraintTest extends \PHPUnit_Framework_TestCase
+class AspectConstraintTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AspectConstraint();
     }

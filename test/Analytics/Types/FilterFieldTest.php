@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Analytics\Types;
 
 use DTS\eBaySDK\Analytics\Types\FilterField;
 
-class FilterFieldTest extends \PHPUnit_Framework_TestCase
+class FilterFieldTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FilterField();
     }

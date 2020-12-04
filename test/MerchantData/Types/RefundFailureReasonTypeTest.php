@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\RefundFailureReasonType;
 
-class RefundFailureReasonTypeTest extends \PHPUnit_Framework_TestCase
+class RefundFailureReasonTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RefundFailureReasonType();
     }

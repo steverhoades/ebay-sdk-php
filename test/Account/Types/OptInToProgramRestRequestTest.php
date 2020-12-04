@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Account\Types;
 
 use DTS\eBaySDK\Account\Types\OptInToProgramRestRequest;
 
-class OptInToProgramRestRequestTest extends \PHPUnit_Framework_TestCase
+class OptInToProgramRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new OptInToProgramRestRequest();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\BuyingGuideType;
 
-class BuyingGuideTypeTest extends \PHPUnit_Framework_TestCase
+class BuyingGuideTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BuyingGuideType();
     }

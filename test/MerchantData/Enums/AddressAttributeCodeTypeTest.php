@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\AddressAttributeCodeType;
 
-class AddressAttributeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class AddressAttributeCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AddressAttributeCodeType();
     }

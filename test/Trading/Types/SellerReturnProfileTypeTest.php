@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\SellerReturnProfileType;
 
-class SellerReturnProfileTypeTest extends \PHPUnit_Framework_TestCase
+class SellerReturnProfileTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellerReturnProfileType();
     }

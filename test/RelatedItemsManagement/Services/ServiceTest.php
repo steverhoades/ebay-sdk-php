@@ -6,7 +6,7 @@ use DTS\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementService;
 use DTS\eBaySDK\Test\RelatedItemsManagement\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends \PHPUnit\Framework\TestCase
 {
     public function testConfigDefinitions()
     {

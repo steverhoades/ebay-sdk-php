@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Enums;
 
 use DTS\eBaySDK\PostOrder\Enums\LabelActionEnum;
 
-class LabelActionEnumTest extends \PHPUnit_Framework_TestCase
+class LabelActionEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new LabelActionEnum();
     }

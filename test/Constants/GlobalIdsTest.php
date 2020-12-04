@@ -3,32 +3,32 @@ namespace DTS\eBaySDK\Constants\Test;
 
 use DTS\eBaySDK\Constants\GlobalIds as GlobalIds;
 
-class GlobalIdsTest extends \PHPUnit_Framework_TestCase
+class GlobalIdsTest extends \PHPUnit\Framework\TestCase
 {
     public function testConstantsAreCorrectType()
     {
-        $this->assertInternalType('string', GlobalIds::US);
-        $this->assertInternalType('string', GlobalIds::ENCA);
-        $this->assertInternalType('string', GlobalIds::GB);
-        $this->assertInternalType('string', GlobalIds::AU);
-        $this->assertInternalType('string', GlobalIds::AT);
-        $this->assertInternalType('string', GlobalIds::FRBE);
-        $this->assertInternalType('string', GlobalIds::FR);
-        $this->assertInternalType('string', GlobalIds::DE);
-        $this->assertInternalType('string', GlobalIds::MOTORS);
-        $this->assertInternalType('string', GlobalIds::IT);
-        $this->assertInternalType('string', GlobalIds::NLBE);
-        $this->assertInternalType('string', GlobalIds::NL);
-        $this->assertInternalType('string', GlobalIds::ES);
-        $this->assertInternalType('string', GlobalIds::CH);
-        $this->assertInternalType('string', GlobalIds::HK);
-        $this->assertInternalType('string', GlobalIds::IN);
-        $this->assertInternalType('string', GlobalIds::IE);
-        $this->assertInternalType('string', GlobalIds::MY);
-        $this->assertInternalType('string', GlobalIds::FRCA);
-        $this->assertInternalType('string', GlobalIds::PH);
-        $this->assertInternalType('string', GlobalIds::PL);
-        $this->assertInternalType('string', GlobalIds::SG);
+        $this->assertisString(GlobalIds::US);
+        $this->assertisString(GlobalIds::ENCA);
+        $this->assertisString(GlobalIds::GB);
+        $this->assertisString(GlobalIds::AU);
+        $this->assertisString(GlobalIds::AT);
+        $this->assertisString(GlobalIds::FRBE);
+        $this->assertisString(GlobalIds::FR);
+        $this->assertisString(GlobalIds::DE);
+        $this->assertisString(GlobalIds::MOTORS);
+        $this->assertisString(GlobalIds::IT);
+        $this->assertisString(GlobalIds::NLBE);
+        $this->assertisString(GlobalIds::NL);
+        $this->assertisString(GlobalIds::ES);
+        $this->assertisString(GlobalIds::CH);
+        $this->assertisString(GlobalIds::HK);
+        $this->assertisString(GlobalIds::IN);
+        $this->assertisString(GlobalIds::IE);
+        $this->assertisString(GlobalIds::MY);
+        $this->assertisString(GlobalIds::FRCA);
+        $this->assertisString(GlobalIds::PH);
+        $this->assertisString(GlobalIds::PL);
+        $this->assertisString(GlobalIds::SG);
     }
 
     public function testConstantsHaveCorrectValue()

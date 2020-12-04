@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Enums;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Enums\AppealReasonType;
 
-class AppealReasonTypeTest extends \PHPUnit_Framework_TestCase
+class AppealReasonTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AppealReasonType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\TransactionListType;
 
-class TransactionListTypeTest extends \PHPUnit_Framework_TestCase
+class TransactionListTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TransactionListType();
     }

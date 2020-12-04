@@ -3,11 +3,11 @@ namespace DTS\eBaySDK\Exceptions\Test;
 
 use DTS\eBaySDK\Exceptions\InvalidPropertyTypeException;
 
-class InvalidPropertyTypeExceptionTest extends \PHPUnit_Framework_TestCase
+class InvalidPropertyTypeExceptionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new InvalidPropertyTypeException('foo', 'string', 'integer');
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Enums;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Enums\EBPINRCaseStatusType;
 
-class EBPINRCaseStatusTypeTest extends \PHPUnit_Framework_TestCase
+class EBPINRCaseStatusTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new EBPINRCaseStatusType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\GetDispositionRuleTemplatesResponse;
 
-class GetDispositionRuleTemplatesResponseTest extends \PHPUnit_Framework_TestCase
+class GetDispositionRuleTemplatesResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetDispositionRuleTemplatesResponse();
     }

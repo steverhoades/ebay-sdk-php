@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\FileTransfer\Types;
 
 use DTS\eBaySDK\FileTransfer\Types\FileAttachment;
 
-class FileAttachmentTest extends \PHPUnit_Framework_TestCase
+class FileAttachmentTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FileAttachment();
     }

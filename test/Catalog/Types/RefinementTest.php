@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Catalog\Types;
 
 use DTS\eBaySDK\Catalog\Types\Refinement;
 
-class RefinementTest extends \PHPUnit_Framework_TestCase
+class RefinementTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Refinement();
     }

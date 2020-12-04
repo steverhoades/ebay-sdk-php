@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Enums;
 
 use DTS\eBaySDK\Marketing\Enums\ReportFormatEnum;
 
-class ReportFormatEnumTest extends \PHPUnit_Framework_TestCase
+class ReportFormatEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReportFormatEnum();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\GetAdsRestResponse;
 
-class GetAdsRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetAdsRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetAdsRestResponse();
     }

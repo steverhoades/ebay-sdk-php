@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Types;
 
 use DTS\eBaySDK\ProductMetadata\Types\ProductMetadataResponse;
 
-class ProductMetadataResponseTest extends \PHPUnit_Framework_TestCase
+class ProductMetadataResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProductMetadataResponse();
     }

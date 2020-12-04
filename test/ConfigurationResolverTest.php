@@ -3,8 +3,9 @@ namespace DTS\eBaySDK\Test;
 
 use DTS\eBaySDK\ConfigurationResolver;
 use DTS\eBaySDK\Test\Mocks\StaticMethods;
+use InvalidArgumentException;
 
-class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
+class ConfigurationResolverTest extends \PHPUnit\Framework\TestCase
 {
     public function testDefaults()
     {
@@ -40,10 +41,6 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
         ]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Missing required configuration options
-     */
     public function testRequired()
     {
         $r = new ConfigurationResolver([
@@ -52,13 +49,13 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
                 'required' => true
             ]
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Missing required configuration options');
+
         $r->resolve([]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "foo". Expected array, but got int(-1)
-     */
     public function testValidatesArray()
     {
         $r = new ConfigurationResolver([
@@ -66,13 +63,13 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
                 'valid' => ['array']
             ]
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid configuration value provided for "foo". Expected array, but got int(-1)');
+
         $r->resolve(['foo' => -1]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "foo". Expected bool, but got int(-1)
-     */
     public function testValidatesBool()
     {
         $r = new ConfigurationResolver([
@@ -80,13 +77,13 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
                 'valid' => ['bool']
             ]
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid configuration value provided for "foo". Expected bool, but got int(-1)');
+
         $r->resolve(['foo' => -1]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "foo". Expected callable, but got int(-1)
-     */
     public function testValidatesCallable()
     {
         $r = new ConfigurationResolver([
@@ -94,13 +91,13 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
                 'valid' => ['callable']
             ]
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid configuration value provided for "foo". Expected callable, but got int(-1)');
+
         $r->resolve(['foo' => -1]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "foo". Expected StdClass, but got int(-1)
-     */
     public function testValidatesInstanceOf()
     {
         $r = new ConfigurationResolver([
@@ -108,13 +105,13 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
                 'valid' => ['StdClass']
             ]
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid configuration value provided for "foo". Expected StdClass, but got int(-1)');
+
         $r->resolve(['foo' => -1]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "foo". Expected int, but got string(3)
-     */
     public function testValidatesInt()
     {
         $r = new ConfigurationResolver([
@@ -122,13 +119,13 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
                 'valid' => ['int']
             ]
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid configuration value provided for "foo". Expected int, but got string(3)');
+
         $r->resolve(['foo' => 'foo']);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "foo". Expected string, but got int(-1)
-     */
     public function testValidatesStrings()
     {
         $r = new ConfigurationResolver([
@@ -136,6 +133,10 @@ class ConfigurationResolverTest extends \PHPUnit_Framework_TestCase
                 'valid' => ['string']
             ]
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid configuration value provided for "foo". Expected string, but got int(-1)');
+
         $r->resolve(['foo' => -1]);
     }
 

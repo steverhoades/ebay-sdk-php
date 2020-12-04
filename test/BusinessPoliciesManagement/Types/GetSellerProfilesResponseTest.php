@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
 
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\GetSellerProfilesResponse;
 
-class GetSellerProfilesResponseTest extends \PHPUnit_Framework_TestCase
+class GetSellerProfilesResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetSellerProfilesResponse();
     }

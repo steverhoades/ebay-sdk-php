@@ -6,7 +6,7 @@ use DTS\eBaySDK\Account\Services\AccountService;
 use DTS\eBaySDK\Test\Account\Mocks\Service;
 use DTS\eBaySDK\Test\Mocks\HttpRestHandler;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends \PHPUnit\Framework\TestCase
 {
     public function testConfigDefinitions()
     {

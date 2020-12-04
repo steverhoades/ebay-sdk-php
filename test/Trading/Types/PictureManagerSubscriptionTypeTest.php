@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\PictureManagerSubscriptionType;
 
-class PictureManagerSubscriptionTypeTest extends \PHPUnit_Framework_TestCase
+class PictureManagerSubscriptionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PictureManagerSubscriptionType();
     }

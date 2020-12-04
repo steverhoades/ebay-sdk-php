@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\FaultDetailsType;
 
-class FaultDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class FaultDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FaultDetailsType();
     }

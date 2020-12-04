@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\RelatedItemsManagement\Types;
 
 use DTS\eBaySDK\RelatedItemsManagement\Types\BundleFilter;
 
-class BundleFilterTest extends \PHPUnit_Framework_TestCase
+class BundleFilterTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BundleFilter();
     }

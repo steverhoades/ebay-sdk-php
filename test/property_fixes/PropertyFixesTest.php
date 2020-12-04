@@ -8,7 +8,7 @@ use DTS\eBaySDK as Sdk;
  * These names have been incorrectly named in the documentation.
  * The names used for the properties are now taken from the actual response from the API.
  */
-class PropertyFixesTest extends \PHPUnit_Framework_TestCase
+class PropertyFixesTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Incorrect documentation https://developer.ebay.com/Devzone/post-order/types/CancelSummary.html
@@ -33,10 +33,10 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
         $obj = new Sdk\PostOrder\Types\ItemEligibilityResult();
 
         $obj->itemId = '123';
-        $this->assertInternalType('string', $obj->itemId);
+        $this->assertisString($obj->itemId);
 
         $obj->transactionId = '123';
-        $this->assertInternalType('string', $obj->transactionId);
+        $this->assertisString($obj->transactionId);
     }
 
     /**
@@ -48,19 +48,19 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
         $obj = new Sdk\PostOrder\Types\Error();
 
         $obj->subdomain = '123';
-        $this->assertInternalType('string', $obj->subdomain);
+        $this->assertisString($obj->subdomain);
 
         $obj->errorName = '123';
-        $this->assertInternalType('string', $obj->errorName);
+        $this->assertisString($obj->errorName);
 
         $obj->resolution = '123';
-        $this->assertInternalType('string', $obj->resolution);
+        $this->assertisString($obj->resolution);
 
         $obj->organization = '123';
-        $this->assertInternalType('string', $obj->organization);
+        $this->assertisString($obj->organization);
 
         $obj->errorGroups = '123';
-        $this->assertInternalType('string', $obj->errorGroups);
+        $this->assertisString($obj->errorGroups);
     }
 
     public function testDeliveryCost()
@@ -80,7 +80,7 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
         $obj = new Sdk\Fulfillment\Types\ShippingFulfillment();
 
         $obj->shippingServiceCode = 'foo';
-        $this->assertInternalType('string', $obj->shippingServiceCode);
+        $this->assertisString($obj->shippingServiceCode);
     }
 
     /**
@@ -98,7 +98,7 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
 
     public function testPriceDiscountSubtotalDoesNotExist()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property');
 
         $obj = new Sdk\Fulfillment\Types\PricingSummary();
 
@@ -145,10 +145,10 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
         $obj = new Sdk\PostOrder\Types\OrderCancelLineItem();
 
         $obj->itemTitle = 'foo';
-        $this->assertInternalType('string', $obj->itemTitle);
+        $this->assertisString($obj->itemTitle);
 
         $obj->cancelQuantity = 123;
-        $this->assertInternalType('integer', $obj->cancelQuantity);
+        $this->assertisInt($obj->cancelQuantity);
     }
 
     /**
@@ -160,7 +160,7 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
         $obj = new Sdk\Trading\Types\PictureDetailsType();
 
         $obj->GalleryURL = 'foo';
-        $this->assertInternalType('string', $obj->GalleryURL);
+        $this->assertisString($obj->GalleryURL);
     }
 
     /**
@@ -174,7 +174,7 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
 
         $obj->data = '';
 
-        $this->assertInternalType('string', $obj->data);
+        $this->assertisString($obj->data);
     }
 
     /**
@@ -188,12 +188,12 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
         $obj = new Sdk\Trading\Types\ReviseFixedPriceItemRequestType();
 
         $obj->VerifyOnly = true;
-        $this->assertInternalType('boolean', $obj->VerifyOnly);
+        $this->assertisBool($obj->VerifyOnly);
 
         $obj = new Sdk\Trading\Types\ReviseFixedPriceItemResponseType();
 
         $obj->VerifyOnly = true;
-        $this->assertInternalType('boolean', $obj->VerifyOnly);
+        $this->assertisBool($obj->VerifyOnly);
     }
 
 
@@ -209,6 +209,6 @@ class PropertyFixesTest extends \PHPUnit_Framework_TestCase
 
         $obj->type = '';
 
-        $this->assertInternalType('string', $obj->type);
+        $this->assertisString($obj->type);
     }
 }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType;
 
-class ReviseInventoryStatusRequestTypeTest extends \PHPUnit_Framework_TestCase
+class ReviseInventoryStatusRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReviseInventoryStatusRequestType();
     }

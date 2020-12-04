@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Browse\Enums;
 
 use DTS\eBaySDK\Browse\Enums\DeliveryOptionsEnum;
 
-class DeliveryOptionsEnumTest extends \PHPUnit_Framework_TestCase
+class DeliveryOptionsEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeliveryOptionsEnum();
     }

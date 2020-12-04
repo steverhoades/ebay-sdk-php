@@ -3,31 +3,31 @@ namespace DTS\eBaySDK\Constants\Test;
 
 use DTS\eBaySDK\Constants\MarketplaceIds as MarketplaceIds;
 
-class MarketplaceIdsTest extends \PHPUnit_Framework_TestCase
+class MarketplaceIdsTest extends \PHPUnit\Framework\TestCase
 {
     public function testConstantsAreCorrectType()
     {
-        $this->assertInternalType('string', MarketplaceIds::US);
-        $this->assertInternalType('string', MarketplaceIds::CA);
-        $this->assertInternalType('string', MarketplaceIds::GB);
-        $this->assertInternalType('string', MarketplaceIds::AU);
-        $this->assertInternalType('string', MarketplaceIds::AT);
-        $this->assertInternalType('string', MarketplaceIds::BE);
-        $this->assertInternalType('string', MarketplaceIds::FR);
-        $this->assertInternalType('string', MarketplaceIds::DE);
-        $this->assertInternalType('string', MarketplaceIds::MOTORS);
-        $this->assertInternalType('string', MarketplaceIds::IT);
-        $this->assertInternalType('string', MarketplaceIds::NL);
-        $this->assertInternalType('string', MarketplaceIds::ES);
-        $this->assertInternalType('string', MarketplaceIds::CH);
-        $this->assertInternalType('string', MarketplaceIds::HK);
-        $this->assertInternalType('string', MarketplaceIds::IN);
-        $this->assertInternalType('string', MarketplaceIds::IE);
-        $this->assertInternalType('string', MarketplaceIds::MY);
-        $this->assertInternalType('string', MarketplaceIds::PH);
-        $this->assertInternalType('string', MarketplaceIds::PL);
-        $this->assertInternalType('string', MarketplaceIds::SG);
-        $this->assertInternalType('string', MarketplaceIds::CN);
+        $this->assertisString(MarketplaceIds::US);
+        $this->assertisString(MarketplaceIds::CA);
+        $this->assertisString(MarketplaceIds::GB);
+        $this->assertisString(MarketplaceIds::AU);
+        $this->assertisString(MarketplaceIds::AT);
+        $this->assertisString(MarketplaceIds::BE);
+        $this->assertisString(MarketplaceIds::FR);
+        $this->assertisString(MarketplaceIds::DE);
+        $this->assertisString(MarketplaceIds::MOTORS);
+        $this->assertisString(MarketplaceIds::IT);
+        $this->assertisString(MarketplaceIds::NL);
+        $this->assertisString(MarketplaceIds::ES);
+        $this->assertisString(MarketplaceIds::CH);
+        $this->assertisString(MarketplaceIds::HK);
+        $this->assertisString(MarketplaceIds::IN);
+        $this->assertisString(MarketplaceIds::IE);
+        $this->assertisString(MarketplaceIds::MY);
+        $this->assertisString(MarketplaceIds::PH);
+        $this->assertisString(MarketplaceIds::PL);
+        $this->assertisString(MarketplaceIds::SG);
+        $this->assertisString(MarketplaceIds::CN);
     }
 
     public function testConstantsHaveCorrectValue()

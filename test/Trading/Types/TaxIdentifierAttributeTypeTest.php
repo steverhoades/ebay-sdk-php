@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\TaxIdentifierAttributeType;
 
-class TaxIdentifierAttributeTypeTest extends \PHPUnit_Framework_TestCase
+class TaxIdentifierAttributeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TaxIdentifierAttributeType();
     }

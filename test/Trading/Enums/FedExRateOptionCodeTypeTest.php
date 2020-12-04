@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\FedExRateOptionCodeType;
 
-class FedExRateOptionCodeTypeTest extends \PHPUnit_Framework_TestCase
+class FedExRateOptionCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new FedExRateOptionCodeType();
     }

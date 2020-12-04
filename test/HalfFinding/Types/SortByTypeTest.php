@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\HalfFinding\Types;
 
 use DTS\eBaySDK\HalfFinding\Types\SortByType;
 
-class SortByTypeTest extends \PHPUnit_Framework_TestCase
+class SortByTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SortByType();
     }

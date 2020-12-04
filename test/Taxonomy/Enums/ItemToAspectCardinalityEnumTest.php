@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Taxonomy\Enums;
 
 use DTS\eBaySDK\Taxonomy\Enums\ItemToAspectCardinalityEnum;
 
-class ItemToAspectCardinalityEnumTest extends \PHPUnit_Framework_TestCase
+class ItemToAspectCardinalityEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemToAspectCardinalityEnum();
     }

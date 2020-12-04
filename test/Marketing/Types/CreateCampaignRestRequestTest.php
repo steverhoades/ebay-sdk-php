@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\CreateCampaignRestRequest;
 
-class CreateCampaignRestRequestTest extends \PHPUnit_Framework_TestCase
+class CreateCampaignRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CreateCampaignRestRequest();
     }

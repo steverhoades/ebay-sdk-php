@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Types;
 
 use DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkResponse;
 
-class GetProductSearchValuesBulkResponseTest extends \PHPUnit_Framework_TestCase
+class GetProductSearchValuesBulkResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetProductSearchValuesBulkResponse();
     }

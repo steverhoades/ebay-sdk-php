@@ -4,7 +4,7 @@ namespace DTS\eBaySDK\Types\Test;
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 use DTS\eBaySDK\Test\Mocks\SimpleClass;
 
-class SearchTest extends \PHPUnit_Framework_TestCase
+class SearchTest extends \PHPUnit\Framework\TestCase
 {
     public function testCanSearch()
     {

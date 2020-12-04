@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Feed\Types;
 
 use DTS\eBaySDK\Feed\Types\ErrorParameterV3;
 
-class ErrorParameterV3Test extends \PHPUnit_Framework_TestCase
+class ErrorParameterV3Test extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ErrorParameterV3();
     }

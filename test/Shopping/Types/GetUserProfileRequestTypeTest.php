@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\GetUserProfileRequestType;
 
-class GetUserProfileRequestTypeTest extends \PHPUnit_Framework_TestCase
+class GetUserProfileRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetUserProfileRequestType();
     }

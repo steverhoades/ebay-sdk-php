@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\ConfirmRefundRequest;
 
-class ConfirmRefundRequestTest extends \PHPUnit_Framework_TestCase
+class ConfirmRefundRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ConfirmRefundRequest();
     }

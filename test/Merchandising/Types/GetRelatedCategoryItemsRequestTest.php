@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Merchandising\Types;
 
 use DTS\eBaySDK\Merchandising\Types\GetRelatedCategoryItemsRequest;
 
-class GetRelatedCategoryItemsRequestTest extends \PHPUnit_Framework_TestCase
+class GetRelatedCategoryItemsRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetRelatedCategoryItemsRequest();
     }

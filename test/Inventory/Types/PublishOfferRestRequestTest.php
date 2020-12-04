@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\PublishOfferRestRequest;
 
-class PublishOfferRestRequestTest extends \PHPUnit_Framework_TestCase
+class PublishOfferRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PublishOfferRestRequest();
     }

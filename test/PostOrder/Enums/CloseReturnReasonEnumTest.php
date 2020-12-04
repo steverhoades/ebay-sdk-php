@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Enums;
 
 use DTS\eBaySDK\PostOrder\Enums\CloseReturnReasonEnum;
 
-class CloseReturnReasonEnumTest extends \PHPUnit_Framework_TestCase
+class CloseReturnReasonEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CloseReturnReasonEnum();
     }

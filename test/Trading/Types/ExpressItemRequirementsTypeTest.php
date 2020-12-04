@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ExpressItemRequirementsType;
 
-class ExpressItemRequirementsTypeTest extends \PHPUnit_Framework_TestCase
+class ExpressItemRequirementsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ExpressItemRequirementsType();
     }

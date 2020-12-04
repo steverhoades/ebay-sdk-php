@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
 
 use DTS\eBaySDK\BulkDataExchange\Types\AuctionItemDetails;
 
-class AuctionItemDetailsTest extends \PHPUnit_Framework_TestCase
+class AuctionItemDetailsTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AuctionItemDetails();
     }

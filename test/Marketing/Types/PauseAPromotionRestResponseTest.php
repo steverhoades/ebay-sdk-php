@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\PauseAPromotionRestResponse;
 
-class PauseAPromotionRestResponseTest extends \PHPUnit_Framework_TestCase
+class PauseAPromotionRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PauseAPromotionRestResponse();
     }

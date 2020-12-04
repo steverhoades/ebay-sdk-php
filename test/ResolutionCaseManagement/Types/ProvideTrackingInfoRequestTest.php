@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Types\ProvideTrackingInfoRequest;
 
-class ProvideTrackingInfoRequestTest extends \PHPUnit_Framework_TestCase
+class ProvideTrackingInfoRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProvideTrackingInfoRequest();
     }

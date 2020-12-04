@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\InventoryLocation;
 
-class InventoryLocationTest extends \PHPUnit_Framework_TestCase
+class InventoryLocationTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new InventoryLocation();
     }

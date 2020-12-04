@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\GetMemberMessagesResponseType;
 
-class GetMemberMessagesResponseTypeTest extends \PHPUnit_Framework_TestCase
+class GetMemberMessagesResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetMemberMessagesResponseType();
     }

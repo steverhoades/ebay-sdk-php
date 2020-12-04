@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\DeliveryDetailsType;
 
-class DeliveryDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class DeliveryDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeliveryDetailsType();
     }

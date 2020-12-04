@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Fulfillment\Types;
 
 use DTS\eBaySDK\Fulfillment\Types\CreateAShippingFulfillmentRestResponse;
 
-class CreateAShippingFulfillmentRestResponseTest extends \PHPUnit_Framework_TestCase
+class CreateAShippingFulfillmentRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CreateAShippingFulfillmentRestResponse();
     }

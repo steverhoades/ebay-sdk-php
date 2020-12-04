@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Browse\Types;
 
 use DTS\eBaySDK\Browse\Types\ReviewRating;
 
-class ReviewRatingTest extends \PHPUnit_Framework_TestCase
+class ReviewRatingTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReviewRating();
     }

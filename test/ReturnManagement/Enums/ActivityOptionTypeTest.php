@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Enums;
 
 use DTS\eBaySDK\ReturnManagement\Enums\ActivityOptionType;
 
-class ActivityOptionTypeTest extends \PHPUnit_Framework_TestCase
+class ActivityOptionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ActivityOptionType();
     }

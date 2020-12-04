@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Analytics\Types;
 
 use DTS\eBaySDK\Analytics\Types\Metric;
 
-class MetricTest extends \PHPUnit_Framework_TestCase
+class MetricTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Metric();
     }

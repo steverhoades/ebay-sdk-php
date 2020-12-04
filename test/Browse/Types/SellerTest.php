@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Browse\Types;
 
 use DTS\eBaySDK\Browse\Types\Seller;
 
-class SellerTest extends \PHPUnit_Framework_TestCase
+class SellerTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Seller();
     }

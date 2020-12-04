@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Product\Enums;
 
 use DTS\eBaySDK\Product\Enums\ProductSubmissionStatusCode;
 
-class ProductSubmissionStatusCodeTest extends \PHPUnit_Framework_TestCase
+class ProductSubmissionStatusCodeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProductSubmissionStatusCode();
     }

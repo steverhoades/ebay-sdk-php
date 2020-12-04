@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Finding\Enums;
 
 use DTS\eBaySDK\Finding\Enums\OutputSelectorType;
 
-class OutputSelectorTypeTest extends \PHPUnit_Framework_TestCase
+class OutputSelectorTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new OutputSelectorType();
     }

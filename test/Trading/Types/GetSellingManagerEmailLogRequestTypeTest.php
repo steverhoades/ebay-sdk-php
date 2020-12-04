@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType;
 
-class GetSellingManagerEmailLogRequestTypeTest extends \PHPUnit_Framework_TestCase
+class GetSellingManagerEmailLogRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetSellingManagerEmailLogRequestType();
     }

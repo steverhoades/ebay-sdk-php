@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\CompleteStatusCodeType;
 
-class CompleteStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class CompleteStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CompleteStatusCodeType();
     }

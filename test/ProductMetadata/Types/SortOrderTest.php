@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Types;
 
 use DTS\eBaySDK\ProductMetadata\Types\SortOrder;
 
-class SortOrderTest extends \PHPUnit_Framework_TestCase
+class SortOrderTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SortOrder();
     }

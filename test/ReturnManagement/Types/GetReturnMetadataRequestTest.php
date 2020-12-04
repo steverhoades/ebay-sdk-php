@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Types;
 
 use DTS\eBaySDK\ReturnManagement\Types\GetReturnMetadataRequest;
 
-class GetReturnMetadataRequestTest extends \PHPUnit_Framework_TestCase
+class GetReturnMetadataRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetReturnMetadataRequest();
     }

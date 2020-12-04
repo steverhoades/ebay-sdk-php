@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\StoreCategoryType;
 
-class StoreCategoryTypeTest extends \PHPUnit_Framework_TestCase
+class StoreCategoryTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new StoreCategoryType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Taxonomy\Types;
 
 use DTS\eBaySDK\Taxonomy\Types\AspectValue;
 
-class AspectValueTest extends \PHPUnit_Framework_TestCase
+class AspectValueTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AspectValue();
     }

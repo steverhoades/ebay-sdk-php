@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Fulfillment\Types;
 
 use DTS\eBaySDK\Fulfillment\Types\LineItemFulfillmentInstructions;
 
-class LineItemFulfillmentInstructionsTest extends \PHPUnit_Framework_TestCase
+class LineItemFulfillmentInstructionsTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new LineItemFulfillmentInstructions();
     }

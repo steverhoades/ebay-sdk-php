@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Merchandising\Types;
 
 use DTS\eBaySDK\Merchandising\Types\GetDealsRequest;
 
-class GetDealsRequestTest extends \PHPUnit_Framework_TestCase
+class GetDealsRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetDealsRequest();
     }

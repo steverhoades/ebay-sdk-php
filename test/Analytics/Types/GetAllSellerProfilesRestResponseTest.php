@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Analytics\Types;
 
 use DTS\eBaySDK\Analytics\Types\GetAllSellerProfilesRestResponse;
 
-class GetAllSellerProfilesRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetAllSellerProfilesRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetAllSellerProfilesRestResponse();
     }

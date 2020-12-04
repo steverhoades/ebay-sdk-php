@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Types\ResponseHistoryAttributesType;
 
-class ResponseHistoryAttributesTypeTest extends \PHPUnit_Framework_TestCase
+class ResponseHistoryAttributesTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ResponseHistoryAttributesType();
     }

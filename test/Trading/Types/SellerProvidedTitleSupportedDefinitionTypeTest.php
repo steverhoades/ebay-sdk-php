@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\SellerProvidedTitleSupportedDefinitionType;
 
-class SellerProvidedTitleSupportedDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class SellerProvidedTitleSupportedDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellerProvidedTitleSupportedDefinitionType();
     }

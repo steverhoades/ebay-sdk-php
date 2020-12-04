@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Credentials\Test;
 
 use DTS\eBaySDK\Credentials\Credentials;
 
-class CredentialsTest extends \PHPUnit_Framework_TestCase
+class CredentialsTest extends \PHPUnit\Framework\TestCase
 {
     public function testHasGetters()
     {

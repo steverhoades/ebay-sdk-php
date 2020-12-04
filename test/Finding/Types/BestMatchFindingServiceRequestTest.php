@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\BestMatchFindingServiceRequest;
 
-class BestMatchFindingServiceRequestTest extends \PHPUnit_Framework_TestCase
+class BestMatchFindingServiceRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BestMatchFindingServiceRequest();
     }

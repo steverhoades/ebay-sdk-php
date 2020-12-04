@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\RelatedItemsManagement\Types;
 
 use DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusResponse;
 
-class UpdateBundleStatusResponseTest extends \PHPUnit_Framework_TestCase
+class UpdateBundleStatusResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UpdateBundleStatusResponse();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
 
 use DTS\eBaySDK\BusinessPoliciesManagement\Types\RemoveProfileResponse;
 
-class RemoveProfileResponseTest extends \PHPUnit_Framework_TestCase
+class RemoveProfileResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RemoveProfileResponse();
     }

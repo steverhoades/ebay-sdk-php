@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Fulfillment\Types;
 
 use DTS\eBaySDK\Fulfillment\Types\PaymentSummary;
 
-class PaymentSummaryTest extends \PHPUnit_Framework_TestCase
+class PaymentSummaryTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PaymentSummary();
     }

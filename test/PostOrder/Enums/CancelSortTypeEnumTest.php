@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Enums;
 
 use DTS\eBaySDK\PostOrder\Enums\CancelSortTypeEnum;
 
-class CancelSortTypeEnumTest extends \PHPUnit_Framework_TestCase
+class CancelSortTypeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CancelSortTypeEnum();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\EBayMotorsProPhoneCountDefinitionType;
 
-class EBayMotorsProPhoneCountDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class EBayMotorsProPhoneCountDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new EBayMotorsProPhoneCountDefinitionType();
     }

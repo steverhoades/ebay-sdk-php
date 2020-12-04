@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Types;
 
 use DTS\eBaySDK\MerchantData\Types\SalesTaxType;
 
-class SalesTaxTypeTest extends \PHPUnit_Framework_TestCase
+class SalesTaxTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SalesTaxType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Enums;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Enums\PaypalINRCaseStatusType;
 
-class PaypalINRCaseStatusTypeTest extends \PHPUnit_Framework_TestCase
+class PaypalINRCaseStatusTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PaypalINRCaseStatusType();
     }

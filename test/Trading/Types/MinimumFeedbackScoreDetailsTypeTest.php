@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\MinimumFeedbackScoreDetailsType;
 
-class MinimumFeedbackScoreDetailsTypeTest extends \PHPUnit_Framework_TestCase
+class MinimumFeedbackScoreDetailsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MinimumFeedbackScoreDetailsType();
     }

@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Parser\Test;
 
 use DTS\eBaySDK\Test\Mocks\ComplexClass;
 
-class JsonTest extends \PHPUnit_Framework_TestCase
+class JsonTest extends \PHPUnit\Framework\TestCase
 {
     public function testCanDecodeJson()
     {

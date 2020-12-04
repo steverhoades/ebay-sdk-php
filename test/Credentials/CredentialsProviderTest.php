@@ -4,8 +4,9 @@ namespace DTS\eBaySDK\Test\Credentials;
 use DTS\eBaySDK\Test\TestTraits\ManageEnv;
 use DTS\eBaySDK\Credentials\CredentialsProvider;
 use DTS\eBaySDK\Credentials\Credentials;
+use InvalidArgumentException;
 
-class CredentialsProvideerTest extends \PHPUnit_Framework_TestCase
+class CredentialsProvideerTest extends \PHPUnit\Framework\TestCase
 {
     use ManageEnv;
 
@@ -24,16 +25,15 @@ class CredentialsProvideerTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('333', $c->getDevId());
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Could not find environment variable
-     */
     public function testReturnsExceptionIfNoEnvironmentVariables()
     {
         $this->clearEnv();
 
         $p = CredentialsProvider::env();
         $c = $p();
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Could not find environment variable');
 
         throw $c;
     }
@@ -61,10 +61,6 @@ EOT;
         unlink($dir . '/credentials');
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid credentials file
-     */
     public function testEnsuresIniFileIsValid()
     {
         $dir = $this->clearEnv();
@@ -76,13 +72,12 @@ EOT;
 
         unlink($dir . '/credentials');
 
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid credentials file');
+
         throw $c;
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Cannot read credentials from
-     */
     public function testEnsuresIniFileExists()
     {
         $this->clearEnv();
@@ -91,13 +86,12 @@ EOT;
         $p = CredentialsProvider::ini();
         $c = $p();
 
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Cannot read credentials from');
+
         throw $c;
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage No credentials present in INI profile
-     */
     public function testEnsuresProfileIsNotEmpty()
     {
         $ini = <<<EOT
@@ -117,13 +111,12 @@ EOT;
 
         unlink($dir . '/credentials');
 
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('No credentials present in INI profile');
+
         throw $c;
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage 'foo' not found in credentials file
-     */
     public function testEnsuresFileIsNotEmpty()
     {
         $dir = $this->clearEnv();
@@ -134,6 +127,9 @@ EOT;
         $c = $p();
 
         unlink($dir . '/credentials');
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage("'foo' not found in credentials file");
 
         throw $c;
     }

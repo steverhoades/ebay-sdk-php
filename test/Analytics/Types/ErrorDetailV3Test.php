@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Analytics\Types;
 
 use DTS\eBaySDK\Analytics\Types\ErrorDetailV3;
 
-class ErrorDetailV3Test extends \PHPUnit_Framework_TestCase
+class ErrorDetailV3Test extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ErrorDetailV3();
     }

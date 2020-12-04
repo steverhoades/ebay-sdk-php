@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Analytics\Enums;
 
 use DTS\eBaySDK\Analytics\Enums\DataTypeEnum;
 
-class DataTypeEnumTest extends \PHPUnit_Framework_TestCase
+class DataTypeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DataTypeEnum();
     }

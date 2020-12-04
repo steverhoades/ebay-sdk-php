@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\GetCampaignByIDRestResponse;
 
-class GetCampaignByIDRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetCampaignByIDRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetCampaignByIDRestResponse();
     }

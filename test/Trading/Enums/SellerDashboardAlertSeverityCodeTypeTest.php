@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\SellerDashboardAlertSeverityCodeType;
 
-class SellerDashboardAlertSeverityCodeTypeTest extends \PHPUnit_Framework_TestCase
+class SellerDashboardAlertSeverityCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SellerDashboardAlertSeverityCodeType();
     }

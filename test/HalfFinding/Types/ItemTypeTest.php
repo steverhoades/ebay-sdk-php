@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\HalfFinding\Types;
 
 use DTS\eBaySDK\HalfFinding\Types\ItemType;
 
-class ItemTypeTest extends \PHPUnit_Framework_TestCase
+class ItemTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ItemType();
     }

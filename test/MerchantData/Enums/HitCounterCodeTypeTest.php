@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\HitCounterCodeType;
 
-class HitCounterCodeTypeTest extends \PHPUnit_Framework_TestCase
+class HitCounterCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new HitCounterCodeType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\ShippingDetail;
 
-class ShippingDetailTest extends \PHPUnit_Framework_TestCase
+class ShippingDetailTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ShippingDetail();
     }

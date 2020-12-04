@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\UpdateCustomListRestRequest;
 
-class UpdateCustomListRestRequestTest extends \PHPUnit_Framework_TestCase
+class UpdateCustomListRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UpdateCustomListRestRequest();
     }

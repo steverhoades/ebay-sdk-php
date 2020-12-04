@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\TotalRefundAmountType;
 
-class TotalRefundAmountTypeTest extends \PHPUnit_Framework_TestCase
+class TotalRefundAmountTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TotalRefundAmountType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Metadata\Enums;
 
 use DTS\eBaySDK\Metadata\Enums\CompatibleVehicleTypeEnum;
 
-class CompatibleVehicleTypeEnumTest extends \PHPUnit_Framework_TestCase
+class CompatibleVehicleTypeEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new CompatibleVehicleTypeEnum();
     }

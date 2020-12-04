@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\Group2MaxFlatShippingCostDefinitionType;
 
-class Group2MaxFlatShippingCostDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class Group2MaxFlatShippingCostDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Group2MaxFlatShippingCostDefinitionType();
     }

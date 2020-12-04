@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Types;
 
 use DTS\eBaySDK\ProductMetadata\Types\PropertyNameValue;
 
-class PropertyNameValueTest extends \PHPUnit_Framework_TestCase
+class PropertyNameValueTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PropertyNameValue();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\BulkDeleteAdsByListingIDRestRequest;
 
-class BulkDeleteAdsByListingIDRestRequestTest extends \PHPUnit_Framework_TestCase
+class BulkDeleteAdsByListingIDRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BulkDeleteAdsByListingIDRestRequest();
     }

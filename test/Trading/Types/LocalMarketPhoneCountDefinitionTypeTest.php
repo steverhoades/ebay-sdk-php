@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\LocalMarketPhoneCountDefinitionType;
 
-class LocalMarketPhoneCountDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class LocalMarketPhoneCountDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new LocalMarketPhoneCountDefinitionType();
     }

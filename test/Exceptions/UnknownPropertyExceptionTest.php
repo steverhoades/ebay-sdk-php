@@ -3,11 +3,11 @@ namespace DTS\eBaySDK\Exceptions\Test;
 
 use DTS\eBaySDK\Exceptions\UnknownPropertyException;
 
-class UnknownPropertyExceptionTest extends \PHPUnit_Framework_TestCase
+class UnknownPropertyExceptionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UnknownPropertyException('foo');
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\ConditionHistogram;
 
-class ConditionHistogramTest extends \PHPUnit_Framework_TestCase
+class ConditionHistogramTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ConditionHistogram();
     }

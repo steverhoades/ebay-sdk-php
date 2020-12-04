@@ -3,7 +3,7 @@ namespace DTS\eBaySDK\Test;
 
 use DTS\eBaySDK\Test\Mocks\StatusCode;
 
-class StatusCodeTraitTest extends \PHPUnit_Framework_TestCase
+class StatusCodeTraitTest extends \PHPUnit\Framework\TestCase
 {
     public function testCanSetStatusCode()
     {

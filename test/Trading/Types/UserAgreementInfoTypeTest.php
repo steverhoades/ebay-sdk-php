@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\UserAgreementInfoType;
 
-class UserAgreementInfoTypeTest extends \PHPUnit_Framework_TestCase
+class UserAgreementInfoTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UserAgreementInfoType();
     }

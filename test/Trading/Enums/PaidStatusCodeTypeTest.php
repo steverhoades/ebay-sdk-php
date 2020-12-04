@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\PaidStatusCodeType;
 
-class PaidStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class PaidStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PaidStatusCodeType();
     }

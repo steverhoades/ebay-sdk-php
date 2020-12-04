@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\VeROReportItemsType;
 
-class VeROReportItemsTypeTest extends \PHPUnit_Framework_TestCase
+class VeROReportItemsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new VeROReportItemsType();
     }

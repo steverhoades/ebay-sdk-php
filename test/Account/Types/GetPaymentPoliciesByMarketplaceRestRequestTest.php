@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Account\Types;
 
 use DTS\eBaySDK\Account\Types\GetPaymentPoliciesByMarketplaceRestRequest;
 
-class GetPaymentPoliciesByMarketplaceRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetPaymentPoliciesByMarketplaceRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetPaymentPoliciesByMarketplaceRestRequest();
     }

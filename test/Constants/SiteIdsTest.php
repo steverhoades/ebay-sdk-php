@@ -3,32 +3,32 @@ namespace DTS\eBaySDK\Constants\Test;
 
 use DTS\eBaySDK\Constants\SiteIds as SiteIds;
 
-class SiteIdsTest extends \PHPUnit_Framework_TestCase
+class SiteIdsTest extends \PHPUnit\Framework\TestCase
 {
     public function testConstantsAreCorrectType()
     {
-        $this->assertInternalType('integer', SiteIds::US);
-        $this->assertInternalType('integer', SiteIds::ENCA);
-        $this->assertInternalType('integer', SiteIds::GB);
-        $this->assertInternalType('integer', SiteIds::AU);
-        $this->assertInternalType('integer', SiteIds::AT);
-        $this->assertInternalType('integer', SiteIds::FRBE);
-        $this->assertInternalType('integer', SiteIds::FR);
-        $this->assertInternalType('integer', SiteIds::DE);
-        $this->assertInternalType('integer', SiteIds::MOTORS);
-        $this->assertInternalType('integer', SiteIds::IT);
-        $this->assertInternalType('integer', SiteIds::NLBE);
-        $this->assertInternalType('integer', SiteIds::NL);
-        $this->assertInternalType('integer', SiteIds::ES);
-        $this->assertInternalType('integer', SiteIds::CH);
-        $this->assertInternalType('integer', SiteIds::HK);
-        $this->assertInternalType('integer', SiteIds::IN);
-        $this->assertInternalType('integer', SiteIds::IE);
-        $this->assertInternalType('integer', SiteIds::MY);
-        $this->assertInternalType('integer', SiteIds::FRCA);
-        $this->assertInternalType('integer', SiteIds::PH);
-        $this->assertInternalType('integer', SiteIds::PL);
-        $this->assertInternalType('integer', SiteIds::SG);
+        $this->assertisInt(SiteIds::US);
+        $this->assertisInt(SiteIds::ENCA);
+        $this->assertisInt(SiteIds::GB);
+        $this->assertisInt(SiteIds::AU);
+        $this->assertisInt(SiteIds::AT);
+        $this->assertisInt(SiteIds::FRBE);
+        $this->assertisInt(SiteIds::FR);
+        $this->assertisInt(SiteIds::DE);
+        $this->assertisInt(SiteIds::MOTORS);
+        $this->assertisInt(SiteIds::IT);
+        $this->assertisInt(SiteIds::NLBE);
+        $this->assertisInt(SiteIds::NL);
+        $this->assertisInt(SiteIds::ES);
+        $this->assertisInt(SiteIds::CH);
+        $this->assertisInt(SiteIds::HK);
+        $this->assertisInt(SiteIds::IN);
+        $this->assertisInt(SiteIds::IE);
+        $this->assertisInt(SiteIds::MY);
+        $this->assertisInt(SiteIds::FRCA);
+        $this->assertisInt(SiteIds::PH);
+        $this->assertisInt(SiteIds::PL);
+        $this->assertisInt(SiteIds::SG);
     }
 
     public function testConstantsHaveCorrectValue()

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\HalfProductsType;
 
-class HalfProductsTypeTest extends \PHPUnit_Framework_TestCase
+class HalfProductsTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new HalfProductsType();
     }

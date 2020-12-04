@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Types;
 
 use DTS\eBaySDK\ReturnManagement\Types\ShipmentType;
 
-class ShipmentTypeTest extends \PHPUnit_Framework_TestCase
+class ShipmentTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ShipmentType();
     }

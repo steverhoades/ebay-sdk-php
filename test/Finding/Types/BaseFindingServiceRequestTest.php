@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Finding\Types;
 
 use DTS\eBaySDK\Finding\Types\BaseFindingServiceRequest;
 
-class BaseFindingServiceRequestTest extends \PHPUnit_Framework_TestCase
+class BaseFindingServiceRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BaseFindingServiceRequest();
     }

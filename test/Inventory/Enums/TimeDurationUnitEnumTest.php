@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Inventory\Enums;
 
 use DTS\eBaySDK\Inventory\Enums\TimeDurationUnitEnum;
 
-class TimeDurationUnitEnumTest extends \PHPUnit_Framework_TestCase
+class TimeDurationUnitEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TimeDurationUnitEnum();
     }

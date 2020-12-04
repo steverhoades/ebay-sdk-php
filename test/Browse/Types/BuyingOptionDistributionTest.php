@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Browse\Types;
 
 use DTS\eBaySDK\Browse\Types\BuyingOptionDistribution;
 
-class BuyingOptionDistributionTest extends \PHPUnit_Framework_TestCase
+class BuyingOptionDistributionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BuyingOptionDistribution();
     }

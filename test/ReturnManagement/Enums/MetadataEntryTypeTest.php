@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Enums;
 
 use DTS\eBaySDK\ReturnManagement\Enums\MetadataEntryType;
 
-class MetadataEntryTypeTest extends \PHPUnit_Framework_TestCase
+class MetadataEntryTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MetadataEntryType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\GetMetadataForAReportTypeRestRequest;
 
-class GetMetadataForAReportTypeRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetMetadataForAReportTypeRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetMetadataForAReportTypeRestRequest();
     }

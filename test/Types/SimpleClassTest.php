@@ -11,11 +11,11 @@ use DTS\eBaySDK\Test\Mocks\StringType;
 use DTS\eBaySDK\Test\Mocks\TokenType;
 use DTS\eBaySDK\Test\Mocks\URIType;
 
-class SimpleClassTest extends \PHPUnit_Framework_TestCase
+class SimpleClassTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SimpleClass();
     }
@@ -34,23 +34,23 @@ class SimpleClassTest extends \PHPUnit_Framework_TestCase
     {
         $this->obj->integer = 123;
         $this->assertEquals(123, $this->obj->integer);
-        $this->assertInternalType('integer', $this->obj->integer);
+        $this->assertisInt($this->obj->integer);
 
         $this->obj->string = 'foo';
         $this->assertEquals('foo', $this->obj->string);
-        $this->assertInternalType('string', $this->obj->string);
+        $this->assertisString($this->obj->string);
 
         $this->obj->double = 123.45;
         $this->assertEquals(123.45, $this->obj->double);
-        $this->assertInternalType('float', $this->obj->double);
+        $this->assertisFloat($this->obj->double);
 
         $this->obj->booleanTrue = true;
         $this->assertEquals(true, $this->obj->booleanTrue);
-        $this->assertInternalType('boolean', $this->obj->booleanTrue);
+        $this->assertisBool($this->obj->booleanTrue);
 
         $this->obj->booleanFalse = false;
         $this->assertEquals(false, $this->obj->booleanFalse);
-        $this->assertInternalType('boolean', $this->obj->booleanFalse);
+        $this->assertisBool($this->obj->booleanFalse);
 
         $date = new \DateTime('2000-01-01', new \DateTimeZone('UTC'));
         $this->obj->DateTime = $date;
@@ -182,56 +182,56 @@ class SimpleClassTest extends \PHPUnit_Framework_TestCase
 
     public function testGettingNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         $this->obj->foo;
     }
 
     public function testSettingNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         $this->obj->foo = 'foo';
     }
 
     public function testSettingPropertyWithAnInvalidType()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integer. Expected integer but got string');
+        $this->expectException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integer. Expected integer but got string');
 
         $this->obj->integer = 'foo';
     }
 
     public function testIsSetNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         isset($this->obj->foo);
     }
 
     public function testUnSetNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->expectException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         isset($this->obj->foo);
     }
 
     public function testSettingRepeatablePropertyWithAnInvalidType()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
+        $this->expectException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
 
         $this->obj->integers[] = 'foo';
     }
 
     public function testSettingRepeatablePropertyWithOneInvalidType()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
+        $this->expectException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
 
         $this->obj->integers = [123, 'foo'];
     }
 
     public function testSettingRepeatablePropertyDirectly()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected DTS\eBaySDK\Types\RepeatableType but got integer');
+        $this->expectException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected DTS\eBaySDK\Types\RepeatableType but got integer');
 
         $this->obj->integers = 123;
     }

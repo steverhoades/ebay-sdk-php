@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType;
 
-class ValidateTestUserRegistrationRequestTypeTest extends \PHPUnit_Framework_TestCase
+class ValidateTestUserRegistrationRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ValidateTestUserRegistrationRequestType();
     }

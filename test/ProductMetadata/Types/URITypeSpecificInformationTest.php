@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ProductMetadata\Types;
 
 use DTS\eBaySDK\ProductMetadata\Types\URITypeSpecificInformation;
 
-class URITypeSpecificInformationTest extends \PHPUnit_Framework_TestCase
+class URITypeSpecificInformationTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new URITypeSpecificInformation();
     }

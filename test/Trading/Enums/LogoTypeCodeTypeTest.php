@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\LogoTypeCodeType;
 
-class LogoTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class LogoTypeCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new LogoTypeCodeType();
     }

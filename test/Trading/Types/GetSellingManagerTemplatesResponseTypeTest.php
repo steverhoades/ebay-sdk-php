@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesResponseType;
 
-class GetSellingManagerTemplatesResponseTypeTest extends \PHPUnit_Framework_TestCase
+class GetSellingManagerTemplatesResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetSellingManagerTemplatesResponseType();
     }

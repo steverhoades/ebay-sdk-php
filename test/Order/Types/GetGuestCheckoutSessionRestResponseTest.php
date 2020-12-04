@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\GetGuestCheckoutSessionRestResponse;
 
-class GetGuestCheckoutSessionRestResponseTest extends \PHPUnit_Framework_TestCase
+class GetGuestCheckoutSessionRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetGuestCheckoutSessionRestResponse();
     }

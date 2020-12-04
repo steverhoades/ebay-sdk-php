@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\PostOrder\Types;
 
 use DTS\eBaySDK\PostOrder\Types\DeleteReturnDraftFileRestResponse;
 
-class DeleteReturnDraftFileRestResponseTest extends \PHPUnit_Framework_TestCase
+class DeleteReturnDraftFileRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeleteReturnDraftFileRestResponse();
     }

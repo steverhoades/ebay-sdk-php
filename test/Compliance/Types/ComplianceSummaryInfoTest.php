@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Compliance\Types;
 
 use DTS\eBaySDK\Compliance\Types\ComplianceSummaryInfo;
 
-class ComplianceSummaryInfoTest extends \PHPUnit_Framework_TestCase
+class ComplianceSummaryInfoTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ComplianceSummaryInfo();
     }

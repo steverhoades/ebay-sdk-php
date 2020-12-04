@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\DeleteSpecificReportTaskRestResponse;
 
-class DeleteSpecificReportTaskRestResponseTest extends \PHPUnit_Framework_TestCase
+class DeleteSpecificReportTaskRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeleteSpecificReportTaskRestResponse();
     }

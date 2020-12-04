@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Account\Types;
 
 use DTS\eBaySDK\Account\Types\InventorySnapshot;
 
-class InventorySnapshotTest extends \PHPUnit_Framework_TestCase
+class InventorySnapshotTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new InventorySnapshot();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\MerchantData\Enums;
 
 use DTS\eBaySDK\MerchantData\Enums\MismatchTypeCodeType;
 
-class MismatchTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
+class MismatchTypeCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MismatchTypeCodeType();
     }

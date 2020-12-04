@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Enums;
 
 use DTS\eBaySDK\Shopping\Enums\ExternalProductCodeType;
 
-class ExternalProductCodeTypeTest extends \PHPUnit_Framework_TestCase
+class ExternalProductCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ExternalProductCodeType();
     }

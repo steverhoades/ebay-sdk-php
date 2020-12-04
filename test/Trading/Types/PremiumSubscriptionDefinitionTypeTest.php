@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\PremiumSubscriptionDefinitionType;
 
-class PremiumSubscriptionDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class PremiumSubscriptionDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PremiumSubscriptionDefinitionType();
     }

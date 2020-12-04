@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Shopping\Types;
 
 use DTS\eBaySDK\Shopping\Types\SimpleItemArrayType;
 
-class SimpleItemArrayTypeTest extends \PHPUnit_Framework_TestCase
+class SimpleItemArrayTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SimpleItemArrayType();
     }

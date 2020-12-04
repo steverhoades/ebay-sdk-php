@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\BuyerPackageEnclosureType;
 
-class BuyerPackageEnclosureTypeTest extends \PHPUnit_Framework_TestCase
+class BuyerPackageEnclosureTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new BuyerPackageEnclosureType();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\MinimumAdvertisedPriceExposureCodeType;
 
-class MinimumAdvertisedPriceExposureCodeTypeTest extends \PHPUnit_Framework_TestCase
+class MinimumAdvertisedPriceExposureCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new MinimumAdvertisedPriceExposureCodeType();
     }

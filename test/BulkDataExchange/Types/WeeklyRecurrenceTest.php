@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
 
 use DTS\eBaySDK\BulkDataExchange\Types\WeeklyRecurrence;
 
-class WeeklyRecurrenceTest extends \PHPUnit_Framework_TestCase
+class WeeklyRecurrenceTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new WeeklyRecurrence();
     }

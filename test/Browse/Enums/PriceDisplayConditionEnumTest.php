@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Browse\Enums;
 
 use DTS\eBaySDK\Browse\Enums\PriceDisplayConditionEnum;
 
-class PriceDisplayConditionEnumTest extends \PHPUnit_Framework_TestCase
+class PriceDisplayConditionEnumTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new PriceDisplayConditionEnum();
     }

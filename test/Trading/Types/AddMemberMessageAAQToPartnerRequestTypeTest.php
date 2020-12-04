@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType;
 
-class AddMemberMessageAAQToPartnerRequestTypeTest extends \PHPUnit_Framework_TestCase
+class AddMemberMessageAAQToPartnerRequestTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new AddMemberMessageAAQToPartnerRequestType();
     }

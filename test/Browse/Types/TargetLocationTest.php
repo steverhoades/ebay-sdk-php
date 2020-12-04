@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Browse\Types;
 
 use DTS\eBaySDK\Browse\Types\TargetLocation;
 
-class TargetLocationTest extends \PHPUnit_Framework_TestCase
+class TargetLocationTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new TargetLocation();
     }

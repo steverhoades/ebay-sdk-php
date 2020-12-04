@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
 
 use DTS\eBaySDK\ResolutionCaseManagement\Types\EscalateToCustomerSupportOptionType;
 
-class EscalateToCustomerSupportOptionTypeTest extends \PHPUnit_Framework_TestCase
+class EscalateToCustomerSupportOptionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new EscalateToCustomerSupportOptionType();
     }

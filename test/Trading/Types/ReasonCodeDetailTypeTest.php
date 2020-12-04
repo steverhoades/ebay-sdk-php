@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ReasonCodeDetailType;
 
-class ReasonCodeDetailTypeTest extends \PHPUnit_Framework_TestCase
+class ReasonCodeDetailTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ReasonCodeDetailType();
     }

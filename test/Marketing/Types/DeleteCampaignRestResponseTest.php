@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Marketing\Types;
 
 use DTS\eBaySDK\Marketing\Types\DeleteCampaignRestResponse;
 
-class DeleteCampaignRestResponseTest extends \PHPUnit_Framework_TestCase
+class DeleteCampaignRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeleteCampaignRestResponse();
     }

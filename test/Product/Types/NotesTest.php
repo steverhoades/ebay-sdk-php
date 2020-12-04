@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Product\Types;
 
 use DTS\eBaySDK\Product\Types\Notes;
 
-class NotesTest extends \PHPUnit_Framework_TestCase
+class NotesTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new Notes();
     }

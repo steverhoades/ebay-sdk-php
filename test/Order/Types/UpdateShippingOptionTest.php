@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Order\Types;
 
 use DTS\eBaySDK\Order\Types\UpdateShippingOption;
 
-class UpdateShippingOptionTest extends \PHPUnit_Framework_TestCase
+class UpdateShippingOptionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new UpdateShippingOption();
     }

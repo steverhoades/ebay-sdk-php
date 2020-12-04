@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderResponseType;
 
-class DeleteSellingManagerInventoryFolderResponseTypeTest extends \PHPUnit_Framework_TestCase
+class DeleteSellingManagerInventoryFolderResponseTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeleteSellingManagerInventoryFolderResponseType();
     }

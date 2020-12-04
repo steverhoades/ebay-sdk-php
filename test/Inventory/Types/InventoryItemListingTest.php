@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\InventoryItemListing;
 
-class InventoryItemListingTest extends \PHPUnit_Framework_TestCase
+class InventoryItemListingTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new InventoryItemListing();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\RelatedItemsManagement\Types;
 
 use DTS\eBaySDK\RelatedItemsManagement\Types\RelatedProduct;
 
-class RelatedProductTest extends \PHPUnit_Framework_TestCase
+class RelatedProductTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new RelatedProduct();
     }

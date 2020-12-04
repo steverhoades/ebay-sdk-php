@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Types;
 
 use DTS\eBaySDK\ReturnManagement\Types\GetUserReturnsResponse;
 
-class GetUserReturnsResponseTest extends \PHPUnit_Framework_TestCase
+class GetUserReturnsResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetUserReturnsResponse();
     }

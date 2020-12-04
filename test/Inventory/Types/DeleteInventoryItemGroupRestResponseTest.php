@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Inventory\Types;
 
 use DTS\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestResponse;
 
-class DeleteInventoryItemGroupRestResponseTest extends \PHPUnit_Framework_TestCase
+class DeleteInventoryItemGroupRestResponseTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new DeleteInventoryItemGroupRestResponse();
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Metadata\Types;
 
 use DTS\eBaySDK\Metadata\Types\SalesTaxJurisdiction;
 
-class SalesTaxJurisdictionTest extends \PHPUnit_Framework_TestCase
+class SalesTaxJurisdictionTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new SalesTaxJurisdiction();
     }

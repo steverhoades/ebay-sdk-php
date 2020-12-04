@@ -6,8 +6,9 @@ use DTS\eBaySDK\OAuth\Services\OAuthService;
 use DTS\eBaySDK\Test\Mocks\HttpOAuthHandler;
 use DTS\eBaySDK\Credentials\Credentials;
 use DTS\eBaySDK\Credentials\CredentialsProvider;
+use InvalidArgumentException;
 
-class ServiceTest extends \PHPUnit_Framework_TestCase
+class ServiceTest extends \PHPUnit\Framework\TestCase
 {
     use ManageEnv;
 
@@ -103,10 +104,6 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         ]));
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage state parameter
-     */
     public function testExceptionThrowForMissingStateParam()
     {
         $s = new OAuthService([
@@ -118,15 +115,14 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             'ruName'      => 'baz'
         ]);
 
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('state parameter');
+
         $s->redirectUrlForUser([
             'scope' => []
         ]);
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage scope parameter
-     */
     public function testExceptionThrowForMissingScopeParam()
     {
         $s = new OAuthService([
@@ -137,6 +133,9 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
             ],
             'ruName'      => 'baz'
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('scope parameter');
 
         $s->redirectUrlForUser([
             'state' => ''
@@ -271,10 +270,10 @@ class ServiceTest extends \PHPUnit_Framework_TestCase
         ]);
         $r = $s->getAppToken();
 
-        $this->assertContains('Content-Type: application/x-www-form-urlencoded', $str);
-        $this->assertContains('Content-Length: '.strlen($body), $str);
-        $this->assertContains('foo', $str);
-        $this->assertContains('bar', $str);
+        $this->assertStringContainsString('Content-Type: application/x-www-form-urlencoded', $str);
+        $this->assertStringContainsString('Content-Length: '.strlen($body), $str);
+        $this->assertStringContainsString('foo', $str);
+        $this->assertStringContainsString('bar', $str);
     }
 
     public function testCredentialsInstanceCanBePassed()
@@ -348,10 +347,6 @@ EOT;
         unlink($dir . '/credentials');
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage No credentials present in INI profile
-     */
     public function testCredentialsIniWillThrowException()
     {
         $ini = <<<EOT
@@ -361,6 +356,9 @@ EOT;
         $dir = $this->clearEnv();
         file_put_contents($dir . '/credentials', $ini);
         putenv('HOME=' . dirname($dir));
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('No credentials present in INI profile');
 
         $s = new OAuthService([
             'profile' => 'foo',
@@ -375,12 +373,11 @@ EOT;
         }
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Cannot locate credentials
-     */
     public function testCredentialsProviderThrowsIfCantProvide()
     {
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Cannot locate credentials');
+
         new OAuthService([
             'credentials' => function () {
                 return new \InvalidArgumentException('Cannot locate credentials');
@@ -429,10 +426,6 @@ EOT;
         ], $s->getConfig());
     }
 
-    /**
-     * @expectedException \InvalidArgumentException
-     * @expectedExceptionMessage Invalid configuration value provided for "sandbox". Expected bool, but got int(-1)
-     */
     public function testSetConfigWillThrow()
     {
         $s = new OAuthService([
@@ -444,6 +437,9 @@ EOT;
             'ruName'      => 'foo',
             'x'           => 1
         ]);
+
+        $this->expectException(InvalidArgumentException::class);
+        $this->expectExceptionMessage('Invalid configuration value provided for "sandbox". Expected bool, but got int(-1)');
 
         $s->setConfig(['sandbox' => -1]);
     }

@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Catalog\Types;
 
 use DTS\eBaySDK\Catalog\Types\GetProductRestRequest;
 
-class GetProductRestRequestTest extends \PHPUnit_Framework_TestCase
+class GetProductRestRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetProductRestRequest();
     }

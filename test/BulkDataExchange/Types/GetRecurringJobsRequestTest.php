@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
 
 use DTS\eBaySDK\BulkDataExchange\Types\GetRecurringJobsRequest;
 
-class GetRecurringJobsRequestTest extends \PHPUnit_Framework_TestCase
+class GetRecurringJobsRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new GetRecurringJobsRequest();
     }

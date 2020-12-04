@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Types;
 
 use DTS\eBaySDK\Trading\Types\ISBNIdentifierEnabledDefinitionType;
 
-class ISBNIdentifierEnabledDefinitionTypeTest extends \PHPUnit_Framework_TestCase
+class ISBNIdentifierEnabledDefinitionTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ISBNIdentifierEnabledDefinitionType();
     }

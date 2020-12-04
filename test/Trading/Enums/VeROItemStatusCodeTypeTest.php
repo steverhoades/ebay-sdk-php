@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\Trading\Enums;
 
 use DTS\eBaySDK\Trading\Enums\VeROItemStatusCodeType;
 
-class VeROItemStatusCodeTypeTest extends \PHPUnit_Framework_TestCase
+class VeROItemStatusCodeTypeTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new VeROItemStatusCodeType();
     }

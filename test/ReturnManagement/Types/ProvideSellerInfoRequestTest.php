@@ -12,11 +12,11 @@ namespace DTS\eBaySDK\Test\ReturnManagement\Types;
 
 use DTS\eBaySDK\ReturnManagement\Types\ProvideSellerInfoRequest;
 
-class ProvideSellerInfoRequestTest extends \PHPUnit_Framework_TestCase
+class ProvideSellerInfoRequestTest extends \PHPUnit\Framework\TestCase
 {
     private $obj;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->obj = new ProvideSellerInfoRequest();
     }
