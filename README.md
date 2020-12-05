@@ -1,12 +1,14 @@
 # eBay SDK for PHP
 
-This is a fork of the original [dts/ebay-sdk-php](https://github.com/davidtsadler/ebay-sdk-php) by [@davidtsadler](https://github.com/davidtsadler), with support for PHP 7.4 and PHP 8, Guzzle 7.
+This is a fork of the original [dts/ebay-sdk-php](https://github.com/davidtsadler/ebay-sdk-php) by [@davidtsadler](https://github.com/davidtsadler), with support for PHP 7.3, PHP 7.4 and PHP 8, Guzzle 7.
 
 The original project has been officially abandoned in February 2020.
 
-I'm planning to maintain this fork in the short term. The aim is not to keep it up to date with the latest eBay API versions,
+**I'm planning to maintain this fork in the short term.** The aim is not to keep it up to date with the latest eBay API versions,
 but to provide a solution for a smooth upgrade of existing apps to PHP 8. New users should seek a better SDK for PHP.
 
+[![Build Status](https://travis-ci.com/BenMorel/ebay-sdk-php.svg?branch=master)](https://travis-ci.com/BenMorel/ebay-sdk-php)
+[![Latest Stable Version](https://poser.pugx.org/benmorel/ebay-sdk-php/v/stable)](https://packagist.org/packages/benmorel/ebay-sdk-php)
 ---
 
 This project enables PHP developers to use the [eBay API](https://go.developer.ebay.com/api-documentation) in their PHP code, and build software using services such as [Finding](http://developer.ebay.com/Devzone/finding/Concepts/FindingAPIGuide.html), [Trading](http://developer.ebay.com/DevZone/guides/ebayfeatures/index.html), [Shopping](http://developer.ebay.com/Devzone/shopping/docs/Concepts/ShoppingAPIGuide.html), etc. You can get started by [installing the SDK via Composer](http://devbay.net/sdk/guides/getting-started/installation.html) and by following the [Basic Usage Guide](http://devbay.net/sdk/guides/getting-started/basic-usage.html).
