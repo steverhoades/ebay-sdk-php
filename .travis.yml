@@ -17,6 +17,9 @@ matrix:
   fast_finish: true
 
 install:
+  # Xdebug 2
+  - 'echo "xdebug.overload_var_dump = 0" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini'
+  # Xdebug 3
   - 'echo "xdebug.mode = profile" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini'
   - travis_retry composer update $COMPOSER_OPTS --no-interaction --prefer-source
 
