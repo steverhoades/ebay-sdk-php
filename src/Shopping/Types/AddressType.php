@@ -13,26 +13,13 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property string $Name
- * @property string $Street
  * @property string $Street1
  * @property string $Street2
  * @property string $CityName
- * @property string $County
  * @property string $StateOrProvince
  * @property string $CountryName
  * @property string $Phone
- * @property string $PhoneCountryPrefix
- * @property string $PhoneAreaOrCityCode
- * @property string $PhoneLocalNumber
- * @property string $Phone2CountryPrefix
- * @property string $Phone2AreaOrCityCode
- * @property string $Phone2LocalNumber
  * @property string $PostalCode
- * @property string $AddressID
- * @property string $ExternalAddressID
- * @property string $InternationalName
- * @property string $InternationalStateAndCity
- * @property string $InternationalStreet
  * @property string $CompanyName
  * @property string $FirstName
  * @property string $LastName
@@ -48,12 +35,6 @@ class AddressType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Name'
-        ],
-        'Street' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Street'
         ],
         'Street1' => [
             'type' => 'string',
@@ -73,12 +54,6 @@ class AddressType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'CityName'
         ],
-        'County' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'County'
-        ],
         'StateOrProvince' => [
             'type' => 'string',
             'repeatable' => false,
@@ -97,77 +72,11 @@ class AddressType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'Phone'
         ],
-        'PhoneCountryPrefix' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PhoneCountryPrefix'
-        ],
-        'PhoneAreaOrCityCode' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PhoneAreaOrCityCode'
-        ],
-        'PhoneLocalNumber' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PhoneLocalNumber'
-        ],
-        'Phone2CountryPrefix' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Phone2CountryPrefix'
-        ],
-        'Phone2AreaOrCityCode' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Phone2AreaOrCityCode'
-        ],
-        'Phone2LocalNumber' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Phone2LocalNumber'
-        ],
         'PostalCode' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PostalCode'
-        ],
-        'AddressID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'AddressID'
-        ],
-        'ExternalAddressID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ExternalAddressID'
-        ],
-        'InternationalName' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InternationalName'
-        ],
-        'InternationalStateAndCity' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InternationalStateAndCity'
-        ],
-        'InternationalStreet' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InternationalStreet'
         ],
         'CompanyName' => [
             'type' => 'string',

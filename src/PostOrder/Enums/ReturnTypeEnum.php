@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Enums;
 
 class ReturnTypeEnum
 {
-    const C_CANCEL = 'CANCEL';
+    const C_EXCHANGE = 'EXCHANGE';
     const C_MONEY_BACK = 'MONEY_BACK';
     const C_REPLACEMENT = 'REPLACEMENT';
     const C_UNKNOWN = 'UNKNOWN';

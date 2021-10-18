@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingInsuranceCost
  * @property string $ShippingService
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingServiceCost
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingServiceAdditionalCost
@@ -20,7 +19,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $ExpeditedService
  * @property integer $ShippingTimeMin
  * @property integer $ShippingTimeMax
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingSurcharge
  * @property boolean $FreeShipping
  * @property boolean $LocalPickup
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ImportCharge
@@ -33,12 +31,6 @@ class ShippingServiceOptionsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'ShippingInsuranceCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingInsuranceCost'
-        ],
         'ShippingService' => [
             'type' => 'string',
             'repeatable' => false,
@@ -80,12 +72,6 @@ class ShippingServiceOptionsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingTimeMax'
-        ],
-        'ShippingSurcharge' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingSurcharge'
         ],
         'FreeShipping' => [
             'type' => 'boolean',

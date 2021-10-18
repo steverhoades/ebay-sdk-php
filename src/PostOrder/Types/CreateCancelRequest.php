@@ -16,6 +16,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $buyerPaidDate
  * @property string $cancelReason
  * @property string $legacyOrderId
+ * @property \DTS\eBaySDK\PostOrder\Types\RelistLineItem[] $relistLineItem
  */
 class CreateCancelRequest extends \DTS\eBaySDK\Types\BaseType
 {
@@ -46,6 +47,12 @@ class CreateCancelRequest extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'legacyOrderId'
+        ],
+        'relistLineItem' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\RelistLineItem',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'relistLineItem'
         ]
     ];
 

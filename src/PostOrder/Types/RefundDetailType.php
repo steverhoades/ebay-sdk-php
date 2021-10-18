@@ -12,6 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $feeCreditAmount
  * @property \DTS\eBaySDK\PostOrder\Types\ItemizedRefundDetailType[] $itemizedRefundDetail
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $totalAmount
  */
@@ -21,6 +22,12 @@ class RefundDetailType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'feeCreditAmount' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'feeCreditAmount'
+        ],
         'itemizedRefundDetail' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\ItemizedRefundDetailType',
             'repeatable' => true,

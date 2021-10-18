@@ -46,6 +46,7 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property \DTS\eBaySDK\Finding\Types\ItemAttribute[] $attribute
  * @property boolean $topRatedListing
  * @property string[] $eekStatus
+ * @property boolean $eBayPlusEnabled
  */
 class SearchItem extends \DTS\eBaySDK\Types\BaseType
 {
@@ -256,6 +257,12 @@ class SearchItem extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'eekStatus'
+        ],
+        'eBayPlusEnabled' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayPlusEnabled'
         ]
     ];
 

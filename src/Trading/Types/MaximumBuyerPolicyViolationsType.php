@@ -12,8 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property integer $Count
- * @property \DTS\eBaySDK\Trading\Enums\PeriodCodeType $Period
  */
 class MaximumBuyerPolicyViolationsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -21,18 +19,6 @@ class MaximumBuyerPolicyViolationsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'Count' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Count'
-        ],
-        'Period' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Period'
-        ]
     ];
 
     /**

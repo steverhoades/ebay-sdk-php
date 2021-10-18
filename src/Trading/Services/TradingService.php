@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\Trading\Services;
 
 class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
 {
-    const API_VERSION = '1057';
+    const API_VERSION = '1225';
 
     /**
      * @param array $config Configuration option values.
@@ -107,28 +107,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
             'AddItem',
             $request,
             '\DTS\eBaySDK\Trading\Types\AddItemResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateResponseType
-     */
-    public function addItemFromSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request)
-    {
-        return $this->addItemFromSellingManagerTemplateAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function addItemFromSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'AddItemFromSellingManagerTemplate',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateResponseType'
         );
     }
 
@@ -265,72 +243,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderResponseType
-     */
-    public function addSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->addSellingManagerInventoryFolderAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function addSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'AddSellingManagerInventoryFolder',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddSellingManagerProductResponseType
-     */
-    public function addSellingManagerProduct(\DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request)
-    {
-        return $this->addSellingManagerProductAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function addSellingManagerProductAsync(\DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'AddSellingManagerProduct',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\AddSellingManagerProductResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateResponseType
-     */
-    public function addSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request)
-    {
-        return $this->addSellingManagerTemplateAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function addSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'AddSellingManagerTemplate',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateResponseType'
-        );
-    }
-
-    /**
      * @param \DTS\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request
      * @return \DTS\eBaySDK\Trading\Types\AddToItemDescriptionResponseType
      */
@@ -459,116 +371,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
             'DeleteMyMessages',
             $request,
             '\DTS\eBaySDK\Trading\Types\DeleteMyMessagesResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderResponseType
-     */
-    public function deleteSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->deleteSellingManagerInventoryFolderAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function deleteSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'DeleteSellingManagerInventoryFolder',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleResponseType
-     */
-    public function deleteSellingManagerItemAutomationRule(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request)
-    {
-        return $this->deleteSellingManagerItemAutomationRuleAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function deleteSellingManagerItemAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'DeleteSellingManagerItemAutomationRule',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductResponseType
-     */
-    public function deleteSellingManagerProduct(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request)
-    {
-        return $this->deleteSellingManagerProductAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function deleteSellingManagerProductAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'DeleteSellingManagerProduct',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateResponseType
-     */
-    public function deleteSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request)
-    {
-        return $this->deleteSellingManagerTemplateAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function deleteSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'DeleteSellingManagerTemplate',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleResponseType
-     */
-    public function deleteSellingManagerTemplateAutomationRule(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request)
-    {
-        return $this->deleteSellingManagerTemplateAutomationRuleAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function deleteSellingManagerTemplateAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'DeleteSellingManagerTemplateAutomationRule',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleResponseType'
         );
     }
 
@@ -1387,28 +1189,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsResponseType
-     */
-    public function getPromotionalSaleDetails(\DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request)
-    {
-        return $this->getPromotionalSaleDetailsAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getPromotionalSaleDetailsAsync(\DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetPromotionalSaleDetails',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsResponseType'
-        );
-    }
-
-    /**
      * @param \DTS\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request
      * @return \DTS\eBaySDK\Trading\Types\GetSellerDashboardResponseType
      */
@@ -1493,204 +1273,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
             'GetSellerTransactions',
             $request,
             '\DTS\eBaySDK\Trading\Types\GetSellerTransactionsResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsResponseType
-     */
-    public function getSellingManagerAlerts(\DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request)
-    {
-        return $this->getSellingManagerAlertsAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerAlertsAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerAlerts',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogResponseType
-     */
-    public function getSellingManagerEmailLog(\DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request)
-    {
-        return $this->getSellingManagerEmailLogAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerEmailLogAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerEmailLog',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryResponseType
-     */
-    public function getSellingManagerInventory(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request)
-    {
-        return $this->getSellingManagerInventoryAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerInventoryAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerInventory',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderResponseType
-     */
-    public function getSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->getSellingManagerInventoryFolderAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerInventoryFolder',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleResponseType
-     */
-    public function getSellingManagerItemAutomationRule(\DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request)
-    {
-        return $this->getSellingManagerItemAutomationRuleAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerItemAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerItemAutomationRule',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordResponseType
-     */
-    public function getSellingManagerSaleRecord(\DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request)
-    {
-        return $this->getSellingManagerSaleRecordAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerSaleRecordAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerSaleRecord',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsResponseType
-     */
-    public function getSellingManagerSoldListings(\DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request)
-    {
-        return $this->getSellingManagerSoldListingsAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerSoldListingsAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerSoldListings',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleResponseType
-     */
-    public function getSellingManagerTemplateAutomationRule(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request)
-    {
-        return $this->getSellingManagerTemplateAutomationRuleAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerTemplateAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerTemplateAutomationRule',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesResponseType
-     */
-    public function getSellingManagerTemplates(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request)
-    {
-        return $this->getSellingManagerTemplatesAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getSellingManagerTemplatesAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'GetSellingManagerTemplates',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesResponseType'
         );
     }
 
@@ -2113,28 +1695,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderResponseType
-     */
-    public function moveSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->moveSellingManagerInventoryFolderAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function moveSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'MoveSellingManagerInventoryFolder',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderResponseType'
-        );
-    }
-
-    /**
      * @param \DTS\eBaySDK\Trading\Types\PlaceOfferRequestType $request
      * @return \DTS\eBaySDK\Trading\Types\PlaceOfferResponseType
      */
@@ -2267,28 +1827,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusResponseType
-     */
-    public function reviseCheckoutStatus(\DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request)
-    {
-        return $this->reviseCheckoutStatusAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function reviseCheckoutStatusAsync(\DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'ReviseCheckoutStatus',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusResponseType'
-        );
-    }
-
-    /**
      * @param \DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request
      * @return \DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemResponseType
      */
@@ -2399,94 +1937,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderResponseType
-     */
-    public function reviseSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->reviseSellingManagerInventoryFolderAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function reviseSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'ReviseSellingManagerInventoryFolder',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductResponseType
-     */
-    public function reviseSellingManagerProduct(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request)
-    {
-        return $this->reviseSellingManagerProductAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function reviseSellingManagerProductAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'ReviseSellingManagerProduct',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordResponseType
-     */
-    public function reviseSellingManagerSaleRecord(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request)
-    {
-        return $this->reviseSellingManagerSaleRecordAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function reviseSellingManagerSaleRecordAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'ReviseSellingManagerSaleRecord',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateResponseType
-     */
-    public function reviseSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request)
-    {
-        return $this->reviseSellingManagerTemplateAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function reviseSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'ReviseSellingManagerTemplate',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateResponseType'
-        );
-    }
-
-    /**
      * @param \DTS\eBaySDK\Trading\Types\RevokeTokenRequestType $request
      * @return \DTS\eBaySDK\Trading\Types\RevokeTokenResponseType
      */
@@ -2505,28 +1955,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
             'RevokeToken',
             $request,
             '\DTS\eBaySDK\Trading\Types\RevokeTokenResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateResponseType
-     */
-    public function saveItemToSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request)
-    {
-        return $this->saveItemToSellingManagerTemplateAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function saveItemToSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'SaveItemToSellingManagerTemplate',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateResponseType'
         );
     }
 
@@ -2615,116 +2043,6 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
             'SetNotificationPreferences',
             $request,
             '\DTS\eBaySDK\Trading\Types\SetNotificationPreferencesResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetPromotionalSaleResponseType
-     */
-    public function setPromotionalSale(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request)
-    {
-        return $this->setPromotionalSaleAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function setPromotionalSaleAsync(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'SetPromotionalSale',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\SetPromotionalSaleResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsResponseType
-     */
-    public function setPromotionalSaleListings(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request)
-    {
-        return $this->setPromotionalSaleListingsAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function setPromotionalSaleListingsAsync(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'SetPromotionalSaleListings',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsResponseType
-     */
-    public function setSellingManagerFeedbackOptions(\DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request)
-    {
-        return $this->setSellingManagerFeedbackOptionsAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function setSellingManagerFeedbackOptionsAsync(\DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'SetSellingManagerFeedbackOptions',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType
-     */
-    public function setSellingManagerItemAutomationRule(\DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request)
-    {
-        return $this->setSellingManagerItemAutomationRuleAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function setSellingManagerItemAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'SetSellingManagerItemAutomationRule',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleResponseType
-     */
-    public function setSellingManagerTemplateAutomationRule(\DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request)
-    {
-        return $this->setSellingManagerTemplateAutomationRuleAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function setSellingManagerTemplateAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request)
-    {
-        return $this->callOperationAsync(
-            'SetSellingManagerTemplateAutomationRule',
-            $request,
-            '\DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleResponseType'
         );
     }
 

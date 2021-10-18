@@ -16,7 +16,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $Price
  * @property integer $Quantity
  * @property \DTS\eBaySDK\MerchantData\Types\NameValueListArrayType $VariationSpecifics
- * @property \DTS\eBaySDK\MerchantData\Types\MerchantDataSellingStatusType $SellingStatus
  */
 class MerchantDataVariationType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -47,12 +46,6 @@ class MerchantDataVariationType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VariationSpecifics'
-        ],
-        'SellingStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MerchantDataSellingStatusType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SellingStatus'
         ]
     ];
 

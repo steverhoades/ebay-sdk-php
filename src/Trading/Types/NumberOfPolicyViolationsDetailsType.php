@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property integer[] $Count
  */
 class NumberOfPolicyViolationsDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -20,12 +19,6 @@ class NumberOfPolicyViolationsDetailsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'Count' => [
-            'type' => 'integer',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'Count'
-        ]
     ];
 
     /**

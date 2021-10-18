@@ -53,8 +53,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DTS\eBaySDK\Shopping\Types\CharityType $Charity
  * @property \DTS\eBaySDK\Shopping\Types\StorefrontType $Storefront
  * @property \DTS\eBaySDK\Shopping\Enums\CountryCodeType $Country
- * @property \DTS\eBaySDK\Shopping\Enums\HalfItemConditionCodeType $HalfItemCondition
- * @property string $SellerComments
  * @property \DTS\eBaySDK\Shopping\Types\ReturnPolicyType $ReturnPolicy
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $MinimumToBid
  * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
@@ -82,8 +80,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DTS\eBaySDK\Shopping\Types\ItemCompatibilityListType $ItemCompatibilityList
  * @property integer $QuantitySoldByPickupInStore
  * @property string $SKU
- * @property boolean $eBayNowEligible
- * @property boolean $eBayNowAvailable
  * @property boolean $IgnoreQuantity
  * @property boolean $AvailableForPickupDropOff
  * @property boolean $EligibleForPickupDropOff
@@ -340,18 +336,6 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'Country'
         ],
-        'HalfItemCondition' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'HalfItemCondition'
-        ],
-        'SellerComments' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SellerComments'
-        ],
         'ReturnPolicy' => [
             'type' => 'DTS\eBaySDK\Shopping\Types\ReturnPolicyType',
             'repeatable' => false,
@@ -513,18 +497,6 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SKU'
-        ],
-        'eBayNowEligible' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'eBayNowEligible'
-        ],
-        'eBayNowAvailable' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'eBayNowAvailable'
         ],
         'IgnoreQuantity' => [
             'type' => 'boolean',

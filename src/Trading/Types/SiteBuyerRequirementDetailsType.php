@@ -18,7 +18,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\MaximumUnpaidItemStrikesInfoDetailsType $MaximumUnpaidItemStrikesInfo
  * @property \DTS\eBaySDK\Trading\Types\MinimumFeedbackScoreDetailsType $MinimumFeedbackScore
  * @property boolean $ShipToRegistrationCountry
- * @property \DTS\eBaySDK\Trading\Types\VerifiedUserRequirementsDetailsType $VerifiedUserRequirements
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  */
@@ -63,12 +62,6 @@ class SiteBuyerRequirementDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShipToRegistrationCountry'
-        ],
-        'VerifiedUserRequirements' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\VerifiedUserRequirementsDetailsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'VerifiedUserRequirements'
         ],
         'DetailVersion' => [
             'type' => 'string',

@@ -17,7 +17,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingServiceAdditionalCost
  * @property integer $ShippingServicePriority
  * @property string[] $ShipToLocation
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingInsuranceCost
  * @property \DTS\eBaySDK\Trading\Types\AmountType $ImportCharge
  * @property \DateTime $ShippingServiceCutOffTime
  */
@@ -56,12 +55,6 @@ class InternationalShippingServiceOptionsType extends \DTS\eBaySDK\Types\BaseTyp
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ShipToLocation'
-        ],
-        'ShippingInsuranceCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingInsuranceCost'
         ],
         'ImportCharge' => [
             'type' => 'DTS\eBaySDK\Trading\Types\AmountType',

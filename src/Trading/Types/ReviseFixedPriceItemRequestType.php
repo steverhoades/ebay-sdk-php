@@ -14,7 +14,6 @@ namespace DTS\eBaySDK\Trading\Types;
  *
  * @property \DTS\eBaySDK\Trading\Types\ItemType $Item
  * @property string[] $DeletedField
- * @property boolean $VerifyOnly
  */
 class ReviseFixedPriceItemRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
 {
@@ -33,12 +32,6 @@ class ReviseFixedPriceItemRequestType extends \DTS\eBaySDK\Trading\Types\Abstrac
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'DeletedField'
-        ],
-        'VerifyOnly' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'VerifyOnly'
         ]
     ];
 

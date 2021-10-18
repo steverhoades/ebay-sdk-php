@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Enums\EligibilityCheckTypeEnum $checkType
+ * @property string $checkType
  * @property \DTS\eBaySDK\PostOrder\Types\EligibilityResultType $eligibilityInfo
  */
 class ReturnEligibilityItemPerCheckTypeResult extends \DTS\eBaySDK\Types\BaseType

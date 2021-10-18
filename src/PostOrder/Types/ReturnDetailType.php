@@ -15,12 +15,12 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnAddressType $buyerAddress
  * @property string $buyerLoginName
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnCloseInfoType $closeInfo
- * @property \DTS\eBaySDK\PostOrder\Types\DispositionRuleDetailType[] $dispositionRuleDetail
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnFileType[] $files
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnHoldInfoType $holdInfo
  * @property \DTS\eBaySDK\PostOrder\Types\ItemDetailType $itemDetail
- * @property \DTS\eBaySDK\PostOrder\Enums\MarketplaceIdEnum $marketplaceId
- * @property \DTS\eBaySDK\PostOrder\Types\MoneyMovementDetailType[] $moneyMovementInfo
+ * @property string $marketplaceId
+ * @property \DTS\eBaySDK\PostOrder\Types\Ret:MoneyMovementDetailType[] $moneyMovementInfo
+ * @property \DTS\eBaySDK\PostOrder\Types\ReturnPayoutRecoupInfoType $payoutRecoupInfo
  * @property \DTS\eBaySDK\PostOrder\Types\RefundInfoType $refundInfo
  * @property \DTS\eBaySDK\PostOrder\Types\ShipmentType $replacementShipmentInfo
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnResponseHistoryType[] $responseHistory
@@ -53,12 +53,6 @@ class ReturnDetailType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'closeInfo'
         ],
-        'dispositionRuleDetail' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DispositionRuleDetailType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'dispositionRuleDetail'
-        ],
         'files' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnFileType',
             'repeatable' => true,
@@ -84,10 +78,16 @@ class ReturnDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'marketplaceId'
         ],
         'moneyMovementInfo' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\MoneyMovementDetailType',
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Ret:MoneyMovementDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'moneyMovementInfo'
+        ],
+        'payoutRecoupInfo' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnPayoutRecoupInfoType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'payoutRecoupInfo'
         ],
         'refundInfo' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\RefundInfoType',

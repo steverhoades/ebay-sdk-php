@@ -14,12 +14,8 @@ namespace DTS\eBaySDK\MerchantData\Types;
  *
  * @property boolean $ShipToRegistrationCountry
  * @property boolean $ZeroFeedbackScore
- * @property integer $MinimumFeedbackScore
  * @property \DTS\eBaySDK\MerchantData\Types\MaximumItemRequirementsType $MaximumItemRequirements
- * @property boolean $LinkedPayPalAccount
- * @property \DTS\eBaySDK\MerchantData\Types\VerifiedUserRequirementsType $VerifiedUserRequirements
  * @property \DTS\eBaySDK\MerchantData\Types\MaximumUnpaidItemStrikesInfoType $MaximumUnpaidItemStrikesInfo
- * @property \DTS\eBaySDK\MerchantData\Types\MaximumBuyerPolicyViolationsType $MaximumBuyerPolicyViolations
  */
 class BuyerRequirementDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -39,41 +35,17 @@ class BuyerRequirementDetailsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ZeroFeedbackScore'
         ],
-        'MinimumFeedbackScore' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'MinimumFeedbackScore'
-        ],
         'MaximumItemRequirements' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\MaximumItemRequirementsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MaximumItemRequirements'
         ],
-        'LinkedPayPalAccount' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'LinkedPayPalAccount'
-        ],
-        'VerifiedUserRequirements' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\VerifiedUserRequirementsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'VerifiedUserRequirements'
-        ],
         'MaximumUnpaidItemStrikesInfo' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\MaximumUnpaidItemStrikesInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MaximumUnpaidItemStrikesInfo'
-        ],
-        'MaximumBuyerPolicyViolations' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MaximumBuyerPolicyViolationsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'MaximumBuyerPolicyViolations'
         ]
     ];
 

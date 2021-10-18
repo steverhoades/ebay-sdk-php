@@ -14,7 +14,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property boolean $eligible
  * @property string[] $eligibleCancelReason
- * @property \DTS\eBaySDK\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
+ * @property string[] $failureReason
  * @property \DTS\eBaySDK\PostOrder\Types\ItemEligibilityResult[] $itemEligibilityResult
  * @property string $legacyOrderId
  */

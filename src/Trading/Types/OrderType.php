@@ -48,14 +48,13 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $SellerEIASToken
  * @property string $CancelReason
  * @property \DTS\eBaySDK\Trading\Enums\CancelStatusCodeType $CancelStatus
- * @property string $CancelReasonDetails
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingConvenienceCharge
- * @property \DTS\eBaySDK\Trading\Types\CancelDetailType[] $CancelDetail
  * @property string $LogisticsPlanType
  * @property \DTS\eBaySDK\Trading\Types\TaxIdentifierType[] $BuyerTaxIdentifier
  * @property \DTS\eBaySDK\Trading\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
  * @property string $ExtendedOrderID
  * @property boolean $ContainseBayPlusTransaction
+ * @property boolean $eBayCollectAndRemitTax
+ * @property integer $OrderLineItemCount
  */
 class OrderType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -279,24 +278,6 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'CancelStatus'
         ],
-        'CancelReasonDetails' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CancelReasonDetails'
-        ],
-        'ShippingConvenienceCharge' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingConvenienceCharge'
-        ],
-        'CancelDetail' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\CancelDetailType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'CancelDetail'
-        ],
         'LogisticsPlanType' => [
             'type' => 'string',
             'repeatable' => false,
@@ -326,6 +307,18 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ContainseBayPlusTransaction'
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
+        ],
+        'OrderLineItemCount' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'OrderLineItemCount'
         ]
     ];
 

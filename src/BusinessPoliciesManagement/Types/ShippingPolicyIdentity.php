@@ -12,6 +12,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
+ * @property integer $shippingPolicyId
  * @property integer $shippingPolicyVersionId
  */
 class ShippingPolicyIdentity extends \DTS\eBaySDK\Types\BaseType
@@ -20,6 +21,12 @@ class ShippingPolicyIdentity extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'shippingPolicyId' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'shippingPolicyId'
+        ],
         'shippingPolicyVersionId' => [
             'type' => 'integer',
             'repeatable' => false,

@@ -13,6 +13,7 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property boolean $EligibleForPickupInStore
+ * @property boolean $AvailableForPickupInStore
  */
 class PickUpInStoreDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -25,6 +26,12 @@ class PickUpInStoreDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'EligibleForPickupInStore'
+        ],
+        'AvailableForPickupInStore' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'AvailableForPickupInStore'
         ]
     ];
 

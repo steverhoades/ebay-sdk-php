@@ -14,7 +14,7 @@ class ShippingRateType
 {
     const C_DAILY_PICKUP = 'DailyPickup';
     const C_EBAY_RATES = 'EbayRates';
-    const C_FEDEX_COUNTER = 'FedexCounter';
+    const C_FEDEX_DISCOUNTED = 'FedexDiscounted';
     const C_FEDEX_DISCOUNTED = 'FedexDiscounted';
     const C_FEDEX_STANDARD_LIST = 'FedexStandardList';
     const C_GOLD_SILVER = 'GoldSilver';

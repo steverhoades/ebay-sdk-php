@@ -22,10 +22,14 @@ class LanguageEnum
     const C_IT = 'it';
     const C_JA = 'ja';
     const C_KA = 'ka';
+    const C_KO = 'ko';
     const C_NL = 'nl';
+    const C_PL = 'pl';
     const C_PT = 'pt';
     const C_RU = 'ru';
     const C_SV = 'sv';
     const C_TR = 'tr';
+    const C_VI = 'vi';
     const C_XX = 'xx';
+    const C_ZH = 'zh';
 }

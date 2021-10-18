@@ -12,8 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\GroupValidationRulesType $ValidationRules
- * @property \DTS\eBaySDK\Trading\Types\NameRecommendationType[] $NameRecommendation
  */
 class ProductIdentifiersType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -21,18 +19,6 @@ class ProductIdentifiersType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'ValidationRules' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\GroupValidationRulesType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ValidationRules'
-        ],
-        'NameRecommendation' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NameRecommendationType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'NameRecommendation'
-        ]
     ];
 
     /**

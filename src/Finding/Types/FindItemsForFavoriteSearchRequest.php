@@ -45,10 +45,6 @@ class FindItemsForFavoriteSearchRequest extends \DTS\eBaySDK\Finding\Types\BaseS
             self::$xmlNamespaces[__CLASS__] = 'xmlns="http://www.ebay.com/marketplace/search/v1/services"';
         }
 
-        if (!array_key_exists(__CLASS__, self::$requestXmlRootElementNames)) {
-            self::$requestXmlRootElementNames[__CLASS__] = 'findItemsForFavoriteSearchRequest';
-        }
-
         $this->setValues(__CLASS__, $childValues);
     }
 }

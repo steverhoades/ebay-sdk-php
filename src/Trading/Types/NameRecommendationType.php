@@ -13,6 +13,7 @@ namespace DTS\eBaySDK\Trading\Types;
 /**
  *
  * @property string $Name
+ * @property \DTS\eBaySDK\Trading\Types\RelevanceIndicatorType $RelevanceIndicator
  * @property \DTS\eBaySDK\Trading\Types\RecommendationValidationRulesType $ValidationRules
  * @property \DTS\eBaySDK\Trading\Types\ValueRecommendationType[] $ValueRecommendation
  * @property string $HelpURL
@@ -29,6 +30,12 @@ class NameRecommendationType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Name'
+        ],
+        'RelevanceIndicator' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\RelevanceIndicatorType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'RelevanceIndicator'
         ],
         'ValidationRules' => [
             'type' => 'DTS\eBaySDK\Trading\Types\RecommendationValidationRulesType',

@@ -16,12 +16,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\ReturnsWithinDetailsType[] $ReturnsWithin
  * @property \DTS\eBaySDK\Trading\Types\ReturnsAcceptedDetailsType[] $ReturnsAccepted
  * @property boolean $Description
- * @property \DTS\eBaySDK\Trading\Types\WarrantyOfferedDetailsType[] $WarrantyOffered
- * @property \DTS\eBaySDK\Trading\Types\WarrantyTypeDetailsType[] $WarrantyType
- * @property \DTS\eBaySDK\Trading\Types\WarrantyDurationDetailsType[] $WarrantyDuration
- * @property boolean $EAN
  * @property \DTS\eBaySDK\Trading\Types\ShippingCostPaidByDetailsType[] $ShippingCostPaidBy
- * @property \DTS\eBaySDK\Trading\Types\RestockingFeeValueDetailsType[] $RestockingFeeValue
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  */
@@ -55,41 +50,11 @@ class ReturnPolicyDetailsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'Description'
         ],
-        'WarrantyOffered' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\WarrantyOfferedDetailsType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'WarrantyOffered'
-        ],
-        'WarrantyType' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\WarrantyTypeDetailsType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'WarrantyType'
-        ],
-        'WarrantyDuration' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\WarrantyDurationDetailsType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'WarrantyDuration'
-        ],
-        'EAN' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'EAN'
-        ],
         'ShippingCostPaidBy' => [
             'type' => 'DTS\eBaySDK\Trading\Types\ShippingCostPaidByDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ShippingCostPaidBy'
-        ],
-        'RestockingFeeValue' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\RestockingFeeValueDetailsType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'RestockingFeeValue'
         ],
         'DetailVersion' => [
             'type' => 'string',

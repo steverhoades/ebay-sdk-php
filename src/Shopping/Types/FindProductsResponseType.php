@@ -18,7 +18,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property integer $PageNumber
  * @property \DTS\eBaySDK\Shopping\Types\CatalogProductType[] $Product
  * @property integer $TotalProducts
- * @property boolean $DuplicateItems
  */
 class FindProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
 {
@@ -61,12 +60,6 @@ class FindProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractRespo
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalProducts'
-        ],
-        'DuplicateItems' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'DuplicateItems'
         ]
     ];
 

@@ -16,6 +16,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
  * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ErrorMessage $errorMessage
  * @property string $version
  * @property \DateTime $timestamp
+ * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ExtensionType[] $extension
  */
 class BaseResponse extends \DTS\eBaySDK\Types\BaseType
 {
@@ -46,6 +47,12 @@ class BaseResponse extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'timestamp'
+        ],
+        'extension' => [
+            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\ExtensionType',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'extension'
         ]
     ];
 

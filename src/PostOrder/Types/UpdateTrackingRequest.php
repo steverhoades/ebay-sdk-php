@@ -12,10 +12,10 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Enums\ShippingCarrierEnum $newCarrierEnum
+ * @property string $newCarrierEnum
  * @property string $newCarrierName
  * @property string $newTrackingNumber
- * @property \DTS\eBaySDK\PostOrder\Enums\ShippingCarrierEnum $usedCarrierEnum
+ * @property string $usedCarrierEnum
  * @property string $usedCarrierName
  * @property string $usedTrackingNumber
  */

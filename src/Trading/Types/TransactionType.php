@@ -65,7 +65,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\PaymentsInformationType $MonetaryDetails
  * @property \DTS\eBaySDK\Trading\Types\PickupDetailsType $PickupDetails
  * @property \DTS\eBaySDK\Trading\Types\PickupMethodSelectedType $PickupMethodSelected
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingConvenienceCharge
  * @property string $LogisticsPlanType
  * @property \DTS\eBaySDK\Trading\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
  * @property string $InventoryReservationID
@@ -76,6 +75,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $Gift
  * @property boolean $GuaranteedShipping
  * @property boolean $GuaranteedDelivery
+ * @property boolean $eBayCollectAndRemitTax
+ * @property \DTS\eBaySDK\Trading\Types\TaxesType $eBayCollectAndRemitTaxes
+ * @property \DTS\eBaySDK\Trading\Types\TransactionProgramType $Program
  */
 class TransactionType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -401,12 +403,6 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'PickupMethodSelected'
         ],
-        'ShippingConvenienceCharge' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingConvenienceCharge'
-        ],
         'LogisticsPlanType' => [
             'type' => 'string',
             'repeatable' => false,
@@ -466,6 +462,24 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GuaranteedDelivery'
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
+        ],
+        'eBayCollectAndRemitTaxes' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\TaxesType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTaxes'
+        ],
+        'Program' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\TransactionProgramType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Program'
         ]
     ];
 

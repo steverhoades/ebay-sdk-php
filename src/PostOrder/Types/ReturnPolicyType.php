@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property boolean $RMARequired
+ * @property boolean $rmaRequired
  */
 class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -20,11 +20,11 @@ class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'RMARequired' => [
+        'rmaRequired' => [
             'type' => 'boolean',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'RMARequired'
+            'elementName' => 'rmaRequired'
         ]
     ];
 

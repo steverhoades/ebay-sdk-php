@@ -18,6 +18,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType[] $VariationSpecifics
  * @property \DTS\eBaySDK\Shopping\Types\SellingStatusType $SellingStatus
  * @property \DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
+ * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
  */
 class VariationType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -60,6 +61,12 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
+        ],
+        'ProductID' => [
+            'type' => 'DTS\eBaySDK\Shopping\Types\ProductIDType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ProductID'
         ]
     ];
 

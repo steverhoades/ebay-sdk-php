@@ -26,6 +26,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TaxAmount
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingCost
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TotalCost
+ * @property boolean $TotalIncludeseBayCollectedTax
  * @property \DateTime $PaymentClearedTime
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $InsuranceCost
  * @property integer $ListingSiteID
@@ -34,14 +35,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $SecondDescription
  * @property string $FeeDescription
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeAmount
- * @property integer $SellingManagerSaleRecordID
- * @property string $BuyerPaymentTransactionNumber
- * @property \DTS\eBaySDK\MerchantData\Types\MerchantDataVariationType $Variation
- * @property string $TaxCategory
- * @property \DTS\eBaySDK\MerchantData\Types\TaxesType $Taxes
- * @property \DTS\eBaySDK\MerchantData\Types\TransactionStatusType $Status
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ActualShippingCost
- * @property \DTS\eBaySDK\MerchantData\Types\UnpaidItemType $UnpaidItem
  */
 class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -133,6 +126,12 @@ class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'TotalCost'
         ],
+        'TotalIncludeseBayCollectedTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'TotalIncludeseBayCollectedTax'
+        ],
         'PaymentClearedTime' => [
             'type' => 'DateTime',
             'repeatable' => false,
@@ -180,54 +179,6 @@ class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeAmount'
-        ],
-        'SellingManagerSaleRecordID' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SellingManagerSaleRecordID'
-        ],
-        'BuyerPaymentTransactionNumber' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BuyerPaymentTransactionNumber'
-        ],
-        'Variation' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MerchantDataVariationType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Variation'
-        ],
-        'TaxCategory' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'TaxCategory'
-        ],
-        'Taxes' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TaxesType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Taxes'
-        ],
-        'Status' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TransactionStatusType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Status'
-        ],
-        'ActualShippingCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ActualShippingCost'
-        ],
-        'UnpaidItem' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\UnpaidItemType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UnpaidItem'
         ]
     ];
 

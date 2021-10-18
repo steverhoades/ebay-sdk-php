@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
- * @property integer $daysToFullPayment
  * @property integer $hoursToDeposit
  * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\Amount $depositAmount
  */
@@ -22,12 +21,6 @@ class DepositDetails extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'daysToFullPayment' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'daysToFullPayment'
-        ],
         'hoursToDeposit' => [
             'type' => 'integer',
             'repeatable' => false,

@@ -12,9 +12,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\ValType[] $Value
- * @property integer $attributeID
- * @property string $attributeLabel
  */
 class AttributeType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -22,24 +19,6 @@ class AttributeType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'Value' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ValType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'Value'
-        ],
-        'attributeID' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => true,
-            'attributeName' => 'attributeID'
-        ],
-        'attributeLabel' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => true,
-            'attributeName' => 'attributeLabel'
-        ]
     ];
 
     /**

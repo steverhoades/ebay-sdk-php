@@ -17,7 +17,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\FeedbackInfoType $FeedbackInfo
  * @property boolean $Shipped
  * @property boolean $Paid
- * @property \DTS\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
  * @property \DTS\eBaySDK\Trading\Types\ShipmentType $Shipment
  * @property string $OrderID
  * @property string $OrderLineItemID
@@ -57,12 +56,6 @@ class CompleteSaleRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequest
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Paid'
-        ],
-        'ListingType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingType'
         ],
         'Shipment' => [
             'type' => 'DTS\eBaySDK\Trading\Types\ShipmentType',

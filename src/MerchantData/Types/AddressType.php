@@ -26,10 +26,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $PhoneCountryPrefix
  * @property string $PhoneAreaOrCityCode
  * @property string $PhoneLocalNumber
- * @property \DTS\eBaySDK\MerchantData\Enums\CountryCodeType $Phone2CountryCode
- * @property string $Phone2CountryPrefix
- * @property string $Phone2AreaOrCityCode
- * @property string $Phone2LocalNumber
  * @property string $PostalCode
  * @property string $AddressID
  * @property \DTS\eBaySDK\MerchantData\Enums\AddressOwnerCodeType $AddressOwner
@@ -134,30 +130,6 @@ class AddressType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PhoneLocalNumber'
-        ],
-        'Phone2CountryCode' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Phone2CountryCode'
-        ],
-        'Phone2CountryPrefix' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Phone2CountryPrefix'
-        ],
-        'Phone2AreaOrCityCode' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Phone2AreaOrCityCode'
-        ],
-        'Phone2LocalNumber' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Phone2LocalNumber'
         ],
         'PostalCode' => [
             'type' => 'string',

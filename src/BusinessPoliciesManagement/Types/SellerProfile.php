@@ -12,6 +12,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
+ * @property boolean $forceDuplicate
  * @property string $profileName
  * @property integer $profileId
  * @property \DTS\eBaySDK\BusinessPoliciesManagement\Enums\ProfileType $profileType
@@ -27,6 +28,12 @@ class SellerProfile extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'forceDuplicate' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'forceDuplicate'
+        ],
         'profileName' => [
             'type' => 'string',
             'repeatable' => false,

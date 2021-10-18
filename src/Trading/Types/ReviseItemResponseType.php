@@ -21,7 +21,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $VerifyOnly
  * @property \DTS\eBaySDK\Trading\Enums\DiscountReasonCodeType[] $DiscountReason
  * @property \DTS\eBaySDK\Trading\Types\ProductSuggestionsType $ProductSuggestions
- * @property \DTS\eBaySDK\Trading\Types\ListingRecommendationsType $ListingRecommendations
  */
 class ReviseItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
 {
@@ -82,12 +81,6 @@ class ReviseItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponse
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductSuggestions'
-        ],
-        'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ListingRecommendationsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingRecommendations'
         ]
     ];
 

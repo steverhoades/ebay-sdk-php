@@ -13,7 +13,8 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property boolean $ascending
- * @property \DTS\eBaySDK\PostOrder\Enums\CancelSortTypeEnum $enumValue
+ * @property string $enumValue
+ * @property string $field
  */
 class CancelSortField extends \DTS\eBaySDK\Types\BaseType
 {
@@ -32,6 +33,12 @@ class CancelSortField extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'enumValue'
+        ],
+        'field' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'field'
         ]
     ];
 

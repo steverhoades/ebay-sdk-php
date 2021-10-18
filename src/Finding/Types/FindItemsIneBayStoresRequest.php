@@ -17,6 +17,7 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property \DTS\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
  * @property \DTS\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
  * @property \DTS\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
+ * @property \DTS\eBaySDK\Finding\Types\DomainFilter[] $domainFilter
  * @property string[] $categoryId
  */
 class FindItemsIneBayStoresRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingServiceRequest
@@ -54,6 +55,12 @@ class FindItemsIneBayStoresRequest extends \DTS\eBaySDK\Finding\Types\BaseFindin
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'aspectFilter'
+        ],
+        'domainFilter' => [
+            'type' => 'DTS\eBaySDK\Finding\Types\DomainFilter',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'domainFilter'
         ],
         'categoryId' => [
             'type' => 'string',

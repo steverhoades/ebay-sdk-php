@@ -13,9 +13,11 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Text $comments
- * @property \DTS\eBaySDK\PostOrder\Enums\DecisionEnum $decision
+ * @property string $decision
+ * @property boolean $keepOriginalItem
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $partialRefundAmount
  * @property string $RMANumber
+ * @property boolean $rMAProvided
  */
 class DecideReturnRequest extends \DTS\eBaySDK\Types\BaseType
 {
@@ -35,6 +37,12 @@ class DecideReturnRequest extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'decision'
         ],
+        'keepOriginalItem' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'keepOriginalItem'
+        ],
         'partialRefundAmount' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
@@ -46,6 +54,12 @@ class DecideReturnRequest extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RMANumber'
+        ],
+        'rMAProvided' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'rMAProvided'
         ]
     ];
 

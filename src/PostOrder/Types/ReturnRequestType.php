@@ -15,11 +15,11 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $carrier
  * @property \DTS\eBaySDK\PostOrder\Types\Text $comments
  * @property string $itemId
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property string $reason
  * @property string $requestType
  * @property integer $returnQuantity
  * @property string $transactionId
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnTypeEnum $type
+ * @property string $type
  */
 class ReturnRequestType extends \DTS\eBaySDK\Types\BaseType
 {

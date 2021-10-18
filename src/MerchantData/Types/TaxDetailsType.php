@@ -19,6 +19,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TaxOnShippingAmount
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TaxOnHandlingAmount
  * @property string $TaxCode
+ * @property \DTS\eBaySDK\MerchantData\Enums\CollectionMethodCodeType $CollectionMethod
  */
 class TaxDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -67,6 +68,12 @@ class TaxDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxCode'
+        ],
+        'CollectionMethod' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'CollectionMethod'
         ]
     ];
 

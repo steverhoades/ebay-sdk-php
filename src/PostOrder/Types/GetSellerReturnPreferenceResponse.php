@@ -13,8 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property boolean $advanceRulesEnabled
- * @property \DTS\eBaySDK\PostOrder\Types\RuleDetailType[] $basicRules
- * @property boolean $RMARequired
+ * @property boolean $rmaRequired
  * @property integer $versionId
  */
 class GetSellerReturnPreferenceResponse extends \DTS\eBaySDK\Types\BaseType
@@ -29,17 +28,11 @@ class GetSellerReturnPreferenceResponse extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'advanceRulesEnabled'
         ],
-        'basicRules' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleDetailType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'basicRules'
-        ],
-        'RMARequired' => [
+        'rmaRequired' => [
             'type' => 'boolean',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'RMARequired'
+            'elementName' => 'rmaRequired'
         ],
         'versionId' => [
             'type' => 'integer',

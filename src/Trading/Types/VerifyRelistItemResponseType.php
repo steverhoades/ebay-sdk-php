@@ -18,7 +18,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DateTime $EndTime
  * @property \DTS\eBaySDK\Trading\Enums\DiscountReasonCodeType[] $DiscountReason
  * @property \DTS\eBaySDK\Trading\Types\ProductSuggestionsType $ProductSuggestions
- * @property \DTS\eBaySDK\Trading\Types\ListingRecommendationsType $ListingRecommendations
  */
 class VerifyRelistItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
 {
@@ -61,12 +60,6 @@ class VerifyRelistItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRe
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductSuggestions'
-        ],
-        'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ListingRecommendationsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingRecommendations'
         ]
     ];
 

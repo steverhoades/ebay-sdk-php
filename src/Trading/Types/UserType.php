@@ -42,7 +42,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $eBayWikiReadOnly
  * @property integer $TUVLevel
  * @property string $VATID
- * @property boolean $MotorsDealer
  * @property \DTS\eBaySDK\Trading\Types\BiddingSummaryType $BiddingSummary
  * @property boolean $UserAnonymized
  * @property integer $UniqueNeutralFeedbackCount
@@ -240,12 +239,6 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VATID'
-        ],
-        'MotorsDealer' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'MotorsDealer'
         ],
         'BiddingSummary' => [
             'type' => 'DTS\eBaySDK\Trading\Types\BiddingSummaryType',

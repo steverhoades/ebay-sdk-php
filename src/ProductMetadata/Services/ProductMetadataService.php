@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\ProductMetadata\Services;
 
 class ProductMetadataService extends \DTS\eBaySDK\ProductMetadata\Services\ProductMetadataBaseService
 {
-    const API_VERSION = '1.3.0';
+    const API_VERSION = '1.3.0 1.3.0';
 
     /**
      * @param array $config Configuration option values.

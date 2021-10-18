@@ -12,6 +12,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Enums;
 
 class ProfileType
 {
+    const C_BUYER_REQUIREMENTS = 'BUYER_REQUIREMENTS';
     const C_PAYMENT = 'PAYMENT';
     const C_RETURN_POLICY = 'RETURN_POLICY';
     const C_SHIPPING = 'SHIPPING';

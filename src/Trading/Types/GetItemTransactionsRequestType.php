@@ -19,7 +19,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\PaginationType $Pagination
  * @property boolean $IncludeFinalValueFee
  * @property boolean $IncludeContainingOrder
- * @property \DTS\eBaySDK\Trading\Enums\TransactionPlatformCodeType $Platform
  * @property integer $NumberOfDays
  * @property boolean $IncludeVariations
  * @property string $OrderLineItemID
@@ -71,12 +70,6 @@ class GetItemTransactionsRequestType extends \DTS\eBaySDK\Trading\Types\Abstract
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'IncludeContainingOrder'
-        ],
-        'Platform' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Platform'
         ],
         'NumberOfDays' => [
             'type' => 'integer',

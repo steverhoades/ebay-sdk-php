@@ -14,6 +14,8 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $amount
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $date
+ * @property \DTS\eBaySDK\PostOrder\Types\FundingSource $fundingSource
+ * @property \DTS\eBaySDK\PostOrder\Enums\FundingStatusEnum $fundingStatus
  * @property string $type
  */
 class MoneyMovementEntry extends \DTS\eBaySDK\Types\BaseType
@@ -33,6 +35,18 @@ class MoneyMovementEntry extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'date'
+        ],
+        'fundingSource' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\FundingSource',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'fundingSource'
+        ],
+        'fundingStatus' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'fundingStatus'
         ],
         'type' => [
             'type' => 'string',

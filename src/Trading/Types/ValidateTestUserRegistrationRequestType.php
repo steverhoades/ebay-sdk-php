@@ -14,8 +14,6 @@ namespace DTS\eBaySDK\Trading\Types;
  *
  * @property integer $FeedbackScore
  * @property \DateTime $RegistrationDate
- * @property boolean $SubscribeSA
- * @property boolean $SubscribeSAPro
  * @property boolean $SubscribeSM
  * @property boolean $SubscribeSMPro
  */
@@ -36,18 +34,6 @@ class ValidateTestUserRegistrationRequestType extends \DTS\eBaySDK\Trading\Types
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RegistrationDate'
-        ],
-        'SubscribeSA' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SubscribeSA'
-        ],
-        'SubscribeSAPro' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SubscribeSAPro'
         ],
         'SubscribeSM' => [
             'type' => 'boolean',

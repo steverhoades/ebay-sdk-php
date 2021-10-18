@@ -39,7 +39,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\PaymentHoldDetailType $PaymentHoldDetails
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $RefundAmount
  * @property string $RefundStatus
- * @property \DTS\eBaySDK\MerchantData\Types\RefundArrayType $RefundArray
  * @property boolean $IsMultiLegShipping
  * @property \DTS\eBaySDK\MerchantData\Types\MultiLegShippingDetailsType $MultiLegShippingDetails
  * @property \DTS\eBaySDK\MerchantData\Types\PaymentsInformationType $MonetaryDetails
@@ -49,14 +48,13 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $SellerEIASToken
  * @property string $CancelReason
  * @property \DTS\eBaySDK\MerchantData\Enums\CancelStatusCodeType $CancelStatus
- * @property string $CancelReasonDetails
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingConvenienceCharge
- * @property \DTS\eBaySDK\MerchantData\Types\CancelDetailType[] $CancelDetail
  * @property string $LogisticsPlanType
  * @property \DTS\eBaySDK\MerchantData\Types\TaxIdentifierType[] $BuyerTaxIdentifier
  * @property \DTS\eBaySDK\MerchantData\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
  * @property string $ExtendedOrderID
  * @property boolean $ContainseBayPlusTransaction
+ * @property boolean $eBayCollectAndRemitTax
+ * @property integer $OrderLineItemCount
  */
 class OrderType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -226,12 +224,6 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'RefundStatus'
         ],
-        'RefundArray' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\RefundArrayType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'RefundArray'
-        ],
         'IsMultiLegShipping' => [
             'type' => 'boolean',
             'repeatable' => false,
@@ -286,24 +278,6 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'CancelStatus'
         ],
-        'CancelReasonDetails' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CancelReasonDetails'
-        ],
-        'ShippingConvenienceCharge' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingConvenienceCharge'
-        ],
-        'CancelDetail' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CancelDetailType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'CancelDetail'
-        ],
         'LogisticsPlanType' => [
             'type' => 'string',
             'repeatable' => false,
@@ -333,6 +307,18 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ContainseBayPlusTransaction'
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
+        ],
+        'OrderLineItemCount' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'OrderLineItemCount'
         ]
     ];
 

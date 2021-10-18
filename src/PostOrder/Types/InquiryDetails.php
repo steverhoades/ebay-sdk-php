@@ -18,6 +18,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $expirationDate
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $lastBuyerRespDate
  * @property \DTS\eBaySDK\PostOrder\Types\RefundAmounts $refundAmounts
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $refundChargeAmount
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $refundDeadlineDate
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $totalAmount
  */
@@ -62,6 +63,12 @@ class InquiryDetails extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundAmounts'
+        ],
+        'refundChargeAmount' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'refundChargeAmount'
         ],
         'refundDeadlineDate' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',

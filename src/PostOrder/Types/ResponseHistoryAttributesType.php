@@ -12,14 +12,16 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property string $carrierUsed
  * @property string $escalateReason
+ * @property boolean $keepOriginalItem
  * @property \DTS\eBaySDK\PostOrder\Types\MoneyMovementRef $moneyMovementRef
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $partialRefundAmount
+ * @property \DTS\eBaySDK\PostOrder\Types\RefundDeductionType $refundDeductionType
+ * @property string $rlspType
  * @property string $RMA
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnAddressType $sellerReturnAddress
  * @property string $toEmailAddress
- * @property string $trackingNumber
+ * @property string $updatedTrackingNumber
  */
 class ResponseHistoryAttributesType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -27,17 +29,17 @@ class ResponseHistoryAttributesType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'carrierUsed' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'carrierUsed'
-        ],
         'escalateReason' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'escalateReason'
+        ],
+        'keepOriginalItem' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'keepOriginalItem'
         ],
         'moneyMovementRef' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\MoneyMovementRef',
@@ -50,6 +52,18 @@ class ResponseHistoryAttributesType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'partialRefundAmount'
+        ],
+        'refundDeductionType' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\RefundDeductionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'refundDeductionType'
+        ],
+        'rlspType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'rlspType'
         ],
         'RMA' => [
             'type' => 'string',
@@ -69,11 +83,11 @@ class ResponseHistoryAttributesType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'toEmailAddress'
         ],
-        'trackingNumber' => [
+        'updatedTrackingNumber' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'trackingNumber'
+            'elementName' => 'updatedTrackingNumber'
         ]
     ];
 

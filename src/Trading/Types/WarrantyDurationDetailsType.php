@@ -12,8 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property string $WarrantyDurationOption
- * @property string $Description
  */
 class WarrantyDurationDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -21,18 +19,6 @@ class WarrantyDurationDetailsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'WarrantyDurationOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyDurationOption'
-        ],
-        'Description' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Description'
-        ]
     ];
 
     /**

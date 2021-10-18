@@ -12,22 +12,25 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
+ * @property string $buyerLoginName
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $buyerResponseDueDate
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $cancelCloseDate
  * @property string $cancelCloseReason
  * @property string $cancelId
  * @property string $cancelReason
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $cancelRequestDate
- * @property string $legacyOrderId
- * @property \DTS\eBaySDK\PostOrder\Types\OrderCancelLineItem[] $lineItems
- * @property \DTS\eBaySDK\PostOrder\Enums\MarketplaceIdEnum $marketplaceId
- * @property string $paymentStatus
- * @property string $requestorType
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $requestRefundAmount
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $sellerResponseDueDate
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $shipmentDate
  * @property string $cancelState
  * @property string $cancelStatus
+ * @property string $legacyOrderId
+ * @property string $marketplaceId
+ * @property string $partialOrderType
+ * @property string $paymentStatus
+ * @property \DTS\eBaySDK\PostOrder\Types\PayoutRecoupInfo $payoutRecoupInfo
+ * @property string $requestorType
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $requestRefundAmount
+ * @property string $sellerLoginName
+ * @property \DTS\eBaySDK\PostOrder\Types\DateTime $sellerResponseDueDate
+ * @property \DTS\eBaySDK\PostOrder\Types\DateTime $shipmentDate
  */
 class CancelSummary extends \DTS\eBaySDK\Types\BaseType
 {
@@ -35,6 +38,12 @@ class CancelSummary extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'buyerLoginName' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'buyerLoginName'
+        ],
         'buyerResponseDueDate' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
@@ -71,17 +80,23 @@ class CancelSummary extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'cancelRequestDate'
         ],
+        'cancelState' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'cancelState'
+        ],
+        'cancelStatus' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'cancelStatus'
+        ],
         'legacyOrderId' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'legacyOrderId'
-        ],
-        'lineItems' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\OrderCancelLineItem',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'lineItems'
         ],
         'marketplaceId' => [
             'type' => 'string',
@@ -89,11 +104,23 @@ class CancelSummary extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'marketplaceId'
         ],
+        'partialOrderType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'partialOrderType'
+        ],
         'paymentStatus' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentStatus'
+        ],
+        'payoutRecoupInfo' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\PayoutRecoupInfo',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'payoutRecoupInfo'
         ],
         'requestorType' => [
             'type' => 'string',
@@ -107,6 +134,12 @@ class CancelSummary extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'requestRefundAmount'
         ],
+        'sellerLoginName' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'sellerLoginName'
+        ],
         'sellerResponseDueDate' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
@@ -118,18 +151,6 @@ class CancelSummary extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipmentDate'
-        ],
-        'cancelState' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'cancelState'
-        ],
-        'cancelStatus' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'cancelStatus'
         ]
     ];
 

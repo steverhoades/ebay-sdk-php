@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property string $UserID
  * @property \DateTime $StartTimeFrom
  * @property \DateTime $StartTimeTo
  * @property \DateTime $EndTimeFrom
@@ -30,12 +29,6 @@ class GetSellerEventsRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequ
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'UserID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UserID'
-        ],
         'StartTimeFrom' => [
             'type' => 'DateTime',
             'repeatable' => false,

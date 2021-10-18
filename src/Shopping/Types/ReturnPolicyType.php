@@ -16,13 +16,11 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $ReturnsWithin
  * @property string $ReturnsAccepted
  * @property string $Description
- * @property string $WarrantyOffered
- * @property string $WarrantyType
- * @property string $WarrantyDuration
- * @property string $EAN
  * @property string $ShippingCostPaidBy
- * @property string $RestockingFeeValue
- * @property string $RestockingFeeValueOption
+ * @property string $InternationalRefund
+ * @property string $InternationalReturnsWithin
+ * @property string $InternationalReturnsAccepted
+ * @property string $InternationalShippingCostPaidBy
  */
 class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -54,47 +52,35 @@ class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'Description'
         ],
-        'WarrantyOffered' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyOffered'
-        ],
-        'WarrantyType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyType'
-        ],
-        'WarrantyDuration' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyDuration'
-        ],
-        'EAN' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'EAN'
-        ],
         'ShippingCostPaidBy' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingCostPaidBy'
         ],
-        'RestockingFeeValue' => [
+        'InternationalRefund' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'RestockingFeeValue'
+            'elementName' => 'InternationalRefund'
         ],
-        'RestockingFeeValueOption' => [
+        'InternationalReturnsWithin' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'RestockingFeeValueOption'
+            'elementName' => 'InternationalReturnsWithin'
+        ],
+        'InternationalReturnsAccepted' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalReturnsAccepted'
+        ],
+        'InternationalShippingCostPaidBy' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalShippingCostPaidBy'
         ]
     ];
 

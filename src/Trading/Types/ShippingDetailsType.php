@@ -15,7 +15,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $GlobalShipping
  * @property \DTS\eBaySDK\Trading\Types\CalculatedShippingRateType $CalculatedShippingRate
  * @property boolean $ChangePaymentInstructions
- * @property boolean $InsuranceWanted
  * @property boolean $PaymentEdited
  * @property string $PaymentInstructions
  * @property \DTS\eBaySDK\Trading\Types\SalesTaxType $SalesTax
@@ -65,12 +64,6 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ChangePaymentInstructions'
-        ],
-        'InsuranceWanted' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceWanted'
         ],
         'PaymentEdited' => [
             'type' => 'boolean',

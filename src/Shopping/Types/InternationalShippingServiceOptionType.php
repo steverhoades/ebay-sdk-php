@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingInsuranceCost
  * @property string $ShippingServiceName
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceAdditionalCost
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
@@ -29,12 +28,6 @@ class InternationalShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'ShippingInsuranceCost' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingInsuranceCost'
-        ],
         'ShippingServiceName' => [
             'type' => 'string',
             'repeatable' => false,

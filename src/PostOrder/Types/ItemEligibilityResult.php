@@ -12,8 +12,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
+ * @property integer $cancelQuantity
  * @property boolean $eligible
- * @property \DTS\eBaySDK\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
+ * @property string[] $failureReason
  * @property string $itemId
  * @property string $transactionId
  */
@@ -23,6 +24,12 @@ class ItemEligibilityResult extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'cancelQuantity' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'cancelQuantity'
+        ],
         'eligible' => [
             'type' => 'boolean',
             'repeatable' => false,

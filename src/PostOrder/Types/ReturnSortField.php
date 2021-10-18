@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property boolean $ascending
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnSortEnum $enumValue
+ * @property string $enumValue
  * @property string $field
  */
 class ReturnSortField extends \DTS\eBaySDK\Types\BaseType
