@@ -14,6 +14,7 @@ class RefundPaymentTypeEnum
 {
     const C_ECHECK = 'ECHECK';
     const C_INSTANT_REFUND = 'INSTANT_REFUND';
+    const C_INTERMEDIATED_REFUND = 'INTERMEDIATED_REFUND';
     const C_OTHER = 'OTHER';
     const C_PAYOUT = 'PAYOUT';
 }

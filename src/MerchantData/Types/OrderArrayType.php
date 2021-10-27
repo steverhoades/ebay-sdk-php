@@ -13,6 +13,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
 /**
  *
  * @property \DTS\eBaySDK\MerchantData\Types\OrderType[] $Order
+ * @property \DTS\eBaySDK\MerchantData\Types\ErrorType[] $Errors
  */
 class OrderArrayType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -25,6 +26,12 @@ class OrderArrayType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Order'
+        ],
+        'Errors' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\ErrorType',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'Errors'
         ]
     ];
 

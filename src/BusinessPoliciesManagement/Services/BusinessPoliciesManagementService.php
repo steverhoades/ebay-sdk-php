@@ -12,7 +12,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Services;
 
 class BusinessPoliciesManagementService extends \DTS\eBaySDK\BusinessPoliciesManagement\Services\BusinessPoliciesManagementBaseService
 {
-    const API_VERSION = '1.0.0';
+    const API_VERSION = '1.1.0';
 
     /**
      * @param array $config Configuration option values.

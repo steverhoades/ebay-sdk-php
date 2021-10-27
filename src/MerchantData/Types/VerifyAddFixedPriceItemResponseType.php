@@ -18,7 +18,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $CategoryID
  * @property string $Category2ID
  * @property \DTS\eBaySDK\MerchantData\Enums\DiscountReasonCodeType[] $DiscountReason
- * @property \DTS\eBaySDK\MerchantData\Types\ListingRecommendationsType $ListingRecommendations
  */
 class VerifyAddFixedPriceItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractResponseType
 {
@@ -61,12 +60,6 @@ class VerifyAddFixedPriceItemResponseType extends \DTS\eBaySDK\MerchantData\Type
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'DiscountReason'
-        ],
-        'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingRecommendationsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingRecommendations'
         ]
     ];
 

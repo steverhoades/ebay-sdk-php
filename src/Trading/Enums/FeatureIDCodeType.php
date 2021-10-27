@@ -45,6 +45,10 @@ class FeatureIDCodeType
     const C_DEPOSIT_SUPPORTED = 'DepositSupported';
     const C_DIGITAL_DELIVERY_ENABLED = 'DigitalDeliveryEnabled';
     const C_DIGITAL_GOOD_DELIVERY_ENABLED = 'DigitalGoodDeliveryEnabled';
+    const C_DOMESTIC_REFUND_METHOD_VALUES = 'DomesticRefundMethodValues';
+    const C_DOMESTIC_RETURNS_ACCEPTED_VALUES = 'DomesticReturnsAcceptedValues';
+    const C_DOMESTIC_RETURNS_DURATION_VALUES = 'DomesticReturnsDurationValues';
+    const C_DOMESTIC_RETURNS_SHIPMENT_PAYEE_VALUES = 'DomesticReturnsShipmentPayeeValues';
     const C_DUTCHBIN_ENABLED = 'DutchBINEnabled';
     const C_EAN_ENABLED = 'EANEnabled';
     const C_EAN_IDENTIFIER_ENABLED = 'EANIdentifierEnabled';
@@ -74,6 +78,10 @@ class FeatureIDCodeType
     const C_HANDLING_TIME_ENABLED = 'HandlingTimeEnabled';
     const C_HOME_PAGE_FEATURED_ENABLED = 'HomePageFeaturedEnabled';
     const C_INTANGIBLE_ENABLED = 'IntangibleEnabled';
+    const C_INTERNATIONAL_REFUND_METHOD_VALUES = 'InternationalRefundMethodValues';
+    const C_INTERNATIONAL_RETURNS_ACCEPTED_VALUES = 'InternationalReturnsAcceptedValues';
+    const C_INTERNATIONAL_RETURNS_DURATION_VALUES = 'InternationalReturnsDurationValues';
+    const C_INTERNATIONAL_RETURNS_SHIPMENT_PAYEE_VALUES = 'InternationalReturnsShipmentPayeeValues';
     const C_IN_ESCROW_WORKFLOW_TIMELINE = 'INEscrowWorkflowTimeline';
     const C_ISBN_ENABLED = 'ISBNEnabled';
     const C_ISBN_IDENTIFIER_ENABLED = 'ISBNIdentifierEnabled';
@@ -119,6 +127,7 @@ class FeatureIDCodeType
     const C_PRO_PACK = 'ProPack';
     const C_PRO_PACK_PLUS = 'ProPackPlus';
     const C_REGULAR_SUBSCRIPTION = 'RegularSubscription';
+    const C_RETURN_POLICY_DESCRIPTION_ENABLED = 'ReturnPolicyDescriptionEnabled';
     const C_RETURN_POLICY_ENABLED = 'ReturnPolicyEnabled';
     const C_RETURN_POLICY_PROFILE_CATEGORY_GROUP = 'ReturnPolicyProfileCategoryGroup';
     const C_REVISE_PRICE_ALLOWED = 'RevisePriceAllowed';

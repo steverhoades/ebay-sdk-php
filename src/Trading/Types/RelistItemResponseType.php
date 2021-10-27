@@ -20,7 +20,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $Category2ID
  * @property \DTS\eBaySDK\Trading\Enums\DiscountReasonCodeType[] $DiscountReason
  * @property \DTS\eBaySDK\Trading\Types\ProductSuggestionsType $ProductSuggestions
- * @property \DTS\eBaySDK\Trading\Types\ListingRecommendationsType $ListingRecommendations
  */
 class RelistItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
 {
@@ -75,12 +74,6 @@ class RelistItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponse
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductSuggestions'
-        ],
-        'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ListingRecommendationsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingRecommendations'
         ]
     ];
 

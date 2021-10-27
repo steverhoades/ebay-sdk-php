@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property integer $PaisaPayStatus
  * @property boolean $AllowPaymentEdit
  * @property \DTS\eBaySDK\MerchantData\Enums\CurrencyCodeType $BillingCurrency
  * @property boolean $CheckoutEnabled
@@ -46,12 +45,6 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'PaisaPayStatus' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaisaPayStatus'
-        ],
         'AllowPaymentEdit' => [
             'type' => 'boolean',
             'repeatable' => false,

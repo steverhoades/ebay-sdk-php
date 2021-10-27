@@ -15,7 +15,8 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $estimatedAmount
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $maxAmount
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $minAmount
- * @property \DTS\eBaySDK\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
+ * @property integer[] $purchasePriceDeductedPercentageList
+ * @property string $refundFeeType
  * @property string $restockingFeePercentage
  */
 class EstimatedRefundType extends \DTS\eBaySDK\Types\BaseType
@@ -41,6 +42,12 @@ class EstimatedRefundType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minAmount'
+        ],
+        'purchasePriceDeductedPercentageList' => [
+            'type' => 'integer',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'purchasePriceDeductedPercentageList'
         ],
         'refundFeeType' => [
             'type' => 'string',

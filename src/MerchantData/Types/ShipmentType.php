@@ -35,9 +35,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DateTime $RefundRequestedTime
  * @property \DTS\eBaySDK\MerchantData\Enums\ShipmentStatusCodeType $Status
  * @property \DateTime $ShippedTime
- * @property string $Notes
  * @property \DTS\eBaySDK\MerchantData\Types\ShipmentTrackingDetailsType[] $ShipmentTrackingDetails
- * @property \DTS\eBaySDK\MerchantData\Types\ShipmentLineItemType $ShipmentLineItem
  */
 class ShipmentType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -183,23 +181,11 @@ class ShipmentType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ShippedTime'
         ],
-        'Notes' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Notes'
-        ],
         'ShipmentTrackingDetails' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\ShipmentTrackingDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ShipmentTrackingDetails'
-        ],
-        'ShipmentLineItem' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ShipmentLineItemType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipmentLineItem'
         ]
     ];
 

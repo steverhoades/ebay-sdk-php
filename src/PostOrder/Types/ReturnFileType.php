@@ -16,9 +16,11 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $fileData
  * @property string $fileFormat
  * @property string $fileId
+ * @property string $fileName
  * @property string $filePurpose
  * @property string $fileStatus
  * @property string $resizedFileData
+ * @property string $secureUrl
  * @property string $submitter
  */
 class ReturnFileType extends \DTS\eBaySDK\Types\BaseType
@@ -51,6 +53,12 @@ class ReturnFileType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'fileId'
         ],
+        'fileName' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'fileName'
+        ],
         'filePurpose' => [
             'type' => 'string',
             'repeatable' => false,
@@ -68,6 +76,12 @@ class ReturnFileType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'resizedFileData'
+        ],
+        'secureUrl' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'secureUrl'
         ],
         'submitter' => [
             'type' => 'string',

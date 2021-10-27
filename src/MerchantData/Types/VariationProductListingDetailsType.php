@@ -15,6 +15,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $ISBN
  * @property string $UPC
  * @property string $EAN
+ * @property string $ProductReferenceID
  */
 class VariationProductListingDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -39,6 +40,12 @@ class VariationProductListingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'EAN'
+        ],
+        'ProductReferenceID' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ProductReferenceID'
         ]
     ];
 

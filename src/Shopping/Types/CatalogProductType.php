@@ -16,7 +16,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $DetailsURL
  * @property boolean $DisplayStockPhotos
  * @property \DTS\eBaySDK\Shopping\Types\ProductIDType[] $ProductID
- * @property integer $ItemCount
  * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
  * @property integer $ReviewCount
  * @property string $StockPhotoURL
@@ -52,12 +51,6 @@ class CatalogProductType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ProductID'
-        ],
-        'ItemCount' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ItemCount'
         ],
         'ItemSpecifics' => [
             'type' => 'DTS\eBaySDK\Shopping\Types\NameValueListArrayType',

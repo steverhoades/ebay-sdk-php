@@ -17,7 +17,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DateTime $CreateTimeTo
  * @property \DTS\eBaySDK\Trading\Enums\TradingRoleCodeType $OrderRole
  * @property \DTS\eBaySDK\Trading\Enums\OrderStatusCodeType $OrderStatus
- * @property \DTS\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
  * @property \DTS\eBaySDK\Trading\Types\PaginationType $Pagination
  * @property \DateTime $ModTimeFrom
  * @property \DateTime $ModTimeTo
@@ -60,12 +59,6 @@ class GetOrdersRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestTyp
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderStatus'
-        ],
-        'ListingType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingType'
         ],
         'Pagination' => [
             'type' => 'DTS\eBaySDK\Trading\Types\PaginationType',

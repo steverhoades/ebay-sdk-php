@@ -27,6 +27,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $OrderLineItemID
  * @property string $TransactionID
  * @property boolean $ReceivedTopRatedDiscount
+ * @property string $OrderId
+ * @property \DTS\eBaySDK\Trading\Types\DiscountDetailType $DiscountDetail
+ * @property boolean $Netted
  */
 class AccountEntryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -123,6 +126,24 @@ class AccountEntryType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReceivedTopRatedDiscount'
+        ],
+        'OrderId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'OrderId'
+        ],
+        'DiscountDetail' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DiscountDetailType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DiscountDetail'
+        ],
+        'Netted' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Netted'
         ]
     ];
 

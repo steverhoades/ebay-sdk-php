@@ -13,11 +13,8 @@ namespace DTS\eBaySDK\MerchantData\Types;
 /**
  *
  * @property string $ApplicationData
- * @property \DTS\eBaySDK\MerchantData\Types\AttributeArrayType $AttributeArray
  * @property boolean $AutoPay
- * @property \DTS\eBaySDK\MerchantData\Types\PaymentDetailsType $PaymentDetails
  * @property \DTS\eBaySDK\MerchantData\Types\BiddingDetailsType $BiddingDetails
- * @property boolean $MotorsGermanySearchable
  * @property \DTS\eBaySDK\MerchantData\Enums\BuyerProtectionCodeType $BuyerProtection
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $BuyItNowPrice
  * @property boolean $CategoryMappingAllowed
@@ -26,17 +23,15 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Enums\CurrencyCodeType $Currency
  * @property string $Description
  * @property \DTS\eBaySDK\MerchantData\Enums\DescriptionReviseModeCodeType $DescriptionReviseMode
- * @property integer $GiftIcon
- * @property \DTS\eBaySDK\MerchantData\Enums\GiftServicesCodeType[] $GiftServices
  * @property \DTS\eBaySDK\MerchantData\Enums\HitCounterCodeType $HitCounter
  * @property string $ItemID
  * @property \DTS\eBaySDK\MerchantData\Types\ListingDetailsType $ListingDetails
- * @property \DTS\eBaySDK\MerchantData\Types\ListingDesignerType $ListingDesigner
  * @property string $ListingDuration
  * @property \DTS\eBaySDK\MerchantData\Enums\ListingEnhancementsCodeType[] $ListingEnhancement
  * @property \DTS\eBaySDK\MerchantData\Enums\ListingTypeCodeType $ListingType
  * @property string $Location
  * @property integer $LotSize
+ * @property \DTS\eBaySDK\MerchantData\Types\PaymentDetailsType $PaymentDetails
  * @property \DTS\eBaySDK\MerchantData\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
  * @property string $PayPalEmailAddress
  * @property \DTS\eBaySDK\MerchantData\Types\CategoryType $PrimaryCategory
@@ -68,7 +63,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property boolean $DisableBuyerRequirements
  * @property \DTS\eBaySDK\MerchantData\Types\BestOfferDetailsType $BestOfferDetails
  * @property boolean $LocationDefaulted
- * @property boolean $ThirdPartyCheckout
  * @property boolean $UseTaxTable
  * @property boolean $BuyerResponsibleForShipping
  * @property string $eBayNotes
@@ -76,17 +70,10 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property boolean $Relisted
  * @property integer $QuantityAvailable
  * @property string $SKU
- * @property boolean $CategoryBasedAttributesPrefill
  * @property string $PostalCode
- * @property boolean $ShippingTermsInDescription
- * @property string $SellerInventoryID
  * @property \DTS\eBaySDK\MerchantData\Types\PictureDetailsType $PictureDetails
+ * @property \DTS\eBaySDK\MerchantData\Types\VideoDetailsType $VideoDetails
  * @property integer $DispatchTimeMax
- * @property boolean $SkypeEnabled
- * @property string $SkypeID
- * @property \DTS\eBaySDK\MerchantData\Enums\SkypeContactOptionCodeType[] $SkypeContactOption
- * @property boolean $ThirdPartyCheckoutIntegration
- * @property \DTS\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType $ListingCheckoutRedirectPreference
  * @property \DTS\eBaySDK\MerchantData\Types\AddressType $SellerContactDetails
  * @property integer $TotalQuestionCount
  * @property boolean $ProxyItem
@@ -118,9 +105,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $TaxCategory
  * @property \DTS\eBaySDK\MerchantData\Enums\QuantityAvailableHintCodeType $QuantityAvailableHint
  * @property integer $QuantityThreshold
- * @property boolean $PostCheckoutExperienceEnabled
  * @property \DTS\eBaySDK\MerchantData\Types\DiscountPriceInfoType $DiscountPriceInfo
- * @property boolean $UseRecommendedProduct
  * @property string $SellerProvidedTitle
  * @property string $VIN
  * @property string $VRM
@@ -138,18 +123,15 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $ConditionDefinition
  * @property boolean $HideFromSearch
  * @property \DTS\eBaySDK\MerchantData\Enums\ReasonHideFromSearchCodeType $ReasonHideFromSearch
- * @property boolean $IncludeRecommendations
  * @property \DTS\eBaySDK\MerchantData\Types\PickupInStoreDetailsType $PickupInStoreDetails
- * @property boolean $eBayNowEligible
- * @property boolean $eBayNowAvailable
  * @property boolean $IgnoreQuantity
  * @property boolean $AvailableForPickupDropOff
  * @property boolean $EligibleForPickupDropOff
- * @property boolean $LiveAuction
  * @property \DTS\eBaySDK\MerchantData\Types\DigitalGoodInfoType $DigitalGoodInfo
  * @property boolean $eBayPlus
  * @property boolean $eBayPlusEligible
  * @property boolean $eMailDeliveryAvailable
+ * @property boolean $IsSecureDescription
  */
 class ItemType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -163,35 +145,17 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ApplicationData'
         ],
-        'AttributeArray' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AttributeArrayType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'AttributeArray'
-        ],
         'AutoPay' => [
             'type' => 'boolean',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AutoPay'
         ],
-        'PaymentDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PaymentDetailsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaymentDetails'
-        ],
         'BiddingDetails' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\BiddingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BiddingDetails'
-        ],
-        'MotorsGermanySearchable' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'MotorsGermanySearchable'
         ],
         'BuyerProtection' => [
             'type' => 'string',
@@ -241,18 +205,6 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'DescriptionReviseMode'
         ],
-        'GiftIcon' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'GiftIcon'
-        ],
-        'GiftServices' => [
-            'type' => 'string',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'GiftServices'
-        ],
         'HitCounter' => [
             'type' => 'string',
             'repeatable' => false,
@@ -270,12 +222,6 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingDetails'
-        ],
-        'ListingDesigner' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingDesignerType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingDesigner'
         ],
         'ListingDuration' => [
             'type' => 'string',
@@ -306,6 +252,12 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'LotSize'
+        ],
+        'PaymentDetails' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\PaymentDetailsType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'PaymentDetails'
         ],
         'PaymentMethods' => [
             'type' => 'string',
@@ -493,12 +445,6 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'LocationDefaulted'
         ],
-        'ThirdPartyCheckout' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ThirdPartyCheckout'
-        ],
         'UseTaxTable' => [
             'type' => 'boolean',
             'repeatable' => false,
@@ -541,29 +487,11 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'SKU'
         ],
-        'CategoryBasedAttributesPrefill' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CategoryBasedAttributesPrefill'
-        ],
         'PostalCode' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PostalCode'
-        ],
-        'ShippingTermsInDescription' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingTermsInDescription'
-        ],
-        'SellerInventoryID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SellerInventoryID'
         ],
         'PictureDetails' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\PictureDetailsType',
@@ -571,41 +499,17 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'PictureDetails'
         ],
+        'VideoDetails' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\VideoDetailsType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'VideoDetails'
+        ],
         'DispatchTimeMax' => [
             'type' => 'integer',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DispatchTimeMax'
-        ],
-        'SkypeEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SkypeEnabled'
-        ],
-        'SkypeID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SkypeID'
-        ],
-        'SkypeContactOption' => [
-            'type' => 'string',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'SkypeContactOption'
-        ],
-        'ThirdPartyCheckoutIntegration' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ThirdPartyCheckoutIntegration'
-        ],
-        'ListingCheckoutRedirectPreference' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingCheckoutRedirectPreference'
         ],
         'SellerContactDetails' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\AddressType',
@@ -793,23 +697,11 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'QuantityThreshold'
         ],
-        'PostCheckoutExperienceEnabled' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PostCheckoutExperienceEnabled'
-        ],
         'DiscountPriceInfo' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\DiscountPriceInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
-        ],
-        'UseRecommendedProduct' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UseRecommendedProduct'
         ],
         'SellerProvidedTitle' => [
             'type' => 'string',
@@ -913,29 +805,11 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ReasonHideFromSearch'
         ],
-        'IncludeRecommendations' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'IncludeRecommendations'
-        ],
         'PickupInStoreDetails' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\PickupInStoreDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupInStoreDetails'
-        ],
-        'eBayNowEligible' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'eBayNowEligible'
-        ],
-        'eBayNowAvailable' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'eBayNowAvailable'
         ],
         'IgnoreQuantity' => [
             'type' => 'boolean',
@@ -954,12 +828,6 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'EligibleForPickupDropOff'
-        ],
-        'LiveAuction' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'LiveAuction'
         ],
         'DigitalGoodInfo' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\DigitalGoodInfoType',
@@ -984,6 +852,12 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eMailDeliveryAvailable'
+        ],
+        'IsSecureDescription' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'IsSecureDescription'
         ]
     ];
 

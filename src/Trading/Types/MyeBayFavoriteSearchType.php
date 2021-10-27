@@ -29,7 +29,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $BidCountMax
  * @property integer $BidCountMin
  * @property \DTS\eBaySDK\Trading\Enums\SearchFlagCodeType[] $SearchFlag
- * @property \DTS\eBaySDK\Trading\Enums\PaymentMethodSearchCodeType $PaymentMethod
  * @property \DTS\eBaySDK\Trading\Enums\PreferredLocationCodeType $PreferredLocation
  * @property string[] $SellerID
  * @property string[] $SellerIDExclude
@@ -147,12 +146,6 @@ class MyeBayFavoriteSearchType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'SearchFlag'
-        ],
-        'PaymentMethod' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaymentMethod'
         ],
         'PreferredLocation' => [
             'type' => 'string',

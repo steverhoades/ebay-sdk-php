@@ -16,7 +16,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Enums\ShippingServiceType $ShippingServiceType
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingServiceCost
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingServiceAdditionalCost
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingSurcharge
  */
 class ShippingServiceCostOverrideType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -47,12 +46,6 @@ class ShippingServiceCostOverrideType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceAdditionalCost'
-        ],
-        'ShippingSurcharge' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingSurcharge'
         ]
     ];
 

@@ -31,4 +31,5 @@ class ValueTypeCodeType
     const C_TEXT = 'Text';
     const C_TURKEYID = 'TurkeyID';
     const C_UPC = 'UPC';
+    const C_VATIN = 'VATIN';
 }

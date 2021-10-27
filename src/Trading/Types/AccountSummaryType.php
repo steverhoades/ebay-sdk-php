@@ -32,6 +32,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DateTime $LastPaymentDate
  * @property boolean $PastDue
  * @property \DTS\eBaySDK\Trading\Enums\SellerPaymentMethodCodeType $PaymentMethod
+ * @property \DTS\eBaySDK\Trading\Types\NettedTransactionSummaryType $NettedTransactionSummary
  */
 class AccountSummaryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -158,6 +159,12 @@ class AccountSummaryType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentMethod'
+        ],
+        'NettedTransactionSummary' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\NettedTransactionSummaryType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'NettedTransactionSummary'
         ]
     ];
 

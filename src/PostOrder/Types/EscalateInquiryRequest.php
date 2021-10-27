@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Text $comments
- * @property string $escalationReason
+ * @property string $escalateInquiryReason
  */
 class EscalateInquiryRequest extends \DTS\eBaySDK\Types\BaseType
 {
@@ -27,11 +27,11 @@ class EscalateInquiryRequest extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'comments'
         ],
-        'escalationReason' => [
+        'escalateInquiryReason' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'escalationReason'
+            'elementName' => 'escalateInquiryReason'
         ]
     ];
 

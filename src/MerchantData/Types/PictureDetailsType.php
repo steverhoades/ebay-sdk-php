@@ -13,11 +13,9 @@ namespace DTS\eBaySDK\MerchantData\Types;
 /**
  *
  * @property \DTS\eBaySDK\MerchantData\Enums\GalleryTypeCodeType $GalleryType
- * @property string $GalleryURL
  * @property \DTS\eBaySDK\MerchantData\Enums\PhotoDisplayCodeType $PhotoDisplay
  * @property string[] $PictureURL
  * @property \DTS\eBaySDK\MerchantData\Enums\PictureSourceCodeType $PictureSource
- * @property string $GalleryDuration
  * @property \DTS\eBaySDK\MerchantData\Enums\GalleryStatusCodeType $GalleryStatus
  * @property string $GalleryErrorInfo
  * @property string[] $ExternalPictureURL
@@ -34,12 +32,6 @@ class PictureDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GalleryType'
-        ],
-        'GalleryURL' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'GalleryURL'
         ],
         'PhotoDisplay' => [
             'type' => 'string',
@@ -58,12 +50,6 @@ class PictureDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PictureSource'
-        ],
-        'GalleryDuration' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'GalleryDuration'
         ],
         'GalleryStatus' => [
             'type' => 'string',

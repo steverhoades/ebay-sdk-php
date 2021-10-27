@@ -17,12 +17,10 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property integer $Quantity
  * @property \DTS\eBaySDK\MerchantData\Types\NameValueListArrayType[] $VariationSpecifics
  * @property integer $UnitsAvailable
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $UnitCost
  * @property \DTS\eBaySDK\MerchantData\Types\SellingStatusType $SellingStatus
  * @property string $VariationTitle
  * @property string $VariationViewItemURL
  * @property boolean $Delete
- * @property \DTS\eBaySDK\MerchantData\Types\SellingManagerProductInventoryStatusType $SellingManagerProductInventoryStatus
  * @property integer $WatchCount
  * @property string $PrivateNotes
  * @property \DTS\eBaySDK\MerchantData\Types\DiscountPriceInfoType $DiscountPriceInfo
@@ -64,12 +62,6 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'UnitsAvailable'
         ],
-        'UnitCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UnitCost'
-        ],
         'SellingStatus' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\SellingStatusType',
             'repeatable' => false,
@@ -93,12 +85,6 @@ class VariationType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Delete'
-        ],
-        'SellingManagerProductInventoryStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SellingManagerProductInventoryStatusType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SellingManagerProductInventoryStatus'
         ],
         'WatchCount' => [
             'type' => 'integer',

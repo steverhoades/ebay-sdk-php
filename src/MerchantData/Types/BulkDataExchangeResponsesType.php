@@ -19,13 +19,13 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\EndItemResponseType[] $EndItemResponse
  * @property \DTS\eBaySDK\MerchantData\Types\FeeSettlementReportResponseType $FeeSettlementReport
  * @property \DTS\eBaySDK\MerchantData\Types\OrderAckResponseType[] $OrderAckResponse
+ * @property \DTS\eBaySDK\MerchantData\Types\OrderReportResponseType $OrderReport
  * @property \DTS\eBaySDK\MerchantData\Types\RelistFixedPriceItemResponseType[] $RelistFixedPriceItemResponse
  * @property \DTS\eBaySDK\MerchantData\Types\RelistItemResponseType[] $RelistItemResponse
  * @property \DTS\eBaySDK\MerchantData\Types\ReviseFixedPriceItemResponseType[] $ReviseFixedPriceItemResponse
  * @property \DTS\eBaySDK\MerchantData\Types\ReviseInventoryStatusResponseType[] $ReviseInventoryStatusResponse
  * @property \DTS\eBaySDK\MerchantData\Types\ReviseItemResponseType[] $ReviseItemResponse
  * @property \DTS\eBaySDK\MerchantData\Types\SetShipmentTrackingInfoResponseType[] $SetShipmentTrackingInfoResponse
- * @property \DTS\eBaySDK\MerchantData\Types\SoldReportResponseType $SoldReport
  * @property \DTS\eBaySDK\MerchantData\Types\UploadSiteHostedPicturesResponseType[] $UploadSiteHostedPicturesResponse
  * @property \DTS\eBaySDK\MerchantData\Types\VerifyAddFixedPriceItemResponseType[] $VerifyAddFixedPriceItemResponse
  * @property \DTS\eBaySDK\MerchantData\Types\VerifyAddItemResponseType[] $VerifyAddItemResponse
@@ -78,6 +78,12 @@ class BulkDataExchangeResponsesType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'OrderAckResponse'
         ],
+        'OrderReport' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\OrderReportResponseType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'OrderReport'
+        ],
         'RelistFixedPriceItemResponse' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\RelistFixedPriceItemResponseType',
             'repeatable' => true,
@@ -113,12 +119,6 @@ class BulkDataExchangeResponsesType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'SetShipmentTrackingInfoResponse'
-        ],
-        'SoldReport' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SoldReportResponseType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SoldReport'
         ],
         'UploadSiteHostedPicturesResponse' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\UploadSiteHostedPicturesResponseType',

@@ -12,7 +12,11 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
+ * @property boolean $ebayPlusTxn
  * @property string $itemId
+ * @property integer $listingSiteId
+ * @property string $relistedItemId
+ * @property string $relistStatus
  * @property integer $returnQuantity
  * @property string $transactionId
  */
@@ -22,11 +26,35 @@ class ItemDetailType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'ebayPlusTxn' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ebayPlusTxn'
+        ],
         'itemId' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemId'
+        ],
+        'listingSiteId' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'listingSiteId'
+        ],
+        'relistedItemId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'relistedItemId'
+        ],
+        'relistStatus' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'relistStatus'
         ],
         'returnQuantity' => [
             'type' => 'integer',

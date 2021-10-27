@@ -30,6 +30,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
  * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\Amount $packagingHandlingCosts
  * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\Amount $internationalPackagingHandlingCosts
  * @property \DTS\eBaySDK\BusinessPoliciesManagement\Enums\IsoCurrencyCode $shippingPolicyCurrency
+ * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyIdentity $shippingPolicyIdentity
  * @property boolean $GlobalShipping
  * @property boolean $EligibleForPickupDropOff
  */
@@ -146,6 +147,12 @@ class ShippingPolicyInfo extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingPolicyCurrency'
+        ],
+        'shippingPolicyIdentity' => [
+            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyIdentity',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'shippingPolicyIdentity'
         ],
         'GlobalShipping' => [
             'type' => 'boolean',

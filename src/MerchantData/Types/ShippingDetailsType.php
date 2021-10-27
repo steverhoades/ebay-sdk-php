@@ -15,9 +15,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property boolean $GlobalShipping
  * @property \DTS\eBaySDK\MerchantData\Types\CalculatedShippingRateType $CalculatedShippingRate
  * @property boolean $ChangePaymentInstructions
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $InsuranceFee
- * @property \DTS\eBaySDK\MerchantData\Enums\InsuranceOptionCodeType $InsuranceOption
- * @property boolean $InsuranceWanted
  * @property boolean $PaymentEdited
  * @property string $PaymentInstructions
  * @property \DTS\eBaySDK\MerchantData\Types\SalesTaxType $SalesTax
@@ -29,9 +26,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property integer $SellingManagerSalesRecordNumber
  * @property \DTS\eBaySDK\MerchantData\Types\TaxTableType $TaxTable
  * @property string $ShippingServiceUsed
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $DefaultShippingCost
- * @property \DTS\eBaySDK\MerchantData\Types\InsuranceDetailsType $InsuranceDetails
- * @property \DTS\eBaySDK\MerchantData\Types\InsuranceDetailsType $InternationalInsuranceDetails
  * @property string $ShippingDiscountProfileID
  * @property \DTS\eBaySDK\MerchantData\Types\FlatShippingDiscountType $FlatShippingDiscount
  * @property \DTS\eBaySDK\MerchantData\Types\CalculatedShippingDiscountType $CalculatedShippingDiscount
@@ -70,24 +64,6 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ChangePaymentInstructions'
-        ],
-        'InsuranceFee' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceFee'
-        ],
-        'InsuranceOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceOption'
-        ],
-        'InsuranceWanted' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceWanted'
         ],
         'PaymentEdited' => [
             'type' => 'boolean',
@@ -154,24 +130,6 @@ class ShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceUsed'
-        ],
-        'DefaultShippingCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'DefaultShippingCost'
-        ],
-        'InsuranceDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\InsuranceDetailsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InsuranceDetails'
-        ],
-        'InternationalInsuranceDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\InsuranceDetailsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'InternationalInsuranceDetails'
         ],
         'ShippingDiscountProfileID' => [
             'type' => 'string',

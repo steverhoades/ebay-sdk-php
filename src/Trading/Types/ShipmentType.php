@@ -36,7 +36,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Enums\ShipmentStatusCodeType $Status
  * @property \DateTime $ShippedTime
  * @property \DTS\eBaySDK\Trading\Types\ShipmentTrackingDetailsType[] $ShipmentTrackingDetails
- * @property \DTS\eBaySDK\Trading\Types\ShipmentLineItemType $ShipmentLineItem
  */
 class ShipmentType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -187,12 +186,6 @@ class ShipmentType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ShipmentTrackingDetails'
-        ],
-        'ShipmentLineItem' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShipmentLineItemType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipmentLineItem'
         ]
     ];
 

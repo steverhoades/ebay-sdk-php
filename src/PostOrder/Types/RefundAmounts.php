@@ -14,6 +14,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $buyerFinalAcceptRefundAmt
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $buyerInitExpectRefundAmt
+ * @property \DTS\eBaySDK\PostOrder\Types\Amount $feeCreditAmount
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $internationalRefundAmount
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $refundAmount
  */
@@ -34,6 +35,12 @@ class RefundAmounts extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerInitExpectRefundAmt'
+        ],
+        'feeCreditAmount' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'feeCreditAmount'
         ],
         'internationalRefundAmount' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',

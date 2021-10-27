@@ -1,5 +1,5 @@
 {
-    "name": "benmorel/ebay-sdk-php",
+    "name": "steverhoades/ebay-sdk-php",
     "description": "An eBay SDK for PHP. Fork of dts/ebay-sdk-php with support for PHP 8.",
     "keywords": ["ebay", "api", "sdk"],
     "type": "library",
@@ -13,7 +13,11 @@
         {
           "name": "Benjamin Morel",
           "email": "benjamin.morel@gmail.com"
-        }
+        },
+      {
+        "name": "Steve Rhoades",
+        "email": "sedonami+packagist@gmail.com"
+      }
     ],
     "require": {
         "php-64bit": "^7.1 || ^8.0",

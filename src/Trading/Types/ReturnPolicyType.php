@@ -19,17 +19,12 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $ReturnsAcceptedOption
  * @property string $ReturnsAccepted
  * @property string $Description
- * @property string $WarrantyOfferedOption
- * @property string $WarrantyOffered
- * @property string $WarrantyTypeOption
- * @property string $WarrantyType
- * @property string $WarrantyDurationOption
- * @property string $WarrantyDuration
  * @property string $ShippingCostPaidByOption
  * @property string $ShippingCostPaidBy
- * @property string $RestockingFeeValue
- * @property string $RestockingFeeValueOption
- * @property boolean $ExtendedHolidayReturns
+ * @property string $InternationalRefundOption
+ * @property string $InternationalReturnsAcceptedOption
+ * @property string $InternationalReturnsWithinOption
+ * @property string $InternationalShippingCostPaidByOption
  */
 class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -79,42 +74,6 @@ class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'Description'
         ],
-        'WarrantyOfferedOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyOfferedOption'
-        ],
-        'WarrantyOffered' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyOffered'
-        ],
-        'WarrantyTypeOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyTypeOption'
-        ],
-        'WarrantyType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyType'
-        ],
-        'WarrantyDurationOption' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyDurationOption'
-        ],
-        'WarrantyDuration' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'WarrantyDuration'
-        ],
         'ShippingCostPaidByOption' => [
             'type' => 'string',
             'repeatable' => false,
@@ -127,23 +86,29 @@ class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'ShippingCostPaidBy'
         ],
-        'RestockingFeeValue' => [
+        'InternationalRefundOption' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'RestockingFeeValue'
+            'elementName' => 'InternationalRefundOption'
         ],
-        'RestockingFeeValueOption' => [
+        'InternationalReturnsAcceptedOption' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'RestockingFeeValueOption'
+            'elementName' => 'InternationalReturnsAcceptedOption'
         ],
-        'ExtendedHolidayReturns' => [
-            'type' => 'boolean',
+        'InternationalReturnsWithinOption' => [
+            'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'ExtendedHolidayReturns'
+            'elementName' => 'InternationalReturnsWithinOption'
+        ],
+        'InternationalShippingCostPaidByOption' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalShippingCostPaidByOption'
         ]
     ];
 

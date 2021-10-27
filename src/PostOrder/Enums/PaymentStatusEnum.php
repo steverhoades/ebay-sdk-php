@@ -14,6 +14,7 @@ class PaymentStatusEnum
 {
     const C_MARK_AS_PAID = 'MARK_AS_PAID';
     const C_NOT_PAID = 'NOT_PAID';
+    const C_ONLINE_PAID = 'ONLINE_PAID';
     const C_PAYPAL_PAID = 'PAYPAL_PAID';
     const C_UNKNOWN = 'UNKNOWN';
 }

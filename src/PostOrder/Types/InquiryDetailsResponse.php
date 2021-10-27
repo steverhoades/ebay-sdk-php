@@ -13,8 +13,10 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $claimAmount
+ * @property \DTS\eBaySDK\PostOrder\Enums\INRCreationReasonEnum $creationReason
  * @property string $extTransactionId
  * @property \DTS\eBaySDK\PostOrder\Enums\UserPartyEnum $initiator
+ * @property \DTS\eBaySDK\PostOrder\Types\DateTime $inquiryClosureDate
  * @property \DTS\eBaySDK\PostOrder\Types\InquiryDetails $inquiryDetails
  * @property \DTS\eBaySDK\PostOrder\Types\ClaimHistoryResponse $inquiryHistoryDetails
  * @property string $inquiryId
@@ -41,6 +43,12 @@ class InquiryDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'claimAmount'
         ],
+        'creationReason' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'creationReason'
+        ],
         'extTransactionId' => [
             'type' => 'string',
             'repeatable' => false,
@@ -52,6 +60,12 @@ class InquiryDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'initiator'
+        ],
+        'inquiryClosureDate' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'inquiryClosureDate'
         ],
         'inquiryDetails' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\InquiryDetails',

@@ -13,6 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property string $caseId
+ * @property string $caseUrl
  */
 class EscalateResponse extends \DTS\eBaySDK\Types\BaseType
 {
@@ -25,6 +26,12 @@ class EscalateResponse extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseId'
+        ],
+        'caseUrl' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'caseUrl'
         ]
     ];
 

@@ -14,10 +14,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $actionDate
  * @property string $activityParty
- * @property \DTS\eBaySDK\PostOrder\Enums\CancelActivityTypeEnum $activityType
- * @property string $cancelStateFrom
- * @property string $cancelStateTo
- * @property string $cancelStatetateTo
+ * @property string $activityType
+ * @property string $stateFrom
+ * @property string $stateTo
  */
 class CancelActivityHistory extends \DTS\eBaySDK\Types\BaseType
 {
@@ -43,23 +42,17 @@ class CancelActivityHistory extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'activityType'
         ],
-        'cancelStateFrom' => [
+        'stateFrom' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'cancelStateFrom'
+            'elementName' => 'stateFrom'
         ],
-        'cancelStateTo' => [
+        'stateTo' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'cancelStateTo'
-        ],
-        'cancelStatetateTo' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'cancelStatetateTo'
+            'elementName' => 'stateTo'
         ]
     ];
 

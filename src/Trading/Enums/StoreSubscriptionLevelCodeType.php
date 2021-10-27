@@ -16,5 +16,7 @@ class StoreSubscriptionLevelCodeType
     const C_BASIC = 'Basic';
     const C_CLOSE = 'Close';
     const C_CUSTOM_CODE = 'CustomCode';
+    const C_ENTERPRISE = 'Enterprise';
     const C_FEATURED = 'Featured';
+    const C_STARTER = 'Starter';
 }

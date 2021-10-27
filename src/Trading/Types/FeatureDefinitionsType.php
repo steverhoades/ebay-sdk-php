@@ -133,6 +133,15 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DTS\eBaySDK\Trading\Types\EpidSupportedDefinitionType $EpidSupported
  * @property \DTS\eBaySDK\Trading\Types\KTypeSupportedDefinitionType $KTypeSupported
  * @property \DTS\eBaySDK\Trading\Types\ProductRequiredEnabledDefinitionType $ProductRequiredEnabled
+ * @property \DTS\eBaySDK\Trading\Types\DomesticReturnsAcceptedDefinitionType $DomesticReturnsAcceptedValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalReturnsAcceptedDefinitionType $InternationalReturnsAcceptedValues
+ * @property \DTS\eBaySDK\Trading\Types\DomesticReturnsDurationDefinitionType $DomesticReturnsDurationValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalReturnsDurationDefinitionType $InternationalReturnsDurationValues
+ * @property \DTS\eBaySDK\Trading\Types\DomesticReturnsShipmentPayeeDefinitionType $DomesticReturnsShipmentPayeeValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalReturnsShipmentPayeeDefinitionType $InternationalReturnsShipmentPayeeValues
+ * @property \DTS\eBaySDK\Trading\Types\DomesticRefundMethodCodeType $DomesticRefundMethodValues
+ * @property \DTS\eBaySDK\Trading\Types\InternationalRefundMethodCodeType $InternationalRefundMethodValues
+ * @property \DTS\eBaySDK\Trading\Types\ReturnPolicyDescriptionEnabledDefinitionType $ReturnPolicyDescriptionEnabled
  */
 class FeatureDefinitionsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -865,6 +874,60 @@ class FeatureDefinitionsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductRequiredEnabled'
+        ],
+        'DomesticReturnsAcceptedValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticReturnsAcceptedDefinitionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticReturnsAcceptedValues'
+        ],
+        'InternationalReturnsAcceptedValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalReturnsAcceptedDefinitionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalReturnsAcceptedValues'
+        ],
+        'DomesticReturnsDurationValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticReturnsDurationDefinitionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticReturnsDurationValues'
+        ],
+        'InternationalReturnsDurationValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalReturnsDurationDefinitionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalReturnsDurationValues'
+        ],
+        'DomesticReturnsShipmentPayeeValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticReturnsShipmentPayeeDefinitionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticReturnsShipmentPayeeValues'
+        ],
+        'InternationalReturnsShipmentPayeeValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalReturnsShipmentPayeeDefinitionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalReturnsShipmentPayeeValues'
+        ],
+        'DomesticRefundMethodValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\DomesticRefundMethodCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'DomesticRefundMethodValues'
+        ],
+        'InternationalRefundMethodValues' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\InternationalRefundMethodCodeType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'InternationalRefundMethodValues'
+        ],
+        'ReturnPolicyDescriptionEnabled' => [
+            'type' => 'DTS\eBaySDK\Trading\Types\ReturnPolicyDescriptionEnabledDefinitionType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'ReturnPolicyDescriptionEnabled'
         ]
     ];
 

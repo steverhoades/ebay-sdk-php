@@ -18,7 +18,6 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $IncludeFinalValueFee
  * @property boolean $IncludeContainingOrder
  * @property \DTS\eBaySDK\Trading\Types\SKUArrayType $SKUArray
- * @property \DTS\eBaySDK\Trading\Enums\TransactionPlatformCodeType $Platform
  * @property integer $NumberOfDays
  * @property \DTS\eBaySDK\Trading\Enums\InventoryTrackingMethodCodeType $InventoryTrackingMethod
  * @property boolean $IncludeCodiceFiscale
@@ -64,12 +63,6 @@ class GetSellerTransactionsRequestType extends \DTS\eBaySDK\Trading\Types\Abstra
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SKUArray'
-        ],
-        'Platform' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'Platform'
         ],
         'NumberOfDays' => [
             'type' => 'integer',

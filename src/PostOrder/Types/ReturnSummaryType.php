@@ -17,9 +17,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnResponseDueType $buyerResponseDue
  * @property \DTS\eBaySDK\PostOrder\Types\TotalRefundAmountType $buyerTotalRefund
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnCreationInfoType $creationInfo
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnTypeEnum $currentType
- * @property \DTS\eBaySDK\PostOrder\Enums\DispositionRuleTemplateTypeEnum[] $dispositionRuleTriggered
+ * @property string $currentType
  * @property \DTS\eBaySDK\PostOrder\Types\EscalationInfoType $escalationInfo
+ * @property string $orderId
  * @property string $returnId
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnPolicyType $returnPolicy
  * @property \DTS\eBaySDK\PostOrder\Types\AvailableOptionType[] $sellerAvailableOptions
@@ -28,6 +28,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\TotalRefundAmountType $sellerTotalRefund
  * @property string $state
  * @property string $status
+ * @property \DTS\eBaySDK\PostOrder\Types\DateTime $timeoutDate
  */
 class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -71,17 +72,17 @@ class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'currentType'
         ],
-        'dispositionRuleTriggered' => [
-            'type' => 'string',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'dispositionRuleTriggered'
-        ],
         'escalationInfo' => [
             'type' => 'DTS\eBaySDK\PostOrder\Types\EscalationInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'escalationInfo'
+        ],
+        'orderId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'orderId'
         ],
         'returnId' => [
             'type' => 'string',
@@ -130,6 +131,12 @@ class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'status'
+        ],
+        'timeoutDate' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'timeoutDate'
         ]
     ];
 

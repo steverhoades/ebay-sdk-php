@@ -14,6 +14,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Text $comments
  * @property \DTS\eBaySDK\PostOrder\Types\RefundDetailType $refundDetail
+ * @property boolean $relistItem
  */
 class IssueRefundRequest extends \DTS\eBaySDK\Types\BaseType
 {
@@ -32,6 +33,12 @@ class IssueRefundRequest extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundDetail'
+        ],
+        'relistItem' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'relistItem'
         ]
     ];
 

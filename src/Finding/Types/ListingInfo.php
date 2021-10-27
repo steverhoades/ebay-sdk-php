@@ -20,6 +20,7 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property \DateTime $endTime
  * @property string $listingType
  * @property boolean $gift
+ * @property integer $watchCount
  */
 class ListingInfo extends \DTS\eBaySDK\Types\BaseType
 {
@@ -74,6 +75,12 @@ class ListingInfo extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'gift'
+        ],
+        'watchCount' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'watchCount'
         ]
     ];
 

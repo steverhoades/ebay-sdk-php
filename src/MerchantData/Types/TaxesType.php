@@ -12,6 +12,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
 
 /**
  *
+ * @property \DTS\eBaySDK\MerchantData\Types\EBayTaxReferenceValue $eBayReference
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TotalTaxAmount
  * @property \DTS\eBaySDK\MerchantData\Types\TaxDetailsType[] $TaxDetails
  */
@@ -21,6 +22,12 @@ class TaxesType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
+        'eBayReference' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\EBayTaxReferenceValue',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayReference'
+        ],
         'TotalTaxAmount' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,

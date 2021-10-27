@@ -12,11 +12,6 @@ namespace DTS\eBaySDK\Finding\Types;
 
 /**
  *
- * @property string $keywords
- * @property string[] $categoryId
- * @property \DTS\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
- * @property \DTS\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
- * @property \DTS\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
  * @property \DTS\eBaySDK\Finding\Types\ProductId $productId
  */
 class FindCompletedItemsRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingServiceRequest
@@ -25,36 +20,6 @@ class FindCompletedItemsRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingSe
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'keywords' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'keywords'
-        ],
-        'categoryId' => [
-            'type' => 'string',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'categoryId'
-        ],
-        'itemFilter' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\ItemFilter',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'itemFilter'
-        ],
-        'aspectFilter' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\AspectFilter',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'aspectFilter'
-        ],
-        'outputSelector' => [
-            'type' => 'string',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'outputSelector'
-        ],
         'productId' => [
             'type' => 'DTS\eBaySDK\Finding\Types\ProductId',
             'repeatable' => false,

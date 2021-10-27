@@ -17,6 +17,7 @@ class EndReasonCodeType
     const C_LOST_OR_BROKEN = 'LostOrBroken';
     const C_NOT_AVAILABLE = 'NotAvailable';
     const C_OTHER_LISTING_ERROR = 'OtherListingError';
+    const C_PRODUCT_DELETED = 'ProductDeleted';
     const C_SELL_TO_HIGH_BIDDER = 'SellToHighBidder';
     const C_SOLD = 'Sold';
 }

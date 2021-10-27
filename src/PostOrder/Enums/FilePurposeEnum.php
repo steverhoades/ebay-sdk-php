@@ -14,5 +14,6 @@ class FilePurposeEnum
 {
     const C_ITEM_RELATED = 'ITEM_RELATED';
     const C_LABEL_RELATED = 'LABEL_RELATED';
+    const C_REFUND_RELATED = 'REFUND_RELATED';
     const C_UNKNOWN = 'UNKNOWN';
 }

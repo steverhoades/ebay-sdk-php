@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property integer[] $FeedbackScore
  */
 class MinimumFeedbackScoreDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -20,12 +19,6 @@ class MinimumFeedbackScoreDetailsType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'FeedbackScore' => [
-            'type' => 'integer',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'FeedbackScore'
-        ]
     ];
 
     /**

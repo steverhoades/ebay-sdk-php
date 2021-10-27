@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property integer $count
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnCountFilterEnum $type
+ * @property string $type
  */
 class CountSummaryType extends \DTS\eBaySDK\Types\BaseType
 {

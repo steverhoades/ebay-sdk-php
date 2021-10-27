@@ -12,6 +12,7 @@ namespace DTS\eBaySDK\PostOrder\Enums;
 
 class LabelActionEnum
 {
+    const C_AU_LABEL = 'AU_LABEL';
     const C_EBAY_LABEL = 'EBAY_LABEL';
     const C_MARK_AS_SENT = 'MARK_AS_SENT';
     const C_NO_LABEL = 'NO_LABEL';

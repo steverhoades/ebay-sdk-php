@@ -13,7 +13,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
 /**
  *
  * @property \DTS\eBaySDK\PostOrder\Types\Amount $refundAmount
- * @property \DTS\eBaySDK\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
+ * @property string $refundFeeType
  * @property string $restockingFeePercentage
  */
 class ItemizedRefundDetailType extends \DTS\eBaySDK\Types\BaseType

@@ -20,7 +20,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InsuranceOption
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $ListedShippingServiceCost
  * @property \DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
- * @property string $LogisticPlanType
  */
 class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -75,12 +74,6 @@ class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ImportCharge'
-        ],
-        'LogisticPlanType' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'LogisticPlanType'
         ]
     ];
 

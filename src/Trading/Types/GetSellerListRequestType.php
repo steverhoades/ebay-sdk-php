@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property string $UserID
  * @property \DTS\eBaySDK\Trading\Types\UserIDArrayType $MotorsDealerUsers
  * @property \DateTime $EndTimeFrom
  * @property \DateTime $EndTimeTo
@@ -33,12 +32,6 @@ class GetSellerListRequestType extends \DTS\eBaySDK\Trading\Types\AbstractReques
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'UserID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'UserID'
-        ],
         'MotorsDealerUsers' => [
             'type' => 'DTS\eBaySDK\Trading\Types\UserIDArrayType',
             'repeatable' => false,

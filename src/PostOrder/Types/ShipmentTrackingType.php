@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $carrierName
  * @property string $carrierUsed
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $deliveryDate
- * @property \DTS\eBaySDK\PostOrder\Enums\TrackingStatusEnum $deliveryStatus
+ * @property string $deliveryStatus
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnAddressType $destinationAddress
  * @property string $errorCode
  * @property string $labelAvailableUntilDate
@@ -35,7 +35,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $shipDate
  * @property string $shipmentId
  * @property string $shippedBy
- * @property \DTS\eBaySDK\PostOrder\Enums\ShippingMethodEnum $shippingMethod
+ * @property string $shippingMethod
  * @property string $trackingNumber
  */
 class ShipmentTrackingType extends \DTS\eBaySDK\Types\BaseType

@@ -12,9 +12,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Enums\EligibilityCheckTypeEnum[] $checkTypes
+ * @property string[] $checkTypes
  * @property string $itemId
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property string $reason
  * @property integer $returnQuantity
  * @property string $transactionId
  */

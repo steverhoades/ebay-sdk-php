@@ -40,17 +40,14 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\FeedbackInfoType $FeedbackReceived
  * @property \DTS\eBaySDK\MerchantData\Types\OrderType $ContainingOrder
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FinalValueFee
- * @property \DTS\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType $ListingCheckoutRedirectPreference
- * @property \DTS\eBaySDK\MerchantData\Types\RefundArrayType $RefundArray
  * @property \DTS\eBaySDK\MerchantData\Enums\SiteCodeType $TransactionSiteID
  * @property \DTS\eBaySDK\MerchantData\Enums\TransactionPlatformCodeType $Platform
- * @property string $CartID
- * @property boolean $SellerContactBuyerByEmail
  * @property string $PayPalEmailAddress
  * @property string $PaisaPayID
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $BuyerGuaranteePrice
  * @property \DTS\eBaySDK\MerchantData\Types\VariationType $Variation
  * @property string $BuyerCheckoutMessage
+ * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TotalTransactionPrice
  * @property \DTS\eBaySDK\MerchantData\Types\TaxesType $Taxes
  * @property boolean $BundlePurchase
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ActualShippingCost
@@ -68,7 +65,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\PaymentsInformationType $MonetaryDetails
  * @property \DTS\eBaySDK\MerchantData\Types\PickupDetailsType $PickupDetails
  * @property \DTS\eBaySDK\MerchantData\Types\PickupMethodSelectedType $PickupMethodSelected
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingConvenienceCharge
  * @property string $LogisticsPlanType
  * @property \DTS\eBaySDK\MerchantData\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
  * @property string $InventoryReservationID
@@ -78,6 +74,10 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\DigitalDeliverySelectedType $DigitalDeliverySelected
  * @property boolean $Gift
  * @property boolean $GuaranteedShipping
+ * @property boolean $GuaranteedDelivery
+ * @property boolean $eBayCollectAndRemitTax
+ * @property \DTS\eBaySDK\MerchantData\Types\TaxesType $eBayCollectAndRemitTaxes
+ * @property \DTS\eBaySDK\MerchantData\Types\TransactionProgramType $Program
  */
 class TransactionType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -253,18 +253,6 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'FinalValueFee'
         ],
-        'ListingCheckoutRedirectPreference' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ListingCheckoutRedirectPreference'
-        ],
-        'RefundArray' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\RefundArrayType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'RefundArray'
-        ],
         'TransactionSiteID' => [
             'type' => 'string',
             'repeatable' => false,
@@ -276,18 +264,6 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Platform'
-        ],
-        'CartID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CartID'
-        ],
-        'SellerContactBuyerByEmail' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'SellerContactBuyerByEmail'
         ],
         'PayPalEmailAddress' => [
             'type' => 'string',
@@ -318,6 +294,12 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerCheckoutMessage'
+        ],
+        'TotalTransactionPrice' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'TotalTransactionPrice'
         ],
         'Taxes' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\TaxesType',
@@ -421,12 +403,6 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'PickupMethodSelected'
         ],
-        'ShippingConvenienceCharge' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingConvenienceCharge'
-        ],
         'LogisticsPlanType' => [
             'type' => 'string',
             'repeatable' => false,
@@ -480,6 +456,30 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GuaranteedShipping'
+        ],
+        'GuaranteedDelivery' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'GuaranteedDelivery'
+        ],
+        'eBayCollectAndRemitTax' => [
+            'type' => 'boolean',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTax'
+        ],
+        'eBayCollectAndRemitTaxes' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\TaxesType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'eBayCollectAndRemitTaxes'
+        ],
+        'Program' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\TransactionProgramType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Program'
         ]
     ];
 

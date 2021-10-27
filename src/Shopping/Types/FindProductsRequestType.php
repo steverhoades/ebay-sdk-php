@@ -13,7 +13,6 @@ namespace DTS\eBaySDK\Shopping\Types;
 /**
  *
  * @property string $IncludeSelector
- * @property boolean $AvailableItemsOnly
  * @property string[] $DomainName
  * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
  * @property string $QueryKeywords
@@ -22,7 +21,6 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property integer $MaxEntries
  * @property integer $PageNumber
  * @property string $CategoryID
- * @property boolean $HideDuplicateItems
  */
 class FindProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
 {
@@ -35,12 +33,6 @@ class FindProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractReques
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'IncludeSelector'
-        ],
-        'AvailableItemsOnly' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'AvailableItemsOnly'
         ],
         'DomainName' => [
             'type' => 'string',
@@ -89,12 +81,6 @@ class FindProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractReques
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CategoryID'
-        ],
-        'HideDuplicateItems' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'HideDuplicateItems'
         ]
     ];
 

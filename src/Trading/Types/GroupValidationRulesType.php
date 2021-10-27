@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Trading\Types;
 
 /**
  *
- * @property integer $MinRequired
  */
 class GroupValidationRulesType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -20,12 +19,6 @@ class GroupValidationRulesType extends \DTS\eBaySDK\Types\BaseType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'MinRequired' => [
-            'type' => 'integer',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'MinRequired'
-        ]
     ];
 
     /**

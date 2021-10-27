@@ -155,28 +155,6 @@ class FindingService extends \DTS\eBaySDK\Finding\Services\FindingBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Finding\Types\FindItemsByImageRequest $request
-     * @return \DTS\eBaySDK\Finding\Types\FindItemsByImageResponse
-     */
-    public function findItemsByImage(\DTS\eBaySDK\Finding\Types\FindItemsByImageRequest $request)
-    {
-        return $this->findItemsByImageAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Finding\Types\FindItemsByImageRequest $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function findItemsByImageAsync(\DTS\eBaySDK\Finding\Types\FindItemsByImageRequest $request)
-    {
-        return $this->callOperationAsync(
-            'findItemsByImage',
-            $request,
-            '\DTS\eBaySDK\Finding\Types\FindItemsByImageResponse'
-        );
-    }
-
-    /**
      * @param \DTS\eBaySDK\Finding\Types\GetHistogramsRequest $request
      * @return \DTS\eBaySDK\Finding\Types\GetHistogramsResponse
      */
@@ -217,28 +195,6 @@ class FindingService extends \DTS\eBaySDK\Finding\Services\FindingBaseService
             'getVersion',
             $request,
             '\DTS\eBaySDK\Finding\Types\GetVersionResponse'
-        );
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest $request
-     * @return \DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchResponse
-     */
-    public function findItemsForFavoriteSearch(\DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest $request)
-    {
-        return $this->findItemsForFavoriteSearchAsync($request)->wait();
-    }
-
-    /**
-     * @param \DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest $request
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function findItemsForFavoriteSearchAsync(\DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest $request)
-    {
-        return $this->callOperationAsync(
-            'findItemsForFavoriteSearch',
-            $request,
-            '\DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchResponse'
         );
     }
 

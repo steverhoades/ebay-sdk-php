@@ -39,11 +39,9 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Enums\PayPalAccountTypeCodeType $PayPalAccountType
  * @property \DTS\eBaySDK\MerchantData\Enums\PayPalAccountStatusCodeType $PayPalAccountStatus
  * @property \DTS\eBaySDK\MerchantData\Enums\EBaySubscriptionTypeCodeType[] $UserSubscription
- * @property string[] $SkypeID
  * @property boolean $eBayWikiReadOnly
  * @property integer $TUVLevel
  * @property string $VATID
- * @property boolean $MotorsDealer
  * @property \DTS\eBaySDK\MerchantData\Types\BiddingSummaryType $BiddingSummary
  * @property boolean $UserAnonymized
  * @property integer $UniqueNeutralFeedbackCount
@@ -52,6 +50,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property boolean $QualifiesForSelling
  * @property string $StaticAlias
  * @property \DTS\eBaySDK\MerchantData\Types\AddressType $ShippingAddress
+ * @property \DTS\eBaySDK\MerchantData\Types\MembershipDetailsType $Membership
  * @property string $UserFirstName
  * @property string $UserLastName
  */
@@ -223,12 +222,6 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'UserSubscription'
         ],
-        'SkypeID' => [
-            'type' => 'string',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'SkypeID'
-        ],
         'eBayWikiReadOnly' => [
             'type' => 'boolean',
             'repeatable' => false,
@@ -246,12 +239,6 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VATID'
-        ],
-        'MotorsDealer' => [
-            'type' => 'boolean',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'MotorsDealer'
         ],
         'BiddingSummary' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\BiddingSummaryType',
@@ -300,6 +287,12 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingAddress'
+        ],
+        'Membership' => [
+            'type' => 'DTS\eBaySDK\MerchantData\Types\MembershipDetailsType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Membership'
         ],
         'UserFirstName' => [
             'type' => 'string',

@@ -13,6 +13,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
 /**
  *
  * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyInfo $returnPolicyInfo
+ * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\InternationalReturnPolicyInfo $internationalReturnPolicyInfo
  */
 class ReturnPolicyProfile extends \DTS\eBaySDK\BusinessPoliciesManagement\Types\SellerProfile
 {
@@ -25,6 +26,12 @@ class ReturnPolicyProfile extends \DTS\eBaySDK\BusinessPoliciesManagement\Types\
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPolicyInfo'
+        ],
+        'internationalReturnPolicyInfo' => [
+            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\InternationalReturnPolicyInfo',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'internationalReturnPolicyInfo'
         ]
     ];
 

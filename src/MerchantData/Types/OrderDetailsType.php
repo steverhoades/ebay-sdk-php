@@ -13,19 +13,6 @@ namespace DTS\eBaySDK\MerchantData\Types;
 /**
  *
  * @property string $OrderID
- * @property string $BuyerUserID
- * @property string $BuyerFirstName
- * @property string $BuyerLastName
- * @property string $BuyerEmail
- * @property string $BuyerPhone
- * @property string $ShipRecipientName
- * @property string $ShipStreet1
- * @property string $ShipStreet2
- * @property string $ShipCityName
- * @property string $ShipStateOrProvince
- * @property string $ShipPostalCode
- * @property string $ShipCountryName
- * @property string $ShippingService
  * @property \DateTime $PaymentClearedTime
  * @property integer $CheckoutSiteID
  * @property \DateTime $OrderCreationTime
@@ -34,16 +21,8 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $InsuranceCost
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingCost
  * @property \DTS\eBaySDK\MerchantData\Types\AmountType $OrderTotalCost
- * @property integer $SellingManagerSaleRecordID
+ * @property boolean $TotalIncludeseBayCollectedTax
  * @property \DTS\eBaySDK\MerchantData\Types\OrderItemDetailsType $OrderItemDetails
- * @property string $BuyerStaticAlias
- * @property string $ShippingServiceToken
- * @property \DTS\eBaySDK\MerchantData\Types\CheckoutStatusType $CheckoutStatus
- * @property \DTS\eBaySDK\MerchantData\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
- * @property \DTS\eBaySDK\MerchantData\Types\ExternalTransactionType[] $ExternalTransaction
- * @property string $ShipReferenceId
- * @property \DTS\eBaySDK\MerchantData\Types\PickupDetailsType $PickupDetails
- * @property \DTS\eBaySDK\MerchantData\Types\PickupMethodSelectedType $PickupMethodSelected
  */
 class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -56,84 +35,6 @@ class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderID'
-        ],
-        'BuyerUserID' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BuyerUserID'
-        ],
-        'BuyerFirstName' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BuyerFirstName'
-        ],
-        'BuyerLastName' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BuyerLastName'
-        ],
-        'BuyerEmail' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BuyerEmail'
-        ],
-        'BuyerPhone' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BuyerPhone'
-        ],
-        'ShipRecipientName' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipRecipientName'
-        ],
-        'ShipStreet1' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipStreet1'
-        ],
-        'ShipStreet2' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipStreet2'
-        ],
-        'ShipCityName' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipCityName'
-        ],
-        'ShipStateOrProvince' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipStateOrProvince'
-        ],
-        'ShipPostalCode' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipPostalCode'
-        ],
-        'ShipCountryName' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipCountryName'
-        ],
-        'ShippingService' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingService'
         ],
         'PaymentClearedTime' => [
             'type' => 'DateTime',
@@ -183,65 +84,17 @@ class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'OrderTotalCost'
         ],
-        'SellingManagerSaleRecordID' => [
-            'type' => 'integer',
+        'TotalIncludeseBayCollectedTax' => [
+            'type' => 'boolean',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'SellingManagerSaleRecordID'
+            'elementName' => 'TotalIncludeseBayCollectedTax'
         ],
         'OrderItemDetails' => [
             'type' => 'DTS\eBaySDK\MerchantData\Types\OrderItemDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderItemDetails'
-        ],
-        'BuyerStaticAlias' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'BuyerStaticAlias'
-        ],
-        'ShippingServiceToken' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShippingServiceToken'
-        ],
-        'CheckoutStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CheckoutStatusType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'CheckoutStatus'
-        ],
-        'PaymentHoldStatus' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PaymentHoldStatus'
-        ],
-        'ExternalTransaction' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ExternalTransactionType',
-            'repeatable' => true,
-            'attribute' => false,
-            'elementName' => 'ExternalTransaction'
-        ],
-        'ShipReferenceId' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'ShipReferenceId'
-        ],
-        'PickupDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PickupDetailsType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PickupDetails'
-        ],
-        'PickupMethodSelected' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PickupMethodSelectedType',
-            'repeatable' => false,
-            'attribute' => false,
-            'elementName' => 'PickupMethodSelected'
         ]
     ];
 

@@ -12,7 +12,6 @@ namespace DTS\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property string $unit
  */
 class DistanceType extends \DTS\eBaySDK\Types\DoubleType
 {
@@ -20,12 +19,6 @@ class DistanceType extends \DTS\eBaySDK\Types\DoubleType
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
-        'unit' => [
-            'type' => 'string',
-            'repeatable' => false,
-            'attribute' => true,
-            'attributeName' => 'unit'
-        ]
     ];
 
     /**

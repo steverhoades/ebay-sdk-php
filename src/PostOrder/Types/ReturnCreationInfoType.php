@@ -15,8 +15,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\Text $comments
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
  * @property \DTS\eBaySDK\PostOrder\Types\ReturnItemType $item
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnTypeEnum $type
+ * @property string $reason
+ * @property string $reasonType
+ * @property string $type
  */
 class ReturnCreationInfoType extends \DTS\eBaySDK\Types\BaseType
 {
@@ -47,6 +48,12 @@ class ReturnCreationInfoType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'reason'
+        ],
+        'reasonType' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'reasonType'
         ],
         'type' => [
             'type' => 'string',

@@ -14,6 +14,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  *
  * @property string $cancelId
  * @property \DTS\eBaySDK\PostOrder\Types\OrderEligibilityResult $orderEligibilityResult
+ * @property \DTS\eBaySDK\PostOrder\Types\ErrorData[] $warnings
  */
 class CreateCancelResponse extends \DTS\eBaySDK\Types\BaseType
 {
@@ -32,6 +33,12 @@ class CreateCancelResponse extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'orderEligibilityResult'
+        ],
+        'warnings' => [
+            'type' => 'DTS\eBaySDK\PostOrder\Types\ErrorData',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'warnings'
         ]
     ];
 

@@ -16,6 +16,7 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property string[] $categoryId
  * @property \DTS\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
  * @property \DTS\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
+ * @property \DTS\eBaySDK\Finding\Types\DomainFilter[] $domainFilter
  * @property \DTS\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
  */
 class FindItemsByImageRequest extends \DTS\eBaySDK\Finding\Types\BestMatchFindingServiceRequest
@@ -48,6 +49,12 @@ class FindItemsByImageRequest extends \DTS\eBaySDK\Finding\Types\BestMatchFindin
             'attribute' => false,
             'elementName' => 'aspectFilter'
         ],
+        'domainFilter' => [
+            'type' => 'DTS\eBaySDK\Finding\Types\DomainFilter',
+            'repeatable' => true,
+            'attribute' => false,
+            'elementName' => 'domainFilter'
+        ],
         'outputSelector' => [
             'type' => 'string',
             'repeatable' => true,
@@ -71,10 +78,6 @@ class FindItemsByImageRequest extends \DTS\eBaySDK\Finding\Types\BestMatchFindin
 
         if (!array_key_exists(__CLASS__, self::$xmlNamespaces)) {
             self::$xmlNamespaces[__CLASS__] = 'xmlns="http://www.ebay.com/marketplace/search/v1/services"';
-        }
-
-        if (!array_key_exists(__CLASS__, self::$requestXmlRootElementNames)) {
-            self::$requestXmlRootElementNames[__CLASS__] = 'findItemsByImageRequest';
         }
 
         $this->setValues(__CLASS__, $childValues);

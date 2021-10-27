@@ -15,7 +15,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $holdCreationDate
  * @property string $holdReferenceId
  * @property \DTS\eBaySDK\PostOrder\Types\DateTime $holdReleaseDate
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnHoldStatusEnum $holdStatus
+ * @property string $holdStatus
  * @property string $holdTransactionId
  */
 class ReturnHoldInfoType extends \DTS\eBaySDK\Types\BaseType
