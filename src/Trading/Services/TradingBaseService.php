@@ -91,7 +91,7 @@ class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
      *
      * @return \GuzzleHttp\Promise\PromiseInterface A promise that will be resolved with an object created from the XML response.
      */
-    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request, $responseClass)
+    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request, $responseClass, $headers = [])
     {
         /**
          * Modify the request object to include the auth token that was set up in the configuration.
@@ -115,7 +115,7 @@ class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
             }
         }
 
-        return parent::callOperationAsync($name, $request, $responseClass);
+        return parent::callOperationAsync($name, $request, $responseClass, $headers);
     }
 
     /**
@@ -154,13 +154,6 @@ class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
 
         if ($this->getConfig('authorization')) {
             $headers[self::HDR_AUTHORIZATION] = $this->getConfig('authorization');
-        }
-
-        /**
-         * Note that we have no way of detecting that the actual request has an attachment.
-         */
-        if ($operationName === 'UploadSiteHostedPictures') {
-            $headers['Content-Type'] = 'multipart/form-data;boundary="boundary"';
         }
 
         return $headers;

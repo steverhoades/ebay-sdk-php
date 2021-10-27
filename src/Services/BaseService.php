@@ -149,11 +149,11 @@ abstract class BaseService
      *
      * @return \GuzzleHttp\Promise\PromiseInterface A promise that will be resolved with an object created from the XML response.
      */
-    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request, $responseClass)
+    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request, $responseClass, $headers = [])
     {
         $url = $this->getUrl();
         $body = $this->buildRequestBody($request);
-        $headers = $this->buildRequestHeaders($name, $request, $body);
+        $headers = $this->buildRequestHeaders($name, $request, $body, $headers);
         $debug = $this->getConfig('debug');
         $httpHandler = $this->getConfig('httpHandler');
         $httpOptions = $this->getConfig('httpOptions');
@@ -294,13 +294,11 @@ abstract class BaseService
      *
      * @return array An associative array of HTTP headers.
      */
-    private function buildRequestHeaders($name, $request, $body)
+    private function buildRequestHeaders($name, $request, $body, $headers = [])
     {
-        $headers = [];
-
         if ($request->hasAttachment()) {
             $headers['Content-Type'] = 'multipart/related;boundary=MIME_boundary;type="application/xop+xml";start="<request.xml@devbay.net>";start-info="text/xml"';
-        } else {
+        } else if (empty($headers['Content-Type'])) {
             $headers['Content-Type'] = 'text/xml';
         }
 

@@ -2237,10 +2237,16 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
      */
     public function uploadSiteHostedPicturesAsync(\DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request)
     {
+        $headers = [];
+        if (!empty($request->PictureData)) {
+            $headers['Content-Type'] = 'multipart/form-data;boundary="boundary"';
+        }
+
         return $this->callOperationAsync(
             'UploadSiteHostedPictures',
             $request,
-            '\DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesResponseType'
+            '\DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesResponseType',
+            $headers
         );
     }
 
